@@ -1,6 +1,6 @@
 import type { Module } from "./Module";
 
-export type OriginType = "DRIVE_MI_UNIDAD" | "DRIVE_COMPARTIDA" | "LOCAL_SSD";
+export type OriginType = "DRIVE_MI_UNIDAD" | "DRIVE_COMPARTIDA" | "LOCAL_SSD" | "TELEGRAM_TPC";
 
 export interface Course {
   id: string;
@@ -25,4 +25,8 @@ export interface Course {
   isArchive?: boolean;
   archiveType?: "ZIP" | "RAR" | "7Z" | "OTHER";
   modules?: Module[];
+  telegramChannel?: string;
+  telegramSearchUrl?: string;
+  isUploadedToDrive?: boolean;
+  pipelineStatus?: "PENDING" | "DOWNLOADED" | "EXTRACTED" | "UPLOADED";
 }

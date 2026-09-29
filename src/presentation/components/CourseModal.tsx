@@ -9,6 +9,7 @@ interface CourseModalProps {
   onToggleLesson: (courseId: string, lessonId: string, totalLessons: number) => void;
   onSaveNotes: (courseId: string, notes: string) => void;
   onShowToast: (msg: string, type?: "success" | "info") => void;
+  onOpenPipeline?: (course: Course) => void;
 }
 
 export const CourseModal: React.FC<CourseModalProps> = ({
@@ -18,6 +19,7 @@ export const CourseModal: React.FC<CourseModalProps> = ({
   onToggleLesson,
   onSaveNotes,
   onShowToast,
+  onOpenPipeline
 }) => {
   if (!course) return null;
 
@@ -31,9 +33,11 @@ export const CourseModal: React.FC<CourseModalProps> = ({
 
   const completedSet = new Set(progress?.completedLessonIds || []);
   const percent = progress?.percentCompleted || 0;
+  const isTelegram = course.originType === "TELEGRAM_TPC";
 
   const cleanSearchTerm = course.title.replace(/^[0-9️⃣🔟._ -]+/, "").trim();
   const driveWebSearchUrl = `https://drive.google.com/drive/u/0/search?q=${encodeURIComponent(cleanSearchTerm)}`;
+  const telegramUrl = course.telegramSearchUrl || "https://t.me/MEMBRESIATPC";
 
   return (
     <div className="modal-overlay" onClick={onClose} role="dialog" aria-modal="true" aria-labelledby="modal-title">
@@ -44,9 +48,15 @@ export const CourseModal: React.FC<CourseModalProps> = ({
               <span className="course-tag" style={{ background: "rgba(99, 102, 241, 0.2)", color: "var(--accent-primary)" }}>
                 {course.category}
               </span>
-              <span className="course-tag" style={{ background: "rgba(16, 185, 129, 0.15)", color: "var(--accent-emerald)" }}>
-                ☁️ Google Drive Cloud (0 GB Local)
-              </span>
+              {isTelegram ? (
+                <span className="course-tag" style={{ background: "rgba(217, 70, 239, 0.2)", color: "#f0abfc", border: "1px solid rgba(217, 70, 239, 0.4)" }}>
+                  ✈️ Telegram • DESCARGAS TPC 📥
+                </span>
+              ) : (
+                <span className="course-tag" style={{ background: "rgba(16, 185, 129, 0.15)", color: "var(--accent-emerald)" }}>
+                  ☁️ Google Drive Cloud (0 GB Local)
+                </span>
+              )}
             </div>
             <h2 id="modal-title" style={{ fontSize: "2.2rem", fontWeight: 800, color: "var(--text-primary)", marginBottom: "0.6rem" }}>
               {course.title}
@@ -66,22 +76,48 @@ export const CourseModal: React.FC<CourseModalProps> = ({
           </button>
         </div>
 
-        {/* Action Bar for Direct Drive Cloud Opening */}
-        <div style={{ padding: "1.4rem 2.4rem", background: "rgba(99, 102, 241, 0.08)", borderBottom: "1px solid var(--border-glass)", display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "1rem" }}>
+        {/* Action Bar for Direct Drive / Telegram Pipeline */}
+        <div style={{ padding: "1.4rem 2.4rem", background: isTelegram ? "rgba(217, 70, 239, 0.1)" : "rgba(99, 102, 241, 0.08)", borderBottom: "1px solid var(--border-glass)", display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "1rem" }}>
           <div style={{ display: "flex", alignItems: "center", gap: "0.8rem", fontSize: "1.3rem", color: "var(--text-secondary)" }}>
-            <span>☁️ <strong>Ubicación Cloud:</strong> Google Drive ({course.originName || "Unidades Compartidas & Mi Unidad"})</span>
+            {isTelegram ? (
+              <span>✈️ <strong>Canal Telegram:</strong> DESCARGAS TPC (@MEMBRESIATPC) ➜ Flujo SSD ➜ Google Drive</span>
+            ) : (
+              <span>☁️ <strong>Ubicación Cloud:</strong> Google Drive ({course.originName || "Unidades Compartidas & Mi Unidad"})</span>
+            )}
           </div>
 
           <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
-            <a
-              href={driveWebSearchUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="btn-primary"
-              style={{ display: "inline-flex", alignItems: "center", gap: "0.6rem", padding: "0.8rem 1.6rem", fontSize: "1.35rem" }}
-            >
-              ☁️ Abrir Curso en Google Drive Web ➔
-            </a>
+            {isTelegram ? (
+              <>
+                <button
+                  type="button"
+                  className="btn-primary"
+                  style={{ background: "linear-gradient(135deg, #d946ef 0%, #8b5cf6 100%)", display: "inline-flex", alignItems: "center", gap: "0.6rem", padding: "0.8rem 1.6rem", fontSize: "1.35rem" }}
+                  onClick={() => onOpenPipeline ? onOpenPipeline(course) : null}
+                >
+                  ⚡ Iniciar Pipeline (Descargar ➜ Subir a Drive)
+                </button>
+                <a
+                  href={telegramUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn-secondary"
+                  style={{ display: "inline-flex", alignItems: "center", gap: "0.6rem", padding: "0.8rem 1.4rem", fontSize: "1.35rem" }}
+                >
+                  ✈️ Abrir en Telegram
+                </a>
+              </>
+            ) : (
+              <a
+                href={driveWebSearchUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="btn-primary"
+                style={{ display: "inline-flex", alignItems: "center", gap: "0.6rem", padding: "0.8rem 1.6rem", fontSize: "1.35rem" }}
+              >
+                ☁️ Abrir Curso en Google Drive Web ➔
+              </a>
+            )}
           </div>
         </div>
 
@@ -149,23 +185,32 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                                 className="lesson-checkbox"
                                 checked={isWatched}
                                 onChange={() => onToggleLesson(course.id, l.id, course.totalLessons)}
-                                id={`check-${l.id}`}
+                                id={`lesson-${l.id}`}
                               />
-                              <label htmlFor={`check-${l.id}`} className={`lesson-title ${isWatched ? "watched" : ""}`}>
-                                {l.fileType === "video" ? "🎬" : l.fileType === "pdf" ? "📄" : l.fileType === "doc" ? "📝" : "📦"} {l.title}
+                              <label
+                                htmlFor={`lesson-${l.id}`}
+                                className={`lesson-title ${isWatched ? "watched" : ""}`}
+                              >
+                                {l.fileType === "video" ? "🎬 " : l.fileType === "doc" ? "📄 " : "📦 "}
+                                {l.title}
                               </label>
                             </div>
 
-                            <div style={{ display: "flex", gap: "0.6rem" }}>
+                            <div style={{ display: "flex", gap: "0.8rem", alignItems: "center" }}>
+                              {l.duration && (
+                                <span style={{ fontSize: "1.2rem", color: "var(--text-muted)" }}>
+                                  {l.duration}
+                                </span>
+                              )}
                               <a
                                 href={lessonDriveUrl}
                                 target="_blank"
                                 rel="noreferrer"
                                 className="btn-secondary"
-                                style={{ padding: "0.4rem 1rem", fontSize: "1.2rem", minHeight: "auto", display: "inline-flex", alignItems: "center", gap: "0.4rem" }}
-                                title="Ver archivo directamente en Google Drive Cloud"
+                                style={{ padding: "0.4rem 0.8rem", fontSize: "1.15rem", minHeight: "auto" }}
+                                title="Buscar y reproducir lección en Google Drive"
                               >
-                                ☁️ Ver en Drive ➔
+                                ☁️ Stream
                               </a>
                             </div>
                           </div>
@@ -175,70 +220,96 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                   </div>
                 ))
               ) : (
-                <div style={{ padding: "3rem", textAlign: "center", background: "var(--bg-card)", borderRadius: "var(--radius-md)" }}>
-                  <p style={{ fontSize: "1.6rem", color: "var(--text-secondary)", marginBottom: "1.6rem" }}>
-                    Este curso está disponible directamente en Google Drive ({course.originName}).
+                <div style={{ textAlign: "center", padding: "4rem 2rem", background: "var(--bg-tertiary)", borderRadius: "var(--radius-md)" }}>
+                  <p style={{ color: "var(--text-secondary)", marginBottom: "1.4rem" }}>
+                    Este curso está indexado como contenedor maestro. Puedes abrir directamente todos los archivos y carpetas en Google Drive.
                   </p>
-                  <div style={{ display: "flex", justifyContent: "center", gap: "1.2rem", flexWrap: "wrap" }}>
-                    <a
-                      href={driveWebSearchUrl}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="btn-primary"
-                      style={{ display: "inline-flex", alignItems: "center", gap: "0.6rem", padding: "0.8rem 1.6rem" }}
-                    >
-                      ☁️ Abrir Carpeta en Google Drive Web ➔
-                    </a>
-                  </div>
+                  <a
+                    href={driveWebSearchUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="btn-primary"
+                  >
+                    ☁️ Explorar Todo el Contenido en Google Drive ➔
+                  </a>
                 </div>
               )}
             </div>
           )}
 
           {activeTab === "info" && (
-            <div style={{ display: "flex", flexDirection: "column", gap: "2rem" }}>
-              <div>
-                <h3 style={{ fontSize: "1.5rem", fontWeight: 700, marginBottom: "0.6rem" }}>🎯 Utilidad y Qué Aprenderás</h3>
-                <p style={{ color: "var(--text-secondary)", lineHeight: 1.6 }}>{course.utility}</p>
-              </div>
-
-              <div>
-                <h3 style={{ fontSize: "1.5rem", fontWeight: 700, marginBottom: "0.6rem" }}>👥 Audiencia Objetivo</h3>
-                <p style={{ color: "var(--text-secondary)", lineHeight: 1.6 }}>{course.targetAudience}</p>
-              </div>
-
-              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "1.6rem" }}>
-                <div style={{ background: "var(--bg-card)", padding: "1.4rem", borderRadius: "var(--radius-md)" }}>
-                  <div style={{ fontSize: "1.2rem", color: "var(--text-muted)" }}>Nivel de Dificultad</div>
-                  <div style={{ fontSize: "1.5rem", fontWeight: 700 }}>{course.difficulty}</div>
-                </div>
-                <div style={{ background: "var(--bg-card)", padding: "1.4rem", borderRadius: "var(--radius-md)" }}>
-                  <div style={{ fontSize: "1.2rem", color: "var(--text-muted)" }}>Duración Estimada</div>
-                  <div style={{ fontSize: "1.5rem", fontWeight: 700 }}>{course.estimatedHours}</div>
-                </div>
-              </div>
-
-              <div>
-                <h3 style={{ fontSize: "1.5rem", fontWeight: 700, marginBottom: "0.6rem" }}>☁️ Acceso Cloud en Google Drive</h3>
-                <p style={{ color: "var(--text-secondary)", fontSize: "1.3rem", background: "var(--bg-card)", padding: "1.2rem", borderRadius: "var(--radius-sm)", lineHeight: 1.6 }}>
-                  Este contenido está alojado en Google Drive. Puedes ver los vídeos, PDFs y lecciones directamente desde el navegador en cualquier dispositivo sin descargar archivos a tu disco local.
+            <div style={{ display: "flex", flexDirection: "column", gap: "1.6rem" }}>
+              <div style={{ background: "var(--bg-card)", padding: "1.8rem", borderRadius: "var(--radius-md)", border: "1px solid var(--border-glass)" }}>
+                <h3 style={{ fontSize: "1.5rem", fontWeight: 700, marginBottom: "0.8rem", color: "var(--text-primary)" }}>
+                  🎯 Utilidad y Aplicación Práctica
+                </h3>
+                <p style={{ fontSize: "1.4rem", color: "var(--text-secondary)", lineHeight: 1.6 }}>
+                  {course.utility}
                 </p>
               </div>
+
+              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(22rem, 1fr))", gap: "1.4rem" }}>
+                <div style={{ background: "var(--bg-tertiary)", padding: "1.4rem", borderRadius: "var(--radius-md)" }}>
+                  <div style={{ fontSize: "1.2rem", color: "var(--text-muted)" }}>Nicho / Especialidad</div>
+                  <div style={{ fontSize: "1.4rem", fontWeight: 700, color: "var(--text-primary)", marginTop: "0.4rem" }}>
+                    {course.niche}
+                  </div>
+                </div>
+
+                <div style={{ background: "var(--bg-tertiary)", padding: "1.4rem", borderRadius: "var(--radius-md)" }}>
+                  <div style={{ fontSize: "1.2rem", color: "var(--text-muted)" }}>Duración Estimada</div>
+                  <div style={{ fontSize: "1.4rem", fontWeight: 700, color: "var(--text-primary)", marginTop: "0.4rem" }}>
+                    ⏱️ {course.estimatedHours}
+                  </div>
+                </div>
+
+                <div style={{ background: "var(--bg-tertiary)", padding: "1.4rem", borderRadius: "var(--radius-md)" }}>
+                  <div style={{ fontSize: "1.2rem", color: "var(--text-muted)" }}>Total de Lecciones</div>
+                  <div style={{ fontSize: "1.4rem", fontWeight: 700, color: "var(--text-primary)", marginTop: "0.4rem" }}>
+                    📚 {course.totalLessons} recursos
+                  </div>
+                </div>
+
+                <div style={{ background: "var(--bg-tertiary)", padding: "1.4rem", borderRadius: "var(--radius-md)" }}>
+                  <div style={{ fontSize: "1.2rem", color: "var(--text-muted)" }}>Calificación</div>
+                  <div style={{ fontSize: "1.4rem", fontWeight: 700, color: "#fbbf24", marginTop: "0.4rem" }}>
+                    ⭐ {course.rating} / 5.0
+                  </div>
+                </div>
+              </div>
+
+              {course.localPath && (
+                <div style={{ background: "rgba(10, 14, 25, 0.6)", padding: "1.4rem", borderRadius: "var(--radius-md)", border: "1px solid var(--border-glass)", fontSize: "1.25rem" }}>
+                  <div style={{ color: "var(--text-muted)", marginBottom: "0.4rem" }}>📁 Ruta Local / Almacenamiento:</div>
+                  <code style={{ color: "var(--accent-cyan)" }}>{course.localPath}</code>
+                </div>
+              )}
             </div>
           )}
 
           {activeTab === "notes" && (
             <div>
-              <p style={{ fontSize: "1.3rem", color: "var(--text-muted)", marginBottom: "1rem" }}>
-                Escribe aquí tus ideas clave, prompts, comandos o resúmenes de este curso:
+              <p style={{ fontSize: "1.35rem", color: "var(--text-secondary)", marginBottom: "1.2rem" }}>
+                Escribe ideas clave, resúmenes o enlaces de interés sobre este curso. Se guardan automáticamente en tu navegador.
               </p>
               <textarea
-                style={{ width: "100%", minHeight: "22rem", background: "var(--bg-card)", border: "1px solid var(--border-glass)", borderRadius: "var(--radius-md)", padding: "1.4rem", color: "var(--text-primary)", fontSize: "1.4rem", lineHeight: 1.6, resize: "vertical" }}
-                placeholder="Anota aquí tus aprendizajes, enlaces y próximos pasos..."
                 value={notesText}
                 onChange={(e) => setNotesText(e.target.value)}
+                placeholder="Escribe aquí tus notas personales sobre este curso..."
+                style={{
+                  width: "100%",
+                  minHeight: "22rem",
+                  background: "var(--bg-tertiary)",
+                  border: "1px solid var(--border-glass)",
+                  borderRadius: "var(--radius-md)",
+                  color: "var(--text-primary)",
+                  padding: "1.6rem",
+                  fontSize: "1.4rem",
+                  lineHeight: 1.6,
+                  resize: "vertical"
+                }}
               />
-              <div style={{ display: "flex", justifyContent: "flex-end", marginTop: "1.4rem" }}>
+              <div style={{ display: "flex", justifyContent: "flex-end", marginTop: "1.2rem" }}>
                 <button
                   type="button"
                   className="btn-primary"

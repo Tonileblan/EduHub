@@ -9,6 +9,7 @@ interface CourseCardProps {
   onOpenDetails: (course: Course) => void;
   onToggleFavorite: (courseId: string) => void;
   onToggleWatchLater: (courseId: string) => void;
+  onOpenPipeline?: (course: Course) => void;
 }
 
 export const CourseCard: React.FC<CourseCardProps> = ({
@@ -17,12 +18,14 @@ export const CourseCard: React.FC<CourseCardProps> = ({
   onOpenDetails,
   onToggleFavorite,
   onToggleWatchLater,
+  onOpenPipeline
 }) => {
   const theme = getCategoryTheme(course.category);
   const percent = progress?.percentCompleted || 0;
   const isFav = progress?.isFavorite || false;
   const isWL = progress?.isWatchLater || false;
   const initials = getAuthorInitials(course.author);
+  const isTelegram = course.originType === "TELEGRAM_TPC";
 
   const cleanTitle = course.title.replace(/^[0-9️⃣🔟._ -]+/, "").trim();
   const driveUrl = `https://drive.google.com/drive/u/0/search?q=${encodeURIComponent(cleanTitle)}`;
@@ -34,21 +37,27 @@ export const CourseCard: React.FC<CourseCardProps> = ({
       onClick={() => onOpenDetails(course)}
       style={{
         "--theme-gradient": theme.gradient,
-        "--theme-accent": theme.accentColor,
-        "--theme-glow": theme.glowColor,
+        "--theme-accent": isTelegram ? "#d946ef" : theme.accentColor,
+        "--theme-glow": isTelegram ? "rgba(217, 70, 239, 0.4)" : theme.glowColor,
         "--theme-badge-bg": theme.badgeBg
       } as React.CSSProperties}
     >
       {/* Visual Thumbnail Banner */}
       <div className="card-media-banner" style={{ background: theme.gradient }}>
         <div className="banner-pattern-overlay" />
-        <span className="banner-watermark-icon">{theme.icon}</span>
+        <span className="banner-watermark-icon">{isTelegram ? "✈️" : theme.icon}</span>
 
         {/* Top Badges over banner */}
         <div className="banner-top-row">
-          <span className="banner-cloud-pill">
-            ☁️ Drive 0 GB Local
-          </span>
+          {isTelegram ? (
+            <span className="banner-cloud-pill" style={{ background: "rgba(192, 38, 211, 0.7)", borderColor: "rgba(240, 171, 252, 0.5)", color: "#ffffff" }}>
+              ✈️ Telegram TPC (SSD ➜ Drive)
+            </span>
+          ) : (
+            <span className="banner-cloud-pill">
+              ☁️ Drive 0 GB Local
+            </span>
+          )}
 
           <div className="banner-actions" onClick={(e) => e.stopPropagation()}>
             <button
@@ -110,6 +119,11 @@ export const CourseCard: React.FC<CourseCardProps> = ({
         </p>
 
         <div className="card-tags-row">
+          {isTelegram && (
+            <span className="niche-tag" style={{ background: "rgba(217, 70, 239, 0.2)", color: "#f0abfc", borderColor: "rgba(217, 70, 239, 0.4)" }}>
+              ✈️ DESCARGAS TPC
+            </span>
+          )}
           <span className="niche-tag">
             🎯 {course.niche}
           </span>
@@ -136,16 +150,29 @@ export const CourseCard: React.FC<CourseCardProps> = ({
 
       {/* Card Actions Footer */}
       <div className="card-action-footer" onClick={(e) => e.stopPropagation()}>
-        <a
-          href={driveUrl}
-          target="_blank"
-          rel="noreferrer"
-          className="btn-drive-main"
-          title="Abrir directamente en Google Drive Cloud"
-        >
-          <span>☁️ Ver en Drive</span>
-          <span className="btn-arrow">➔</span>
-        </a>
+        {isTelegram ? (
+          <button
+            type="button"
+            className="btn-drive-main"
+            style={{ background: "linear-gradient(135deg, #d946ef 0%, #8b5cf6 100%)", boxShadow: "0 4px 14px rgba(217, 70, 239, 0.4)" }}
+            onClick={() => onOpenPipeline ? onOpenPipeline(course) : onOpenDetails(course)}
+            title="Procesar descarga de Telegram, descompresión y subida a Drive"
+          >
+            <span>⚡ Pipeline SSD ➜ Drive</span>
+            <span className="btn-arrow">➔</span>
+          </button>
+        ) : (
+          <a
+            href={driveUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="btn-drive-main"
+            title="Abrir directamente en Google Drive Cloud"
+          >
+            <span>☁️ Ver en Drive</span>
+            <span className="btn-arrow">➔</span>
+          </a>
+        )}
 
         <button
           type="button"

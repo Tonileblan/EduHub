@@ -10,6 +10,7 @@ import { CourseCard } from "./presentation/components/CourseCard";
 import { CourseListView } from "./presentation/components/CourseListView";
 import { CourseModal } from "./presentation/components/CourseModal";
 import { ScannerModal } from "./presentation/components/ScannerModal";
+import { TelegramPipelineModal } from "./presentation/components/TelegramPipelineModal";
 import { ToastContainer, type ToastMessage } from "./presentation/components/Toast";
 import { Pagination } from "./presentation/components/Pagination";
 import type { Course } from "./domain/entities/Course";
@@ -17,6 +18,7 @@ import "./App.css";
 
 export const App: React.FC = () => {
   const [selectedCourse, setSelectedCourse] = useState<Course | null>(null);
+  const [pipelineCourse, setPipelineCourse] = useState<Course | null>(null);
   const [showScannerModal, setShowScannerModal] = useState(false);
   const [showStats, setShowStats] = useState(false);
   const [viewMode, setViewMode] = useState<ViewMode>("grid");
@@ -40,7 +42,7 @@ export const App: React.FC = () => {
     toggleWatchLater,
     saveNotes,
     stats
-  } = useProgress(6026, []);
+  } = useProgress(6038, []);
 
   const {
     courses,
@@ -94,6 +96,11 @@ export const App: React.FC = () => {
     let inProgress = 0;
     let watchLater = 0;
     let completed = 0;
+    let telegram = 0;
+
+    for (const c of courses) {
+      if (c.originType === "TELEGRAM_TPC") telegram++;
+    }
 
     for (const [_, prog] of Object.entries(progressMap)) {
       if (prog.isFavorite) favorites++;
@@ -110,7 +117,8 @@ export const App: React.FC = () => {
       favorites,
       inProgress,
       watchLater,
-      completed
+      completed,
+      telegram
     };
   }, [courses, progressMap]);
 
@@ -154,6 +162,10 @@ export const App: React.FC = () => {
 
   const handleCategorySelect = (category: string) => {
     updateFilters({ category });
+  };
+
+  const handleOpenPipeline = (course: Course) => {
+    setPipelineCourse(course);
   };
 
   return (
@@ -200,7 +212,9 @@ export const App: React.FC = () => {
         <div className="results-header-v2">
           <div className="results-left">
             <h2 className="results-title">
-              {filters.status === "FAVORITE"
+              {filters.originType === "TELEGRAM_TPC"
+                ? "✈️ Cursos de Telegram TPC (Flujo SSD ➜ Drive)"
+                : filters.status === "FAVORITE"
                 ? "❤️ Mis Cursos Favoritos"
                 : filters.status === "IN_PROGRESS"
                 ? "⚡ Cursos en Progreso"
@@ -229,7 +243,7 @@ export const App: React.FC = () => {
           <div className="loading-state-card">
             <div className="loading-spinner-glow">⚡</div>
             <h3>Cargando catálogo maestro de 6.000+ cursos...</h3>
-            <p>Conectando con el índice de Google Drive Cloud</p>
+            <p>Conectando con el índice de Google Drive Cloud y Telegram TPC</p>
           </div>
         ) : error ? (
           <div className="error-state-card">
@@ -256,6 +270,7 @@ export const App: React.FC = () => {
                     onOpenDetails={(c) => setSelectedCourse(c)}
                     onToggleFavorite={handleToggleFavoriteWithToast}
                     onToggleWatchLater={handleToggleWatchLaterWithToast}
+                    onOpenPipeline={handleOpenPipeline}
                   />
                 ))}
               </div>
@@ -285,6 +300,15 @@ export const App: React.FC = () => {
         onClose={() => setSelectedCourse(null)}
         onToggleLesson={toggleLesson}
         onSaveNotes={saveNotes}
+        onShowToast={showToast}
+        onOpenPipeline={handleOpenPipeline}
+      />
+
+      {/* Telegram Pipeline Modal */}
+      <TelegramPipelineModal
+        course={pipelineCourse}
+        isOpen={Boolean(pipelineCourse)}
+        onClose={() => setPipelineCourse(null)}
         onShowToast={showToast}
       />
 

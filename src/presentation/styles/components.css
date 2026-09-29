@@ -127,7 +127,7 @@
 
 /* ==========================================================================
    2. Hero Spotlight Section
-   ========================================================================== */
+   ========================================================================= */
 .hero-spotlight {
   position: relative;
   background: linear-gradient(135deg, rgba(17, 24, 44, 0.92) 0%, rgba(10, 14, 27, 0.96) 100%);
@@ -789,7 +789,7 @@
 }
 
 /* ==========================================================================
-   6. Course Card v2 (The Visual Showcase)
+   6. Course Card v2 (Visual 16:9 Banner)
    ========================================================================== */
 .course-grid-v2 {
   display: grid;
@@ -820,7 +820,6 @@
   background: linear-gradient(135deg, rgba(23, 33, 58, 0.95) 0%, rgba(13, 19, 36, 0.99) 100%);
 }
 
-/* 16:9 Thumbnail Media Banner */
 .card-media-banner {
   position: relative;
   height: 14rem;
@@ -944,7 +943,6 @@
   border-radius: var(--radius-full);
 }
 
-/* Card Body Content */
 .card-body-content {
   padding: 2rem 2.2rem 1.6rem;
   flex: 1;
@@ -1047,7 +1045,6 @@
   border-radius: var(--radius-sm);
 }
 
-/* Card Progress Section */
 .card-progress-section {
   padding: 0 2.2rem 1.4rem;
 }
@@ -1083,7 +1080,6 @@
   transition: width 0.3s ease;
 }
 
-/* Card Actions Footer */
 .card-action-footer {
   padding: 1.6rem 2.2rem;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
@@ -1107,6 +1103,8 @@
   text-decoration: none;
   box-shadow: 0 4px 14px rgba(14, 165, 233, 0.35);
   transition: var(--transition-fast);
+  cursor: pointer;
+  border: none;
 }
 
 .btn-drive-main:hover {
@@ -1142,7 +1140,7 @@
 }
 
 /* ==========================================================================
-   7. Course List / Table View (Linear / Pro View)
+   7. Course List / Table View
    ========================================================================== */
 .course-list-table-wrapper {
   background: linear-gradient(135deg, rgba(17, 24, 44, 0.85) 0%, rgba(10, 14, 27, 0.95) 100%);
@@ -1311,7 +1309,110 @@
 }
 
 /* ==========================================================================
-   8. Course Cinema Modal
+   8. Telegram Pipeline Modal & Steps Tracker
+   ========================================================================== */
+.pipeline-steps-tracker {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.8rem 2rem;
+  background: rgba(10, 14, 25, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-md);
+  margin-bottom: 1.6rem;
+  overflow-x: auto;
+  gap: 0.8rem;
+}
+
+.step-node {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: var(--transition-fast);
+  white-space: nowrap;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.step-node.active {
+  opacity: 1;
+  color: #38bdf8;
+}
+
+.step-node.completed {
+  opacity: 0.9;
+  color: #34d399;
+}
+
+.step-circle {
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 800;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.step-node.active .step-circle {
+  background: #0ea5e9;
+  color: #ffffff;
+  border-color: #38bdf8;
+  box-shadow: 0 0 12px rgba(14, 165, 233, 0.6);
+}
+
+.step-node.completed .step-circle {
+  background: #10b981;
+  color: #ffffff;
+  border-color: #34d399;
+}
+
+.step-line {
+  flex: 1;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.1);
+  min-width: 2rem;
+}
+
+.pipeline-step-card {
+  background: rgba(18, 25, 46, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--radius-md);
+  padding: 2.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  animation: fadeIn 0.25s ease;
+}
+
+.step-header {
+  display: flex;
+  gap: 1.6rem;
+  align-items: flex-start;
+}
+
+.step-icon {
+  font-size: 3rem;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 1rem;
+  border-radius: var(--radius-md);
+}
+
+.step-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  margin-top: 0.8rem;
+}
+
+/* ==========================================================================
+   9. Course Cinema Modal & Accordions
    ========================================================================== */
 .modal-overlay {
   position: fixed;
@@ -1381,7 +1482,6 @@
   flex: 1;
 }
 
-/* Module Accordion */
 .module-block {
   background: rgba(14, 20, 36, 0.75);
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -1440,7 +1540,7 @@
 }
 
 /* ==========================================================================
-   9. State Cards & Pagination
+   10. State Cards, Toast, Pagination & Responsive
    ========================================================================== */
 .loading-state-card,
 .empty-state-card,
@@ -1482,7 +1582,6 @@
   margin-right: auto;
 }
 
-/* Pagination */
 .pagination-container {
   display: flex;
   align-items: center;
@@ -1517,7 +1616,6 @@
   box-shadow: 0 0 15px rgba(99, 102, 241, 0.4);
 }
 
-/* Toast Notification in DOM */
 .toast-container {
   position: fixed;
   bottom: 2.4rem;
@@ -1565,7 +1663,6 @@
   to { transform: translateX(0); opacity: 1; }
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -1583,5 +1680,12 @@
   }
   .category-card-grid {
     grid-template-columns: 1fr;
+  }
+  .pipeline-steps-tracker {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .step-line {
+    display: none;
   }
 }

@@ -19,6 +19,7 @@ interface FilterBarProps {
     inProgress: number;
     watchLater: number;
     completed: number;
+    telegram: number;
   };
 }
 
@@ -53,13 +54,27 @@ export const FilterBar: React.FC<FilterBarProps> = ({
         <button
           type="button"
           role="tab"
-          aria-selected={filters.status === "ALL"}
-          className={`status-tab ${filters.status === "ALL" ? "active" : ""}`}
-          onClick={() => onFilterChange({ status: "ALL" })}
+          aria-selected={filters.status === "ALL" && filters.originType === "ALL"}
+          className={`status-tab ${filters.status === "ALL" && filters.originType === "ALL" ? "active" : ""}`}
+          onClick={() => onFilterChange({ status: "ALL", originType: "ALL" })}
         >
           <span className="tab-icon">🌐</span>
           <span>Todo el Catálogo</span>
           <span className="tab-badge">{statsCounts.total.toLocaleString()}</span>
+        </button>
+
+        <button
+          type="button"
+          role="tab"
+          aria-selected={filters.originType === "TELEGRAM_TPC"}
+          className={`status-tab ${filters.originType === "TELEGRAM_TPC" ? "active" : ""}`}
+          onClick={() => onFilterChange({ originType: filters.originType === "TELEGRAM_TPC" ? "ALL" : "TELEGRAM_TPC" })}
+        >
+          <span className="tab-icon">✈️</span>
+          <span>Telegram TPC</span>
+          <span className="tab-badge highlight" style={{ background: "#d946ef", color: "#ffffff" }}>
+            {statsCounts.telegram}
+          </span>
         </button>
 
         <button
@@ -226,6 +241,20 @@ export const FilterBar: React.FC<FilterBarProps> = ({
                 {niches.slice(0, 50).map((n) => (
                   <option key={n} value={n}>{n}</option>
                 ))}
+              </select>
+            </div>
+
+            <div className="filter-field">
+              <label htmlFor="select-origin">☁️ Ubicación / Origen</label>
+              <select
+                id="select-origin"
+                value={filters.originType}
+                onChange={(e) => onFilterChange({ originType: e.target.value })}
+              >
+                <option value="ALL">Todos los Orígenes</option>
+                <option value="DRIVE_MI_UNIDAD">☁️ Google Drive (En la nube)</option>
+                <option value="TELEGRAM_TPC">✈️ Telegram TPC (SSD ➜ Drive)</option>
+                <option value="LOCAL_SSD">💾 Almacenamiento Local SSD</option>
               </select>
             </div>
 
