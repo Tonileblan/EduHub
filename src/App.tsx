@@ -100,44 +100,6 @@ export const App: React.FC = () => {
     }
   };
 
-  const handleOpenExactFolder = async (folderPath: string, title: string) => {
-    try {
-      const res = await fetch(`/api/open-folder?path=${encodeURIComponent(folderPath)}`);
-      if (res.ok) {
-        showToast(`📂 Abriendo en Drive/Finder: ${title}`, "success");
-      } else {
-        const cleanTitle = title.replace(/^[0-9️⃣🔟._ -]+/, "").trim();
-        window.open(`https://drive.google.com/drive/u/0/search?q=${encodeURIComponent(cleanTitle)}`, "_blank");
-        navigator.clipboard.writeText(folderPath);
-        showToast(`📂 Buscando en Drive Web: "${cleanTitle}"`, "info");
-      }
-    } catch (e) {
-      const cleanTitle = title.replace(/^[0-9️⃣🔟._ -]+/, "").trim();
-      window.open(`https://drive.google.com/drive/u/0/search?q=${encodeURIComponent(cleanTitle)}`, "_blank");
-      navigator.clipboard.writeText(folderPath);
-      showToast(`📂 Buscando en Drive Web: "${cleanTitle}"`, "info");
-    }
-  };
-
-  const handleUnzipToDrive = async (sourcePath: string, title: string) => {
-    showToast(`⏳ Descomprimiendo y subiendo a Mi Unidad: ${title}...`, "info");
-    try {
-      const res = await fetch(`/api/unzip-and-move-to-drive?sourcePath=${encodeURIComponent(sourcePath)}&title=${encodeURIComponent(title)}`);
-      const data = await res.json();
-      if (res.ok && data.success) {
-        showToast(`✅ ¡Descomprimido con éxito! (${data.filesExtracted} archivos en Mi Unidad / 001-CURSOS)`, "success");
-      } else {
-        const cleanTitle = title.replace(/^[0-9️⃣🔟._ -]+/, "").trim();
-        window.open(`https://drive.google.com/drive/u/0/search?q=${encodeURIComponent(cleanTitle)}`, "_blank");
-        showToast(`🌐 Abriendo archivo en Google Drive Web`, "info");
-      }
-    } catch (e: any) {
-      const cleanTitle = title.replace(/^[0-9️⃣🔟._ -]+/, "").trim();
-      window.open(`https://drive.google.com/drive/u/0/search?q=${encodeURIComponent(cleanTitle)}`, "_blank");
-      showToast(`🌐 Abriendo archivo en Google Drive Web`, "info");
-    }
-  };
-
   return (
     <div className="app-container">
       <Navbar
@@ -205,8 +167,6 @@ export const App: React.FC = () => {
                   onOpenDetails={(c) => setSelectedCourse(c)}
                   onToggleFavorite={handleToggleFavoriteWithToast}
                   onToggleWatchLater={handleToggleWatchLaterWithToast}
-                  onOpenExactFolder={handleOpenExactFolder}
-                  onUnzipToDrive={handleUnzipToDrive}
                 />
               ))}
             </div>
@@ -227,8 +187,6 @@ export const App: React.FC = () => {
         onToggleLesson={toggleLesson}
         onSaveNotes={saveNotes}
         onShowToast={showToast}
-        onOpenExactFolder={handleOpenExactFolder}
-        onUnzipToDrive={handleUnzipToDrive}
       />
 
       <ScannerModal

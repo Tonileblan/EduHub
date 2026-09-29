@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import type { Course } from "../../domain/entities/Course";
 import type { CourseProgress } from "../../domain/entities/UserProgress";
 
@@ -8,8 +8,6 @@ interface CourseCardProps {
   onOpenDetails: (course: Course) => void;
   onToggleFavorite: (courseId: string) => void;
   onToggleWatchLater: (courseId: string) => void;
-  onOpenExactFolder: (path: string, title: string) => void;
-  onUnzipToDrive: (sourcePath: string, title: string) => Promise<void>;
 }
 
 export const CourseCard: React.FC<CourseCardProps> = ({
@@ -18,49 +16,25 @@ export const CourseCard: React.FC<CourseCardProps> = ({
   onOpenDetails,
   onToggleFavorite,
   onToggleWatchLater,
-  onOpenExactFolder,
-  onUnzipToDrive
 }) => {
-  const [unzipping, setUnzipping] = useState(false);
-  const [unzipped, setUnzipped] = useState(false);
-
   const percent = progress?.percentCompleted || 0;
   const isFav = progress?.isFavorite || false;
   const isWL = progress?.isWatchLater || false;
 
-  const originClass = course.originType === "LOCAL_SSD" ? "ssd"
-    : course.originType === "DRIVE_MI_UNIDAD" ? "drive-unit"
-    : "drive-shared";
-
-  const originLabel = course.originType === "LOCAL_SSD" ? "💾 SSD Local"
-    : course.originType === "DRIVE_MI_UNIDAD" ? "📁 Mi Unidad"
-    : "☁️ Unidad Compartida";
-
-  const handleUnzip = async (e: React.MouseEvent) => {
-    e.stopPropagation();
-    if (!course.localPath) return;
-    try {
-      setUnzipping(true);
-      await onUnzipToDrive(course.localPath, course.title);
-      setUnzipped(true);
-    } finally {
-      setUnzipping(false);
-    }
-  };
+  const cleanTitle = course.title.replace(/^[0-9️⃣🔟._ -]+/, "").trim();
+  const driveUrl = `https://drive.google.com/drive/u/0/search?q=${encodeURIComponent(cleanTitle)}`;
 
   return (
-    <article className="course-card" aria-label={`Curso ${course.title}`}>
+    <article className="course-card" aria-label={`Curso ${course.title}`} onClick={() => onOpenDetails(course)}>
       <div>
         <div className="card-top">
           <div style={{ display: "flex", gap: "0.6rem", flexWrap: "wrap", alignItems: "center" }}>
-            <span className={`origin-badge ${originClass}`}>
-              {originLabel}
+            <span className="origin-badge drive-unit">
+              ☁️ Google Drive
             </span>
-            {course.isArchive && (
-              <span className="origin-badge" style={{ background: "rgba(245, 158, 11, 0.15)", color: "var(--accent-amber)", border: "1px solid rgba(245, 158, 11, 0.3)" }}>
-                📦 {course.archiveType || "ZIP / RAR"}
-              </span>
-            )}
+            <span className="origin-badge" style={{ background: "rgba(16, 185, 129, 0.12)", color: "#10b981", border: "1px solid rgba(16, 185, 129, 0.25)" }}>
+              🌐 Cloud (0 GB Local)
+            </span>
           </div>
 
           <div style={{ display: "flex", gap: "0.4rem" }}>
@@ -135,41 +109,26 @@ export const CourseCard: React.FC<CourseCardProps> = ({
           </div>
 
           <div style={{ display: "flex", gap: "0.6rem", flexWrap: "wrap" }}>
-            {course.isArchive ? (
-              <button
-                type="button"
-                className="btn-primary"
-                style={{ padding: "0.6rem 1rem", fontSize: "1.2rem", minHeight: "auto", background: "linear-gradient(135deg, var(--accent-amber), var(--accent-rose))" }}
-                onClick={handleUnzip}
-                disabled={unzipping}
-                title="Descomprimir automáticamente y subir a tu Mi Unidad en Drive"
-                aria-label="Descomprimir y subir a mi Drive"
-              >
-                {unzipping ? "⏳ Descomprimiendo..." : unzipped ? "✅ En Mi Drive" : "📦 Descomprimir a Drive"}
-              </button>
-            ) : (
-              course.localPath && (
-                <button
-                  type="button"
-                  className="btn-secondary"
-                  style={{ padding: "0.6rem 1rem", fontSize: "1.2rem", minHeight: "auto" }}
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    onOpenExactFolder(course.localPath, course.title);
-                  }}
-                  title="Abrir carpeta exacta en Finder / Google Drive"
-                  aria-label="Abrir carpeta exacta en Finder"
-                >
-                  📂 Abrir en Drive
-                </button>
-              )
-            )}
+            <a
+              href={driveUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="btn-secondary"
+              style={{ padding: "0.6rem 1rem", fontSize: "1.2rem", minHeight: "auto", display: "inline-flex", alignItems: "center", gap: "0.4rem" }}
+              onClick={(e) => e.stopPropagation()}
+              title="Abrir directamente en Google Drive Cloud"
+            >
+              ☁️ Drive ➔
+            </a>
 
             <button
               type="button"
               className="btn-primary"
               style={{ padding: "0.6rem 1.2rem", fontSize: "1.2rem", minHeight: "auto" }}
-              onClick={() => onOpenDetails(course)}
+              onClick={(e) => {
+                e.stopPropagation();
+                onOpenDetails(course);
+              }}
               aria-label={`Ver detalles de ${course.title}`}
             >
               Temario ➔

@@ -9,8 +9,6 @@ interface CourseModalProps {
   onToggleLesson: (courseId: string, lessonId: string, totalLessons: number) => void;
   onSaveNotes: (courseId: string, notes: string) => void;
   onShowToast: (msg: string, type?: "success" | "info") => void;
-  onOpenExactFolder: (path: string, title: string) => void;
-  onUnzipToDrive: (sourcePath: string, title: string) => Promise<void>;
 }
 
 export const CourseModal: React.FC<CourseModalProps> = ({
@@ -20,35 +18,15 @@ export const CourseModal: React.FC<CourseModalProps> = ({
   onToggleLesson,
   onSaveNotes,
   onShowToast,
-  onOpenExactFolder,
-  onUnzipToDrive
 }) => {
   if (!course) return null;
 
   const [activeTab, setActiveTab] = useState<"syllabus" | "notes" | "info">("syllabus");
   const [notesText, setNotesText] = useState(progress?.notes || "");
-  const [unzipping, setUnzipping] = useState(false);
-  const [unzipped, setUnzipped] = useState(false);
-
-  const handleCopyPath = (path: string, label: string) => {
-    navigator.clipboard.writeText(path);
-    onShowToast(`Ruta copiada al portapapeles: ${label}`, "info");
-  };
 
   const handleSaveNotes = () => {
     onSaveNotes(course.id, notesText);
     onShowToast("Notas guardadas correctamente", "success");
-  };
-
-  const handleUnzip = async () => {
-    if (!course.localPath) return;
-    try {
-      setUnzipping(true);
-      await onUnzipToDrive(course.localPath, course.title);
-      setUnzipped(true);
-    } finally {
-      setUnzipping(false);
-    }
   };
 
   const completedSet = new Set(progress?.completedLessonIds || []);
@@ -62,15 +40,13 @@ export const CourseModal: React.FC<CourseModalProps> = ({
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         <div className="modal-header">
           <div>
-            <div style={{ display: "flex", gap: "0.8rem", alignItems: "center", marginBottom: "0.8rem" }}>
+            <div style={{ display: "flex", gap: "0.8rem", alignItems: "center", marginBottom: "0.8rem", flexWrap: "wrap" }}>
               <span className="course-tag" style={{ background: "rgba(99, 102, 241, 0.2)", color: "var(--accent-primary)" }}>
                 {course.category}
               </span>
-              {course.isArchive && (
-                <span className="course-tag" style={{ background: "rgba(245, 158, 11, 0.2)", color: "var(--accent-amber)" }}>
-                  📦 Archivo Comprimido ({course.archiveType || "ZIP / RAR"})
-                </span>
-              )}
+              <span className="course-tag" style={{ background: "rgba(16, 185, 129, 0.15)", color: "var(--accent-emerald)" }}>
+                ☁️ Google Drive Cloud (0 GB Local)
+              </span>
             </div>
             <h2 id="modal-title" style={{ fontSize: "2.2rem", fontWeight: 800, color: "var(--text-primary)", marginBottom: "0.6rem" }}>
               {course.title}
@@ -90,43 +66,21 @@ export const CourseModal: React.FC<CourseModalProps> = ({
           </button>
         </div>
 
-        {/* Action Bar for Exact Drive Opening & Unzipping */}
+        {/* Action Bar for Direct Drive Cloud Opening */}
         <div style={{ padding: "1.4rem 2.4rem", background: "rgba(99, 102, 241, 0.08)", borderBottom: "1px solid var(--border-glass)", display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "1rem" }}>
           <div style={{ display: "flex", alignItems: "center", gap: "0.8rem", fontSize: "1.3rem", color: "var(--text-secondary)" }}>
-            <span>📍 <strong>Ubicación:</strong> {course.originName}</span>
+            <span>☁️ <strong>Ubicación Cloud:</strong> Google Drive ({course.originName || "Unidades Compartidas & Mi Unidad"})</span>
           </div>
 
           <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
-            {course.isArchive && (
-              <button
-                type="button"
-                className="btn-primary"
-                style={{ background: "linear-gradient(135deg, var(--accent-amber), var(--accent-rose))" }}
-                onClick={handleUnzip}
-                disabled={unzipping}
-              >
-                {unzipping ? "⏳ Descomprimiendo y Subiendo a Mi Drive..." : unzipped ? "✅ Listo en Mi Unidad (Abrir)" : "📦 Descomprimir y Pasar a Mi Drive"}
-              </button>
-            )}
-
-            {course.localPath && (
-              <button
-                type="button"
-                className="btn-primary"
-                onClick={() => onOpenExactFolder(course.localPath, course.title)}
-              >
-                📂 Abrir en Drive (Mac)
-              </button>
-            )}
-
             <a
               href={driveWebSearchUrl}
               target="_blank"
               rel="noreferrer"
-              className="btn-secondary"
-              style={{ display: "inline-flex", alignItems: "center" }}
+              className="btn-primary"
+              style={{ display: "inline-flex", alignItems: "center", gap: "0.6rem", padding: "0.8rem 1.6rem", fontSize: "1.35rem" }}
             >
-              🌐 Buscar en Drive Web ➔
+              ☁️ Abrir Curso en Google Drive Web ➔
             </a>
           </div>
         </div>
@@ -159,26 +113,6 @@ export const CourseModal: React.FC<CourseModalProps> = ({
         <div className="modal-body">
           {activeTab === "syllabus" && (
             <div>
-              {course.isArchive && (
-                <div style={{ background: "rgba(245, 158, 11, 0.1)", border: "1px solid rgba(245, 158, 11, 0.3)", borderRadius: "var(--radius-md)", padding: "1.6rem", marginBottom: "2rem" }}>
-                  <div style={{ fontWeight: 700, color: "var(--accent-amber)", fontSize: "1.4rem", marginBottom: "0.4rem" }}>
-                    📦 Este curso se encuentra en archivo comprimido ({course.archiveType || "ZIP/RAR"})
-                  </div>
-                  <p style={{ fontSize: "1.3rem", color: "var(--text-secondary)", marginBottom: "1.2rem" }}>
-                    Pulsa el botón de abajo para descomprimir el contenido automáticamente y organizarlo dentro de tu carpeta personal <code>Mi unidad / 001-CURSOS</code> en Google Drive.
-                  </p>
-                  <button
-                    type="button"
-                    className="btn-primary"
-                    style={{ background: "linear-gradient(135deg, var(--accent-amber), var(--accent-rose))" }}
-                    onClick={handleUnzip}
-                    disabled={unzipping}
-                  >
-                    {unzipping ? "⏳ Descomprimiendo en segundo plano..." : unzipped ? "✅ Descomprimido con Éxito (Abrir)" : "📦 Descomprimir y Pasar a Mi Drive Ahora"}
-                  </button>
-                </div>
-              )}
-
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "1.6rem", background: "var(--bg-tertiary)", padding: "1.2rem 1.6rem", borderRadius: "var(--radius-md)" }}>
                 <div>
                   <div style={{ fontWeight: 700, fontSize: "1.4rem" }}>Progreso del Curso</div>
@@ -204,6 +138,9 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                     <div>
                       {m.lessons.map((l) => {
                         const isWatched = completedSet.has(l.id);
+                        const lessonCleanTitle = l.title.replace(/^[0-9️⃣🔟._ -]+/, "").trim();
+                        const lessonDriveUrl = `https://drive.google.com/drive/u/0/search?q=${encodeURIComponent(lessonCleanTitle)}`;
+
                         return (
                           <div key={l.id} className="lesson-item">
                             <div className="lesson-left">
@@ -220,28 +157,16 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                             </div>
 
                             <div style={{ display: "flex", gap: "0.6rem" }}>
-                              {l.filePath && (
-                                <button
-                                  type="button"
-                                  className="btn-secondary"
-                                  style={{ padding: "0.4rem 1rem", fontSize: "1.2rem", minHeight: "auto" }}
-                                  onClick={() => onOpenExactFolder(l.filePath!, l.title)}
-                                  title="Abrir archivo o carpeta en Finder"
-                                >
-                                  ▶️ Abrir
-                                </button>
-                              )}
-                              {l.filePath && (
-                                <button
-                                  type="button"
-                                  className="btn-secondary"
-                                  style={{ padding: "0.4rem 1rem", fontSize: "1.2rem", minHeight: "auto" }}
-                                  onClick={() => handleCopyPath(l.filePath!, l.title)}
-                                  title="Copiar ruta exacta del archivo"
-                                >
-                                  Copiar Ruta
-                                </button>
-                              )}
+                              <a
+                                href={lessonDriveUrl}
+                                target="_blank"
+                                rel="noreferrer"
+                                className="btn-secondary"
+                                style={{ padding: "0.4rem 1rem", fontSize: "1.2rem", minHeight: "auto", display: "inline-flex", alignItems: "center", gap: "0.4rem" }}
+                                title="Ver archivo directamente en Google Drive Cloud"
+                              >
+                                ☁️ Ver en Drive ➔
+                              </a>
                             </div>
                           </div>
                         );
@@ -252,26 +177,17 @@ export const CourseModal: React.FC<CourseModalProps> = ({
               ) : (
                 <div style={{ padding: "3rem", textAlign: "center", background: "var(--bg-card)", borderRadius: "var(--radius-md)" }}>
                   <p style={{ fontSize: "1.6rem", color: "var(--text-secondary)", marginBottom: "1.6rem" }}>
-                    Este curso está alojado en Google Drive ({course.originName}).
+                    Este curso está disponible directamente en Google Drive ({course.originName}).
                   </p>
                   <div style={{ display: "flex", justifyContent: "center", gap: "1.2rem", flexWrap: "wrap" }}>
-                    {course.localPath && (
-                      <button
-                        type="button"
-                        className="btn-primary"
-                        onClick={() => onOpenExactFolder(course.localPath, course.title)}
-                      >
-                        📂 Abrir Carpeta Exacta en Drive (Mac)
-                      </button>
-                    )}
                     <a
                       href={driveWebSearchUrl}
                       target="_blank"
                       rel="noreferrer"
-                      className="btn-secondary"
-                      style={{ display: "inline-flex", alignItems: "center" }}
+                      className="btn-primary"
+                      style={{ display: "inline-flex", alignItems: "center", gap: "0.6rem", padding: "0.8rem 1.6rem" }}
                     >
-                      🌐 Buscar en Drive Web ➔
+                      ☁️ Abrir Carpeta en Google Drive Web ➔
                     </a>
                   </div>
                 </div>
@@ -303,17 +219,10 @@ export const CourseModal: React.FC<CourseModalProps> = ({
               </div>
 
               <div>
-                <h3 style={{ fontSize: "1.5rem", fontWeight: 700, marginBottom: "0.6rem" }}>📁 Rutas de Acceso Exactas</h3>
-                {course.drivePath && (
-                  <p style={{ color: "var(--text-secondary)", fontFamily: "var(--font-mono)", fontSize: "1.3rem", background: "var(--bg-card)", padding: "1rem", borderRadius: "var(--radius-sm)", marginBottom: "0.8rem" }}>
-                    ☁️ {course.drivePath}
-                  </p>
-                )}
-                {course.localPath && (
-                  <p style={{ color: "var(--text-secondary)", fontFamily: "var(--font-mono)", fontSize: "1.3rem", background: "var(--bg-card)", padding: "1rem", borderRadius: "var(--radius-sm)" }}>
-                    💾 {course.localPath}
-                  </p>
-                )}
+                <h3 style={{ fontSize: "1.5rem", fontWeight: 700, marginBottom: "0.6rem" }}>☁️ Acceso Cloud en Google Drive</h3>
+                <p style={{ color: "var(--text-secondary)", fontSize: "1.3rem", background: "var(--bg-card)", padding: "1.2rem", borderRadius: "var(--radius-sm)", lineHeight: 1.6 }}>
+                  Este contenido está alojado en Google Drive. Puedes ver los vídeos, PDFs y lecciones directamente desde el navegador en cualquier dispositivo sin descargar archivos a tu disco local.
+                </p>
               </div>
             </div>
           )}
