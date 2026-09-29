@@ -1,10 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import { useCourses } from "./presentation/hooks/useCourses";
 import { useProgress } from "./presentation/hooks/useProgress";
 import { Navbar } from "./presentation/components/Navbar";
 import { StatsBanner } from "./presentation/components/StatsBanner";
-import { FilterBar } from "./presentation/components/FilterBar";
+import { HeroSpotlight } from "./presentation/components/HeroSpotlight";
+import { CategoryHub } from "./presentation/components/CategoryHub";
+import { FilterBar, type ViewMode } from "./presentation/components/FilterBar";
 import { CourseCard } from "./presentation/components/CourseCard";
+import { CourseListView } from "./presentation/components/CourseListView";
 import { CourseModal } from "./presentation/components/CourseModal";
 import { ScannerModal } from "./presentation/components/ScannerModal";
 import { ToastContainer, type ToastMessage } from "./presentation/components/Toast";
@@ -15,17 +18,18 @@ import "./App.css";
 export const App: React.FC = () => {
   const [selectedCourse, setSelectedCourse] = useState<Course | null>(null);
   const [showScannerModal, setShowScannerModal] = useState(false);
-  const [showStats, setShowStats] = useState(true);
+  const [showStats, setShowStats] = useState(false);
+  const [viewMode, setViewMode] = useState<ViewMode>("grid");
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 24;
+  const itemsPerPage = viewMode === "grid" ? 24 : 40;
 
   const [toasts, setToasts] = useState<ToastMessage[]>([]);
 
   const showToast = (text: string, type: "success" | "info" = "info") => {
     const id = Date.now().toString() + Math.random().toString();
-    setToasts(prev => [...prev, { id, text, type }]);
+    setToasts((prev) => [...prev, { id, text, type }]);
     setTimeout(() => {
-      setToasts(prev => prev.filter(t => t.id !== id));
+      setToasts((prev) => prev.filter((t) => t.id !== id));
     }, 4500);
   };
 
@@ -51,11 +55,16 @@ export const App: React.FC = () => {
     resetFilters
   } = useCourses(progressMap);
 
+  // Global search shortcut
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "/" && document.activeElement?.tagName !== "INPUT" && document.activeElement?.tagName !== "TEXTAREA") {
+      if (
+        e.key === "/" &&
+        document.activeElement?.tagName !== "INPUT" &&
+        document.activeElement?.tagName !== "TEXTAREA"
+      ) {
         e.preventDefault();
-        const searchInput = document.querySelector(".search-input") as HTMLInputElement;
+        const searchInput = document.querySelector(".search-input-v2") as HTMLInputElement;
         if (searchInput) {
           searchInput.focus();
         }
@@ -65,10 +74,45 @@ export const App: React.FC = () => {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, []);
 
-  // Reset pagination on filter changes
+  // Reset pagination on filter changes or view mode change
   useEffect(() => {
     setCurrentPage(1);
-  }, [filters]);
+  }, [filters, viewMode]);
+
+  // Compute category counts for CategoryHub
+  const categoryCounts = useMemo(() => {
+    const counts: Record<string, number> = {};
+    for (const c of courses) {
+      counts[c.category] = (counts[c.category] || 0) + 1;
+    }
+    return counts;
+  }, [courses]);
+
+  // Compute status counts for filter tabs
+  const statsCounts = useMemo(() => {
+    let favorites = 0;
+    let inProgress = 0;
+    let watchLater = 0;
+    let completed = 0;
+
+    for (const [_, prog] of Object.entries(progressMap)) {
+      if (prog.isFavorite) favorites++;
+      if (prog.isWatchLater) watchLater++;
+      if (prog.percentCompleted === 100) {
+        completed++;
+      } else if (prog.percentCompleted > 0) {
+        inProgress++;
+      }
+    }
+
+    return {
+      total: courses.length,
+      favorites,
+      inProgress,
+      watchLater,
+      completed
+    };
+  }, [courses, progressMap]);
 
   const totalPages = Math.ceil(filteredCourses.length / itemsPerPage) || 1;
   const paginatedCourses = filteredCourses.slice(
@@ -77,7 +121,7 @@ export const App: React.FC = () => {
   );
 
   const handleToggleFavoriteWithToast = (courseId: string) => {
-    const course = courses.find(c => c.id === courseId);
+    const course = courses.find((c) => c.id === courseId);
     toggleFavorite(courseId);
     const isFavNow = !progressMap[courseId]?.isFavorite;
     if (course) {
@@ -89,7 +133,7 @@ export const App: React.FC = () => {
   };
 
   const handleToggleWatchLaterWithToast = (courseId: string) => {
-    const course = courses.find(c => c.id === courseId);
+    const course = courses.find((c) => c.id === courseId);
     toggleWatchLater(courseId);
     const isWLNow = !progressMap[courseId]?.isWatchLater;
     if (course) {
@@ -98,6 +142,18 @@ export const App: React.FC = () => {
         "info"
       );
     }
+  };
+
+  const handleSearchTag = (query: string) => {
+    updateFilters({ searchQuery: query });
+    const searchInput = document.querySelector(".search-input-v2") as HTMLInputElement;
+    if (searchInput) {
+      searchInput.focus();
+    }
+  };
+
+  const handleCategorySelect = (category: string) => {
+    updateFilters({ category });
   };
 
   return (
@@ -110,66 +166,108 @@ export const App: React.FC = () => {
       />
 
       <main className="main-content">
-        {showStats && (
-          <StatsBanner
-            stats={stats}
-          />
-        )}
+        {/* Hero Spotlight Section */}
+        <HeroSpotlight
+          totalCourses={courses.length}
+          onSearchTag={handleSearchTag}
+          onSelectCategory={handleCategorySelect}
+        />
 
+        {/* Global Progress Metrics Banner if toggled */}
+        {showStats && <StatsBanner stats={stats} />}
+
+        {/* Visual Category Cards Hub */}
+        <CategoryHub
+          selectedCategory={filters.category}
+          onSelectCategory={handleCategorySelect}
+          categoryCounts={categoryCounts}
+        />
+
+        {/* Filter Controls & Search */}
         <FilterBar
           filters={filters}
           categories={categories}
           authors={authors}
           niches={niches}
+          viewMode={viewMode}
+          onViewModeChange={setViewMode}
           onFilterChange={updateFilters}
           onResetFilters={resetFilters}
+          statsCounts={statsCounts}
         />
 
-        <div className="results-header" style={{ display: "flex", justifyContent: "space-between", alignItems: "center", margin: "2rem 0 1.6rem 0" }}>
-          <h2 style={{ fontSize: "1.8rem", fontWeight: 700, color: "var(--text-primary)" }}>
-            Catálogo de Cursos ({filteredCourses.length})
-          </h2>
-          <span style={{ fontSize: "1.3rem", color: "var(--text-muted)" }}>
-            Página {currentPage} de {totalPages}
-          </span>
+        {/* Results Info & View Header */}
+        <div className="results-header-v2">
+          <div className="results-left">
+            <h2 className="results-title">
+              {filters.status === "FAVORITE"
+                ? "❤️ Mis Cursos Favoritos"
+                : filters.status === "IN_PROGRESS"
+                ? "⚡ Cursos en Progreso"
+                : filters.status === "WATCH_LATER"
+                ? "📌 Lista para Ver Más Tarde"
+                : filters.status === "COMPLETED"
+                ? "🏆 Cursos Completados"
+                : filters.category !== "ALL"
+                ? `📚 Área: ${filters.category}`
+                : "🌟 Catálogo Completo"}
+            </h2>
+            <span className="results-count-pill">
+              {filteredCourses.length.toLocaleString()} formaciones encontradas
+            </span>
+          </div>
+
+          <div className="results-right">
+            <span className="page-indicator">
+              Página {currentPage} de {totalPages}
+            </span>
+          </div>
         </div>
 
+        {/* Content Section */}
         {loading ? (
-          <div style={{ textAlign: "center", padding: "6rem 2rem" }}>
-            <div style={{ fontSize: "3rem", marginBottom: "1rem" }}>⚡</div>
-            <p style={{ fontSize: "1.6rem", color: "var(--text-secondary)" }}>Cargando catálogo maestro de 6.000+ cursos...</p>
+          <div className="loading-state-card">
+            <div className="loading-spinner-glow">⚡</div>
+            <h3>Cargando catálogo maestro de 6.000+ cursos...</h3>
+            <p>Conectando con el índice de Google Drive Cloud</p>
           </div>
         ) : error ? (
-          <div style={{ textAlign: "center", padding: "4rem 2rem", background: "rgba(239, 68, 68, 0.1)", borderRadius: "var(--radius-md)" }}>
-            <p style={{ color: "var(--accent-rose)", fontSize: "1.6rem" }}>{error}</p>
+          <div className="error-state-card">
+            <p>{error}</p>
           </div>
         ) : filteredCourses.length === 0 ? (
-          <div style={{ textAlign: "center", padding: "6rem 2rem", background: "var(--bg-card)", borderRadius: "var(--radius-md)" }}>
-            <div style={{ fontSize: "4rem", marginBottom: "1.2rem" }}>🔍</div>
-            <h3 style={{ fontSize: "2rem", marginBottom: "0.8rem" }}>No se encontraron cursos con estos filtros</h3>
-            <p style={{ color: "var(--text-muted)", fontSize: "1.4rem", marginBottom: "2rem" }}>Prueba a cambiar los términos de búsqueda o restablecer los filtros.</p>
-            <button
-              type="button"
-              className="btn-primary"
-              onClick={resetFilters}
-            >
-              Restablecer Filtros
+          <div className="empty-state-card">
+            <div className="empty-icon">🔍</div>
+            <h3>No encontramos cursos que coincidan con estos filtros</h3>
+            <p>Prueba a buscar con otros términos, seleccionar otra área o limpiar los filtros.</p>
+            <button type="button" className="btn-primary" onClick={resetFilters}>
+              🔄 Restablecer Filtros
             </button>
           </div>
         ) : (
           <>
-            <div className="course-grid">
-              {paginatedCourses.map(course => (
-                <CourseCard
-                  key={course.id}
-                  course={course}
-                  progress={progressMap[course.id]}
-                  onOpenDetails={(c) => setSelectedCourse(c)}
-                  onToggleFavorite={handleToggleFavoriteWithToast}
-                  onToggleWatchLater={handleToggleWatchLaterWithToast}
-                />
-              ))}
-            </div>
+            {viewMode === "grid" ? (
+              <div className="course-grid-v2">
+                {paginatedCourses.map((course) => (
+                  <CourseCard
+                    key={course.id}
+                    course={course}
+                    progress={progressMap[course.id]}
+                    onOpenDetails={(c) => setSelectedCourse(c)}
+                    onToggleFavorite={handleToggleFavoriteWithToast}
+                    onToggleWatchLater={handleToggleWatchLaterWithToast}
+                  />
+                ))}
+              </div>
+            ) : (
+              <CourseListView
+                courses={paginatedCourses}
+                progressMap={progressMap}
+                onOpenDetails={(c) => setSelectedCourse(c)}
+                onToggleFavorite={handleToggleFavoriteWithToast}
+                onToggleWatchLater={handleToggleWatchLaterWithToast}
+              />
+            )}
 
             <Pagination
               currentPage={currentPage}
@@ -180,6 +278,7 @@ export const App: React.FC = () => {
         )}
       </main>
 
+      {/* Course Details & Syllabus Cinema Modal */}
       <CourseModal
         course={selectedCourse}
         progress={selectedCourse ? progressMap[selectedCourse.id] : undefined}
@@ -189,6 +288,7 @@ export const App: React.FC = () => {
         onShowToast={showToast}
       />
 
+      {/* Cloud & Drive Synchronization Modal */}
       <ScannerModal
         isOpen={showScannerModal}
         onClose={() => setShowScannerModal(false)}
@@ -196,6 +296,7 @@ export const App: React.FC = () => {
         onShowToast={showToast}
       />
 
+      {/* DOM Visual Toast Feedback */}
       <ToastContainer toasts={toasts} />
     </div>
   );
