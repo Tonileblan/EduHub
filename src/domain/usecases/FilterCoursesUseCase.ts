@@ -8,20 +8,24 @@ export class FilterCoursesUseCase {
     filters: FilterState,
     progressMap: Record<string, CourseProgress>
   ): Course[] {
-    const query = filters.searchQuery.trim().toLowerCase();
+    const rawQuery = filters.searchQuery.trim();
+    const normalize = (text: string) =>
+      text
+        .toLowerCase()
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .trim();
+
+    const queryTokens = rawQuery ? normalize(rawQuery).split(/\s+/).filter(Boolean) : [];
     
     return courses.filter(course => {
-      // 1. Text Search across Title, Author, Platform, Niche, Utility, Tags
-      if (query) {
-        const titleMatch = course.title.toLowerCase().includes(query);
-        const authorMatch = course.author.toLowerCase().includes(query);
-        const platformMatch = (course.platform || "").toLowerCase().includes(query);
-        const nicheMatch = course.niche.toLowerCase().includes(query);
-        const utilityMatch = course.utility.toLowerCase().includes(query);
-        const categoryMatch = course.category.toLowerCase().includes(query);
-        const tagMatch = course.tags.some(t => t.toLowerCase().includes(query));
-
-        if (!titleMatch && !authorMatch && !platformMatch && !nicheMatch && !utilityMatch && !categoryMatch && !tagMatch) {
+      // 1. Smart Text Search across Title, Author, Platform, Niche, Utility, Category, Tags
+      if (queryTokens.length > 0) {
+        const searchableText = normalize(
+          `${course.title} ${course.author} ${course.platform || ""} ${course.niche} ${course.utility} ${course.category} ${course.tags.join(" ")}`
+        );
+        const matchesAllTokens = queryTokens.every(token => searchableText.includes(token));
+        if (!matchesAllTokens) {
           return false;
         }
       }

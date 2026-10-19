@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import type { Course } from "../../domain/entities/Course";
 import type { CourseProgress } from "../../domain/entities/UserProgress";
 
@@ -21,10 +21,14 @@ export const CourseModal: React.FC<CourseModalProps> = ({
   onShowToast,
   onOpenPipeline
 }) => {
-  if (!course) return null;
-
   const [activeTab, setActiveTab] = useState<"syllabus" | "notes" | "info">("syllabus");
   const [notesText, setNotesText] = useState(progress?.notes || "");
+
+  useEffect(() => {
+    setNotesText(progress?.notes || "");
+  }, [course?.id, progress?.notes]);
+
+  if (!course) return null;
 
   const handleSaveNotes = () => {
     onSaveNotes(course.id, notesText);

@@ -259,4 +259,40 @@ describe("FilterCoursesUseCase", () => {
     expect(result[0].id).toBe("c3");
     expect(result[0].isArchive).toBe(true);
   });
+
+  it("handles multi-token search across different fields", () => {
+    const filters: FilterState = {
+      searchQuery: "Claude agentes",
+      category: "ALL",
+      author: "ALL",
+      platform: "ALL",
+      niche: "ALL",
+      originType: "ALL",
+      formatType: "ALL",
+      status: "ALL",
+      sortBy: "relevance",
+      onlyWithLessons: false
+    };
+
+    const result = FilterCoursesUseCase.filter(mockCourses, filters, mockProgressMap);
+    expect(result.map(c => c.id)).toContain("c1");
+  });
+
+  it("handles accent-insensitive search queries", () => {
+    const filters: FilterState = {
+      searchQuery: "ingenieria", // without accent for "Ingeniería"
+      category: "ALL",
+      author: "ALL",
+      platform: "ALL",
+      niche: "ALL",
+      originType: "ALL",
+      formatType: "ALL",
+      status: "ALL",
+      sortBy: "relevance",
+      onlyWithLessons: false
+    };
+
+    const result = FilterCoursesUseCase.filter(mockCourses, filters, mockProgressMap);
+    expect(result.map(c => c.id)).toContain("c3");
+  });
 });

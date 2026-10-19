@@ -16,9 +16,7 @@ export const TelegramPipelineModal: React.FC<TelegramPipelineModalProps> = ({
   onShowToast,
   onMarkAsUploaded
 }) => {
-  if (!isOpen || !course) return null;
-
-  const [currentStep, setCurrentStep] = useState<number>(course.isPreparedInDrive ? 4 : course.hasLocalFiles ? 2 : 1);
+  const [currentStep, setCurrentStep] = useState<number>(1);
   const [copiedCmd, setCopiedCmd] = useState<string | null>(null);
   const [isProcessing, setIsProcessing] = useState<boolean>(false);
   const [prepResult, setPrepResult] = useState<{
@@ -29,15 +27,18 @@ export const TelegramPipelineModal: React.FC<TelegramPipelineModalProps> = ({
     webUrl?: string;
   } | null>(null);
 
-  const cleanTitle = course.title.replace(/^[0-9️⃣🔟._ -]+/, "").trim();
-  const telegramUrl = course.telegramSearchUrl || `https://t.me/MEMBRESIATPC`;
-  const driveSearchUrl = course.webUrl || `https://drive.google.com/drive/u/0/search?q=${encodeURIComponent(cleanTitle)}`;
-  const isTelegram = course.originType === "TELEGRAM_TPC";
+  useEffect(() => {
+    if (course) {
+      setCurrentStep(course.isPreparedInDrive ? 4 : course.hasLocalFiles ? 2 : 1);
+      setPrepResult(null);
+      setCopiedCmd(null);
+    }
+  }, [course]);
 
   // Check prepared status on mount
   useEffect(() => {
     let isMounted = true;
-    if (course) {
+    if (isOpen && course) {
       fetch(`/api/check-prepared-status?title=${encodeURIComponent(course.title)}&category=${encodeURIComponent(course.category)}`)
         .then(res => res.json())
         .then(data => {
@@ -53,7 +54,14 @@ export const TelegramPipelineModal: React.FC<TelegramPipelineModalProps> = ({
         .catch(() => {});
     }
     return () => { isMounted = false; };
-  }, [course]);
+  }, [isOpen, course]);
+
+  if (!isOpen || !course) return null;
+
+  const cleanTitle = course.title.replace(/^[0-9._ -]+/, "").trim();
+  const telegramUrl = course.telegramSearchUrl || `https://t.me/MEMBRESIATPC`;
+  const driveSearchUrl = course.webUrl || `https://drive.google.com/drive/u/0/search?q=${encodeURIComponent(cleanTitle)}`;
+  const isTelegram = course.originType === "TELEGRAM_TPC";
 
   const cliCommand = `node scripts/auto_prepare_course_in_drive.js --title "${course.title}" --category "${course.category}"`;
 
@@ -91,7 +99,7 @@ export const TelegramPipelineModal: React.FC<TelegramPipelineModalProps> = ({
         });
         onShowToast(data.error || "Error al preparar curso", "info");
       }
-    } catch (e: any) {
+    } catch {
       setPrepResult({
         success: false,
         message: "Servidor local no detectado o en entorno Vercel Cloud. Ejecuta el comando en tu terminal para preparar el curso."

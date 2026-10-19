@@ -59,18 +59,29 @@ export const App: React.FC = () => {
     markCourseAsPrepared
   } = useCourses(progressMap);
 
-  // Global search shortcut
+  // Global search shortcut (/ or Cmd+K / Ctrl+K)
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (
-        e.key === "/" &&
-        document.activeElement?.tagName !== "INPUT" &&
-        document.activeElement?.tagName !== "TEXTAREA"
-      ) {
+      const isSearchKey =
+        (e.key === "/" &&
+          document.activeElement?.tagName !== "INPUT" &&
+          document.activeElement?.tagName !== "TEXTAREA") ||
+        ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k");
+
+      if (isSearchKey) {
         e.preventDefault();
-        const searchInput = document.querySelector(".search-input-v2") as HTMLInputElement;
-        if (searchInput) {
-          searchInput.focus();
+        const heroInput = document.querySelector(".hero-search-input") as HTMLInputElement | null;
+        const navInput = document.querySelector(".nav-search-input") as HTMLInputElement | null;
+        const filterInput = document.querySelector(".search-input-v2") as HTMLInputElement | null;
+
+        const isScrolledPastHero = window.scrollY > 280;
+        const targetInput = isScrolledPastHero
+          ? (navInput || filterInput || heroInput)
+          : (heroInput || navInput || filterInput);
+
+        if (targetInput) {
+          targetInput.focus();
+          targetInput.select();
         }
       }
     };
@@ -159,9 +170,12 @@ export const App: React.FC = () => {
 
   const handleSearchTag = (query: string) => {
     updateFilters({ searchQuery: query });
-    const searchInput = document.querySelector(".search-input-v2") as HTMLInputElement;
-    if (searchInput) {
-      searchInput.focus();
+    const heroInput = document.querySelector(".hero-search-input") as HTMLInputElement | null;
+    const navInput = document.querySelector(".nav-search-input") as HTMLInputElement | null;
+    if (heroInput) {
+      heroInput.focus();
+    } else if (navInput) {
+      navInput.focus();
     }
   };
 
@@ -176,6 +190,8 @@ export const App: React.FC = () => {
   return (
     <div className="app-container">
       <Navbar
+        searchQuery={filters.searchQuery}
+        onSearchChange={(q) => updateFilters({ searchQuery: q })}
         onOpenScanner={() => setShowScannerModal(true)}
         onOpenStats={() => setShowStats(!showStats)}
         showStats={showStats}
@@ -183,11 +199,14 @@ export const App: React.FC = () => {
       />
 
       <main className="main-content">
-        {/* Hero Spotlight Section */}
+        {/* Hero Spotlight Section with Search Bar */}
         <HeroSpotlight
           totalCourses={courses.length}
+          searchQuery={filters.searchQuery}
+          onSearchChange={(q) => updateFilters({ searchQuery: q })}
           onSearchTag={handleSearchTag}
           onSelectCategory={handleCategorySelect}
+          filteredCount={filteredCourses.length}
         />
 
         {/* Global Progress Metrics Banner if toggled */}
