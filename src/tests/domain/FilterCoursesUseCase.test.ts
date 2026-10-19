@@ -97,6 +97,98 @@ const mockCourses: Course[] = [
     hasLocalFiles: true,
     isArchive: false,
     platform: "Academia Prime IA"
+  },
+  {
+    id: "c5",
+    slug: "cita-con-el-destino-virtual-tony-robbins-2025",
+    title: "Cita con el Destino Virtual - Tony Robbins 2025",
+    author: "Tony Robbins",
+    category: "Desarrollo Personal, Mente & Productividad",
+    niche: "Desarrollo Personal",
+    utility: "Transformación personal",
+    targetAudience: "Todos",
+    difficulty: "Todos los niveles",
+    estimatedHours: "20h",
+    originType: "DRIVE_SHORTCUT",
+    originName: "Atajos Cloud",
+    localPath: "",
+    drivePath: "",
+    webUrl: "https://drive.google.com/drive/folders/12f2MRcez7NPW-jFVyxqvg45rjttgTHe0",
+    rating: 4.9,
+    totalLessons: 12,
+    tags: ["Tony Robbins", "Mentalidad"],
+    hasLocalFiles: false,
+    isArchive: false,
+    platform: "Tony Robbins"
+  },
+  {
+    id: "c6",
+    slug: "curso-business-mastery-virtual-tonny-robins",
+    title: "Curso Business Mastery Virtual – Tonny Robins",
+    author: "Tonny Robins",
+    category: "Desarrollo Personal, Mente & Productividad",
+    niche: "Negocios y Liderazgo",
+    utility: "Maestría en negocios",
+    targetAudience: "Líderes",
+    difficulty: "Avanzado",
+    estimatedHours: "18h",
+    originType: "DRIVE_SHORTCUT",
+    originName: "Atajos Cloud",
+    localPath: "",
+    drivePath: "",
+    webUrl: "https://drive.google.com/drive/folders/1L1VzqPARy2M8tuSWVSHe7kC3k6m-u2mF",
+    rating: 4.8,
+    totalLessons: 23,
+    tags: ["Tonny Robins", "Business"],
+    hasLocalFiles: false,
+    isArchive: false,
+    platform: "Tony Robbins"
+  },
+  {
+    id: "c7",
+    slug: "robin-arzon-mental-strength",
+    title: "Robin Arzón - Mental Strength",
+    author: "Robin Arzón",
+    category: "Desarrollo Personal, Mente & Productividad",
+    niche: "Mental Strength",
+    utility: "Fuerza mental y resistencia",
+    targetAudience: "Atletas y emprendedores",
+    difficulty: "Intermedio",
+    estimatedHours: "5h",
+    originType: "DRIVE_COMPARTIDA",
+    originName: "Unidad Masterclass",
+    localPath: "",
+    drivePath: "",
+    webUrl: "https://drive.google.com/drive/folders/robin-arzon",
+    rating: 4.8,
+    totalLessons: 10,
+    tags: ["Masterclass", "Robin Arzón"],
+    hasLocalFiles: false,
+    isArchive: false,
+    platform: "Masterclass USA"
+  },
+  {
+    id: "c8",
+    slug: "desata-el-poder-interior-tony-robbins-2025",
+    title: "Desata el Poder Interior - Tony Robbins 2025",
+    author: "Tony Robbins",
+    category: "Desarrollo Personal, Mente & Productividad",
+    niche: "Desarrollo Personal",
+    utility: "Unleash the Power Within",
+    targetAudience: "Todos",
+    difficulty: "Todos los niveles",
+    estimatedHours: "15h",
+    originType: "DRIVE_SHORTCUT",
+    originName: "Atajos Cloud",
+    localPath: "",
+    drivePath: "",
+    webUrl: "https://drive.google.com/drive/folders/1t8oyHu5vU91cq55NF7vXkIr_1ljz9nNv",
+    rating: 5.0,
+    totalLessons: 20,
+    tags: ["Tony Robbins", "UPW"],
+    hasLocalFiles: false,
+    isArchive: false,
+    platform: "Tony Robbins"
   }
 ];
 
@@ -294,5 +386,68 @@ describe("FilterCoursesUseCase", () => {
 
     const result = FilterCoursesUseCase.filter(mockCourses, filters, mockProgressMap);
     expect(result.map(c => c.id)).toContain("c3");
+  });
+
+  it("matches 'robins' with fuzzy tolerance to Tony Robbins, Tonny Robins, and Robin Arzón (Google Drive parity)", () => {
+    const filters: FilterState = {
+      searchQuery: "robins",
+      category: "ALL",
+      author: "ALL",
+      platform: "ALL",
+      niche: "ALL",
+      originType: "ALL",
+      formatType: "ALL",
+      status: "ALL",
+      sortBy: "relevance",
+      onlyWithLessons: false
+    };
+
+    const result = FilterCoursesUseCase.filter(mockCourses, filters, mockProgressMap);
+    const matchedIds = result.map(c => c.id);
+    // Must match Tony Robbins (c5), Tonny Robins (c6), and Robin Arzon (c7)
+    expect(matchedIds).toContain("c5");
+    expect(matchedIds).toContain("c6");
+    expect(matchedIds).toContain("c7");
+  });
+
+  it("matches multi-term queries with typos like 'tony robins' or 'destino robins'", () => {
+    const filters: FilterState = {
+      searchQuery: "destino robins",
+      category: "ALL",
+      author: "ALL",
+      platform: "ALL",
+      niche: "ALL",
+      originType: "ALL",
+      formatType: "ALL",
+      status: "ALL",
+      sortBy: "relevance",
+      onlyWithLessons: false
+    };
+
+    const result = FilterCoursesUseCase.filter(mockCourses, filters, mockProgressMap);
+    expect(result.map(c => c.id)).toContain("c5");
+  });
+
+  it("verifies fuzzy matching returns Tony Robbins, Tonny Robins, Robin Arzón, and Desata el Poder Interior for 'robins'", () => {
+    const filters: FilterState = {
+      searchQuery: "robins",
+      category: "ALL",
+      author: "ALL",
+      platform: "ALL",
+      niche: "ALL",
+      originType: "ALL",
+      formatType: "ALL",
+      status: "ALL",
+      sortBy: "relevance",
+      onlyWithLessons: false
+    };
+
+    const results = FilterCoursesUseCase.filter(mockCourses, filters, mockProgressMap);
+    const matchedIds = results.map(c => c.id);
+
+    expect(matchedIds).toContain("c5"); // Cita con el Destino Virtual - Tony Robbins
+    expect(matchedIds).toContain("c6"); // Curso Business Mastery Virtual - Tonny Robins
+    expect(matchedIds).toContain("c7"); // Robin Arzón - Mental Strength
+    expect(matchedIds).toContain("c8"); // Desata el Poder Interior - Tony Robbins
   });
 });

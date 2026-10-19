@@ -183426,5 +183426,36 @@
     "isPreparedInDrive": false,
     "pipelineStatus": "DOWNLOADED",
     "modules": []
+  },
+  {
+    "id": "course-gdrive-desata-el-poder-interior-tony-robbins-2025",
+    "slug": "desata-el-poder-interior-tony-robbins-2025",
+    "title": "Desata el Poder Interior - Tony Robbins 2025",
+    "author": "Tony Robbins",
+    "category": "Desarrollo Personal, Mente & Productividad",
+    "platform": "Tony Robbins",
+    "niche": "Desarrollo Personal, Mente & Productividad",
+    "utility": "Formación oficial Unleash the Power Within (UPW) de Tony Robbins.",
+    "targetAudience": "Emprendedores, profesionales y líderes.",
+    "difficulty": "Todos los niveles",
+    "estimatedHours": "15-25 hrs",
+    "originType": "DRIVE_SHORTCUT",
+    "originName": "Google Drive • Atajos Cloud",
+    "localPath": "",
+    "drivePath": "Google Drive/Mi unidad/001-CURSOS/01-Mente, comunicación /Desata el Poder Interior - Tony Robbins 2025",
+    "webUrl": "https://drive.google.com/drive/folders/1t8oyHu5vU91cq55NF7vXkIr_1ljz9nNv",
+    "rating": 5,
+    "totalLessons": 20,
+    "tags": [
+      "Tony Robbins",
+      "UPW",
+      "Desata el Poder Interior",
+      "Mentalidad",
+      "Liderazgo",
+      "Google Drive"
+    ],
+    "hasLocalFiles": false,
+    "modules": [],
+    "isArchive": false
   }
 ]
