@@ -9,6 +9,7 @@ interface CourseListViewProps {
   onOpenDetails: (course: Course) => void;
   onToggleFavorite: (courseId: string) => void;
   onToggleWatchLater: (courseId: string) => void;
+  onOpenPipeline?: (course: Course) => void;
 }
 
 export const CourseListView: React.FC<CourseListViewProps> = ({
@@ -16,7 +17,8 @@ export const CourseListView: React.FC<CourseListViewProps> = ({
   progressMap,
   onOpenDetails,
   onToggleFavorite,
-  onToggleWatchLater
+  onToggleWatchLater,
+  onOpenPipeline
 }) => {
   return (
     <div className="course-list-table-wrapper" role="region" aria-label="Lista de cursos">
@@ -28,40 +30,56 @@ export const CourseListView: React.FC<CourseListViewProps> = ({
             <th>Autor / Creador</th>
             <th>Módulos & Horas</th>
             <th>Progreso</th>
-            <th>Acciones Cloud</th>
+            <th style={{ width: "16rem", textAlign: "right" }}>Acciones</th>
           </tr>
         </thead>
         <tbody>
           {courses.map((course) => {
-            const progress = progressMap[course.id];
             const theme = getCategoryTheme(course.category);
+            const progress = progressMap[course.id];
             const isFav = progress?.isFavorite || false;
-            const isWL = progress?.isWatchLater || false;
             const percent = progress?.percentCompleted || 0;
             const initials = getAuthorInitials(course.author);
             const cleanTitle = course.title.replace(/^[0-9️⃣🔟._ -]+/, "").trim();
             const driveUrl = course.webUrl || `https://drive.google.com/drive/u/0/search?q=${encodeURIComponent(cleanTitle)}`;
             const isDirect = Boolean(course.webUrl && (course.webUrl.includes('/folders/') || course.webUrl.includes('/file/d/')));
+            const isTelegram = course.originType === "TELEGRAM_TPC";
+            const isArchive = Boolean(course.isArchive || (course.localPath && /\.(zip|rar|7z)$/i.test(course.localPath)));
+            const isPrepared = Boolean(course.isPreparedInDrive);
+            const needsPrep = (isTelegram || isArchive) && !isPrepared;
 
             return (
-              <tr key={course.id} className="course-table-row" onClick={() => onOpenDetails(course)}>
+              <tr
+                key={course.id}
+                className="course-table-row"
+                onClick={() => onOpenDetails(course)}
+                tabIndex={0}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter" || e.key === " ") {
+                    e.preventDefault();
+                    onOpenDetails(course);
+                  }
+                }}
+              >
                 <td onClick={(e) => e.stopPropagation()}>
-                  <div style={{ display: "flex", flexDirection: "column", gap: "0.4rem" }}>
+                  <div style={{ display: "flex", gap: "0.4rem" }}>
                     <button
                       type="button"
-                      className={`row-fav-btn ${isFav ? "active" : ""}`}
+                      className="table-fav-btn"
                       onClick={() => onToggleFavorite(course.id)}
                       title={isFav ? "Quitar de favoritos" : "Añadir a favoritos"}
+                      aria-label="Favorito"
                     >
                       {isFav ? "❤️" : "🤍"}
                     </button>
                     <button
                       type="button"
-                      className={`row-fav-btn ${isWL ? "active" : ""}`}
+                      className="table-fav-btn"
                       onClick={() => onToggleWatchLater(course.id)}
-                      title={isWL ? "En lista para ver" : "Guardar para ver más tarde"}
+                      title="Ver más tarde"
+                      aria-label="Ver más tarde"
                     >
-                      {isWL ? "📌" : "📍"}
+                      {progress?.isWatchLater ? "📌" : "⏱️"}
                     </button>
                   </div>
                 </td>
@@ -77,16 +95,27 @@ export const CourseListView: React.FC<CourseListViewProps> = ({
                           🏢 {course.platform}
                         </span>
                       )}
-                      {course.originType === "DRIVE_MI_UNIDAD" && (
+                      {course.isPreparedInDrive ? (
+                        <span style={{ fontSize: "1.1rem", padding: "0.2rem 0.6rem", borderRadius: "1rem", background: "rgba(16, 185, 129, 0.25)", color: "#34d399", fontWeight: 700 }}>
+                          ✅ Preparado en Drive
+                        </span>
+                      ) : isTelegram ? (
+                        <span style={{ fontSize: "1.1rem", padding: "0.2rem 0.6rem", borderRadius: "1rem", background: "rgba(217, 70, 239, 0.2)", color: "#f0abfc", fontWeight: 700 }}>
+                          ✈️ Telegram TPC
+                        </span>
+                      ) : isArchive ? (
+                        <span style={{ fontSize: "1.1rem", padding: "0.2rem 0.6rem", borderRadius: "1rem", background: "rgba(245, 158, 11, 0.2)", color: "#facc15", fontWeight: 700 }}>
+                          📦 Archivo
+                        </span>
+                      ) : course.originType === "DRIVE_MI_UNIDAD" ? (
                         <span style={{ fontSize: "1.1rem", padding: "0.2rem 0.6rem", borderRadius: "1rem", background: "rgba(16, 185, 129, 0.2)", color: "var(--accent-emerald)", fontWeight: 700 }}>
                           ⭐ Mi Unidad
                         </span>
-                      )}
-                      {course.originType === "DRIVE_SHORTCUT" && (
+                      ) : course.originType === "DRIVE_SHORTCUT" ? (
                         <span style={{ fontSize: "1.1rem", padding: "0.2rem 0.6rem", borderRadius: "1rem", background: "rgba(59, 130, 246, 0.2)", color: "#60a5fa", fontWeight: 700 }}>
                           🚀 Atajo Directo
                         </span>
-                      )}
+                      ) : null}
                     </div>
                     <h4 className="table-course-title">{course.title}</h4>
                     <div className="table-course-niche">🎯 {course.niche}</div>
@@ -124,16 +153,33 @@ export const CourseListView: React.FC<CourseListViewProps> = ({
 
                 <td onClick={(e) => e.stopPropagation()}>
                   <div className="table-actions-cell">
-                    <a
-                      href={driveUrl}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="btn-drive-action"
-                      style={isDirect ? { background: "linear-gradient(135deg, #10b981 0%, #059669 100%)", color: "#ffffff" } : undefined}
-                      title={isDirect ? "Abrir carpeta en Google Drive (1 Clic)" : "Buscar en Google Drive"}
-                    >
-                      {isDirect ? "⚡ Drive (1 Clic)" : "☁️ Drive ➔"}
-                    </a>
+                    {needsPrep ? (
+                      <button
+                        type="button"
+                        className="btn-drive-action"
+                        style={{
+                          background: isTelegram
+                            ? "linear-gradient(135deg, #d946ef 0%, #8b5cf6 100%)"
+                            : "linear-gradient(135deg, #f59e0b 0%, #d97706 100%)",
+                          color: "#ffffff"
+                        }}
+                        onClick={() => onOpenPipeline ? onOpenPipeline(course) : onOpenDetails(course)}
+                        title="Preparar automáticamente en Google Drive (1 Clic)"
+                      >
+                        ⚡ Preparar (1 Clic)
+                      </button>
+                    ) : (
+                      <a
+                        href={driveUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="btn-drive-action"
+                        style={(isDirect || isPrepared) ? { background: "linear-gradient(135deg, #10b981 0%, #059669 100%)", color: "#ffffff" } : undefined}
+                        title={isDirect || isPrepared ? "Abrir carpeta en Google Drive (1 Clic)" : "Buscar en Google Drive"}
+                      >
+                        {(isDirect || isPrepared) ? "⚡ Drive (1 Clic)" : "☁️ Drive ➔"}
+                      </a>
+                    )}
                     <button
                       type="button"
                       className="btn-syllabus-action"

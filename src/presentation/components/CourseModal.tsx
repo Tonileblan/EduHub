@@ -39,6 +39,9 @@ export const CourseModal: React.FC<CourseModalProps> = ({
   const driveWebSearchUrl = course.webUrl || `https://drive.google.com/drive/u/0/search?q=${encodeURIComponent(cleanSearchTerm)}`;
   const isDirectFolder = Boolean(course.webUrl && (course.webUrl.includes('/folders/') || course.webUrl.includes('/file/d/')));
   const telegramUrl = course.telegramSearchUrl || "https://t.me/MEMBRESIATPC";
+  const isArchive = Boolean(course.isArchive || (course.localPath && /\.(zip|rar|7z)$/i.test(course.localPath)));
+  const isPrepared = Boolean(course.isPreparedInDrive);
+  const needsPrep = (isTelegram || isArchive) && !isPrepared;
 
   return (
     <div className="modal-overlay" onClick={onClose} role="dialog" aria-modal="true" aria-labelledby="modal-title">
@@ -54,9 +57,17 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                   🏢 {course.platform}
                 </span>
               )}
-              {isTelegram ? (
+              {course.isPreparedInDrive ? (
+                <span className="course-tag" style={{ background: "rgba(16, 185, 129, 0.25)", color: "#34d399", border: "1px solid rgba(16, 185, 129, 0.4)", fontWeight: 700 }}>
+                  ✅ Preparado en Google Drive
+                </span>
+              ) : isTelegram ? (
                 <span className="course-tag" style={{ background: "rgba(217, 70, 239, 0.2)", color: "#f0abfc", border: "1px solid rgba(217, 70, 239, 0.4)" }}>
                   ✈️ Telegram • DESCARGAS TPC 📥
+                </span>
+              ) : course.isArchive ? (
+                <span className="course-tag" style={{ background: "rgba(245, 158, 11, 0.25)", color: "#facc15", border: "1px solid rgba(245, 158, 11, 0.4)", fontWeight: 700 }}>
+                  📦 Archivo Comprimido ({course.archiveType || "ZIP/RAR"})
                 </span>
               ) : course.originType === "DRIVE_MI_UNIDAD" ? (
                 <span className="course-tag" style={{ background: "rgba(16, 185, 129, 0.2)", color: "var(--accent-emerald)", border: "1px solid rgba(16, 185, 129, 0.4)" }}>
@@ -91,35 +102,51 @@ export const CourseModal: React.FC<CourseModalProps> = ({
         </div>
 
         {/* Action Bar for Direct Drive / Telegram Pipeline */}
-        <div style={{ padding: "1.4rem 2.4rem", background: isTelegram ? "rgba(217, 70, 239, 0.1)" : "rgba(99, 102, 241, 0.08)", borderBottom: "1px solid var(--border-glass)", display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "1rem" }}>
+        <div style={{ padding: "1.4rem 2.4rem", background: isTelegram ? "rgba(217, 70, 239, 0.1)" : isArchive ? "rgba(245, 158, 11, 0.08)" : "rgba(99, 102, 241, 0.08)", borderBottom: "1px solid var(--border-glass)", display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "1rem" }}>
           <div style={{ display: "flex", alignItems: "center", gap: "0.8rem", fontSize: "1.3rem", color: "var(--text-secondary)" }}>
             {isTelegram ? (
               <span>✈️ <strong>Canal Telegram:</strong> DESCARGAS TPC (@MEMBRESIATPC) ➜ Flujo SSD ➜ Google Drive</span>
+            ) : isArchive ? (
+              <span>📦 <strong>Archivo Comprimido:</strong> {course.originName || "Google Drive • Unidades Compartidas"} ➜ Streaming en Drive</span>
             ) : (
               <span>☁️ <strong>Ubicación Cloud:</strong> Google Drive ({course.originName || "Unidades Compartidas & Mi Unidad"})</span>
             )}
           </div>
 
           <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
-            {isTelegram ? (
+            {needsPrep ? (
               <>
                 <button
                   type="button"
                   className="btn-primary"
-                  style={{ background: "linear-gradient(135deg, #d946ef 0%, #8b5cf6 100%)", display: "inline-flex", alignItems: "center", gap: "0.6rem", padding: "0.8rem 1.6rem", fontSize: "1.35rem" }}
+                  style={{
+                    background: isTelegram
+                      ? "linear-gradient(135deg, #d946ef 0%, #8b5cf6 100%)"
+                      : "linear-gradient(135deg, #f59e0b 0%, #d97706 100%)",
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: "0.6rem",
+                    padding: "0.8rem 1.6rem",
+                    fontSize: "1.35rem",
+                    boxShadow: isTelegram
+                      ? "0 4px 14px rgba(217, 70, 239, 0.4)"
+                      : "0 4px 14px rgba(245, 158, 11, 0.4)"
+                  }}
                   onClick={() => onOpenPipeline ? onOpenPipeline(course) : null}
                 >
-                  ⚡ Iniciar Pipeline (Descargar ➜ Subir a Drive)
+                  ⚡ Preparar Automáticamente en Drive (1-Clic)
                 </button>
-                <a
-                  href={telegramUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="btn-secondary"
-                  style={{ display: "inline-flex", alignItems: "center", gap: "0.6rem", padding: "0.8rem 1.4rem", fontSize: "1.35rem" }}
-                >
-                  ✈️ Abrir en Telegram
-                </a>
+                {isTelegram && (
+                  <a
+                    href={telegramUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="btn-secondary"
+                    style={{ display: "inline-flex", alignItems: "center", gap: "0.6rem", padding: "0.8rem 1.4rem", fontSize: "1.35rem" }}
+                  >
+                    ✈️ Abrir en Telegram
+                  </a>
+                )}
               </>
             ) : (
               <a
@@ -133,11 +160,11 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                   gap: "0.6rem",
                   padding: "0.8rem 1.6rem",
                   fontSize: "1.35rem",
-                  background: isDirectFolder ? "linear-gradient(135deg, #10b981 0%, #059669 100%)" : undefined,
-                  boxShadow: isDirectFolder ? "0 4px 14px rgba(16, 185, 129, 0.4)" : undefined
+                  background: (isDirectFolder || isPrepared) ? "linear-gradient(135deg, #10b981 0%, #059669 100%)" : undefined,
+                  boxShadow: (isDirectFolder || isPrepared) ? "0 4px 14px rgba(16, 185, 129, 0.4)" : undefined
                 }}
               >
-                {isDirectFolder ? "⚡ Abrir Carpeta en Drive (1-Clic) ➔" : "☁️ Abrir Curso en Google Drive Web ➔"}
+                {(isDirectFolder || isPrepared) ? "⚡ Abrir Carpeta en Drive (1-Clic) ➔" : "☁️ Abrir Curso en Google Drive Web ➔"}
               </a>
             )}
           </div>

@@ -74,6 +74,29 @@ const mockCourses: Course[] = [
     isArchive: true,
     archiveType: "RAR",
     platform: "EDteam"
+  },
+  {
+    id: "c4",
+    slug: "academia-prime-ia",
+    title: "Claude Code UGC Creator Studio",
+    author: "Academia Prime IA",
+    category: "IA & Automatización",
+    niche: "UGC & Modelos IA",
+    utility: "Crear agentes y modelos UGC",
+    targetAudience: "Creadores",
+    difficulty: "Intermedio",
+    estimatedHours: "6h",
+    originType: "TELEGRAM_TPC",
+    originName: "Telegram • DESCARGAS TPC 📥",
+    localPath: "/downloads/Academia Prime IA/Claude Code UGC Creator Studio",
+    drivePath: "Mi unidad/001-CURSOS/00-IA-CURSOS/Claude Code UGC Creator Studio",
+    webUrl: "https://drive.google.com/drive/u/0/search?q=Claude",
+    rating: 4.9,
+    totalLessons: 22,
+    tags: ["Telegram", "UGC", "Claude"],
+    hasLocalFiles: true,
+    isArchive: false,
+    platform: "Academia Prime IA"
   }
 ];
 
@@ -114,8 +137,9 @@ describe("FilterCoursesUseCase", () => {
     };
 
     const result = FilterCoursesUseCase.filter(mockCourses, filters, mockProgressMap);
-    expect(result).toHaveLength(1);
-    expect(result[0].id).toBe("c1");
+    expect(result).toHaveLength(2);
+    expect(result.map(c => c.id)).toContain("c1");
+    expect(result.map(c => c.id)).toContain("c4");
   });
 
   it("filters courses by archives (ZIP/RAR)", () => {
@@ -194,5 +218,45 @@ describe("FilterCoursesUseCase", () => {
     expect(result).toHaveLength(1);
     expect(result[0].id).toBe("c3");
     expect(result[0].platform).toBe("EDteam");
+  });
+
+  it("filters courses by originType TELEGRAM_TPC", () => {
+    const filters: FilterState = {
+      searchQuery: "",
+      category: "ALL",
+      author: "ALL",
+      platform: "ALL",
+      niche: "ALL",
+      originType: "TELEGRAM_TPC",
+      formatType: "ALL",
+      status: "ALL",
+      sortBy: "relevance",
+      onlyWithLessons: false
+    };
+
+    const result = FilterCoursesUseCase.filter(mockCourses, filters, mockProgressMap);
+    expect(result).toHaveLength(1);
+    expect(result[0].id).toBe("c4");
+    expect(result[0].originType).toBe("TELEGRAM_TPC");
+  });
+
+  it("filters courses by formatType ARCHIVES", () => {
+    const filters: FilterState = {
+      searchQuery: "",
+      category: "ALL",
+      author: "ALL",
+      platform: "ALL",
+      niche: "ALL",
+      originType: "ALL",
+      formatType: "ARCHIVES",
+      status: "ALL",
+      sortBy: "relevance",
+      onlyWithLessons: false
+    };
+
+    const result = FilterCoursesUseCase.filter(mockCourses, filters, mockProgressMap);
+    expect(result).toHaveLength(1);
+    expect(result[0].id).toBe("c3");
+    expect(result[0].isArchive).toBe(true);
   });
 });

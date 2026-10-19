@@ -7,17 +7,33 @@ import path from "path";
 function openFolderPlugin() {
   const miUnidadCursos = "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Mi unidad/001-CURSOS";
 
+  function cleanTitle(raw: string) {
+    if (!raw) return "Curso";
+    return raw
+      .replace(/^[@]?[0-9️⃣🔟._ -]+/, "")
+      .replace(/@cursosp0rmega/gi, "")
+      .replace(/@MEMBRESIATPC/gi, "")
+      .replace(/@TUSCURSOSFULL/gi, "")
+      .replace(/\[.*?\]/g, "")
+      .replace(/\(.*?\)/g, "")
+      .replace(/[._-]+/g, " ")
+      .replace(/[/\\:*?"<>|]/g, " ")
+      .replace(/\s+/g, " ")
+      .trim();
+  }
+
   return {
     name: "vite-open-folder-plugin",
     configureServer(server: any) {
       server.middlewares.use((req: any, res: any, next: any) => {
-        // 1. Open Folder Endpoint
+        // 1. Open Folder in Finder
         if (req.url?.startsWith("/api/open-folder")) {
-          const urlObj = new URL(req.url, "http://localhost:5175");
+          const urlObj = new URL(req.url, "http://localhost:5173");
           const targetPath = urlObj.searchParams.get("path");
 
           if (!targetPath) {
             res.statusCode = 400;
+            res.setHeader("Content-Type", "application/json");
             res.end(JSON.stringify({ error: "Missing path parameter" }));
             return;
           }
@@ -30,60 +46,63 @@ function openFolderPlugin() {
           return;
         }
 
-        // 2. Unzip and Move to Drive Endpoint
-        if (req.url?.startsWith("/api/unzip-and-move-to-drive")) {
-          const urlObj = new URL(req.url, "http://localhost:5175");
-          const sourcePath = urlObj.searchParams.get("sourcePath");
-          const rawTitle = urlObj.searchParams.get("title") || "Curso Descomprimido";
+        // 2. Check Prepared Status in Google Drive
+        if (req.url?.startsWith("/api/check-prepared-status")) {
+          const urlObj = new URL(req.url, "http://localhost:5173");
+          const title = urlObj.searchParams.get("title") || "";
+          const safeT = cleanTitle(title);
 
-          if (!sourcePath || !fs.existsSync(sourcePath)) {
-            res.statusCode = 404;
+          const candidate1 = path.join(miUnidadCursos, "00-IA-CURSOS", safeT);
+          const candidate2 = path.join(miUnidadCursos, safeT);
+
+          const isPrepared = (fs.existsSync(candidate1) && fs.readdirSync(candidate1).length > 0) ||
+                             (fs.existsSync(candidate2) && fs.readdirSync(candidate2).length > 0);
+
+          const finalPath = fs.existsSync(candidate1) ? candidate1 : candidate2;
+
+          res.statusCode = 200;
+          res.setHeader("Content-Type", "application/json");
+          res.end(JSON.stringify({
+            isPrepared,
+            destinationPath: isPrepared ? finalPath : null,
+            webUrl: `https://drive.google.com/drive/u/0/search?q=${encodeURIComponent(safeT)}`
+          }));
+          return;
+        }
+
+        // 3. Prepare Course in Drive (1-Click Pipeline)
+        if (req.url?.startsWith("/api/unzip-and-move-to-drive") || req.url?.startsWith("/api/prepare-course-in-drive")) {
+          const urlObj = new URL(req.url, "http://localhost:5173");
+          const courseId = urlObj.searchParams.get("courseId") || "";
+          const sourcePath = urlObj.searchParams.get("sourcePath") || "";
+          const rawTitle = urlObj.searchParams.get("title") || "Curso";
+          const category = urlObj.searchParams.get("category") || "";
+
+          let cmd = `node scripts/auto_prepare_course_in_drive.js`;
+          if (courseId) cmd += ` --id "${courseId}"`;
+          if (rawTitle) cmd += ` --title "${rawTitle}"`;
+          if (category) cmd += ` --category "${category}"`;
+          if (sourcePath) cmd += ` --source "${sourcePath}"`;
+
+          exec(cmd, (err, stdout, stderr) => {
             res.setHeader("Content-Type", "application/json");
-            res.end(JSON.stringify({ error: "Source archive file not found" }));
-            return;
-          }
-
-          const cleanTitle = rawTitle.replace(/[/\\:*?"<>|]/g, "-").replace(/\.rar$|\.zip$|\.7z$/i, "").trim();
-          const targetDir = path.join(miUnidadCursos, cleanTitle);
-
-          if (!fs.existsSync(targetDir)) {
-            fs.mkdirSync(targetDir, { recursive: true });
-          }
-
-          // First reveal the source file to trigger materialization if on Google Drive
-          exec(`open -R "${sourcePath}"`);
-
-          const unarCmd = `/opt/homebrew/bin/unar -force-overwrite -output-directory "${targetDir}" "${sourcePath}"`;
-
-          exec(unarCmd, (err) => {
-            if (err) {
-              // Open target folder in Drive anyway so user has direct access
-              exec(`open "${targetDir}"`);
-              res.statusCode = 200;
-              res.setHeader("Content-Type", "application/json");
-              res.end(JSON.stringify({
-                success: true,
-                destinationPath: targetDir,
-                message: "Archivo revelado en Drive y carpeta de destino preparada en Mi Unidad."
-              }));
-              return;
-            }
-
-            let fileCount = 0;
             try {
-              fileCount = fs.readdirSync(targetDir).length;
+              // Extract JSON from output
+              const jsonMatch = stdout.match(/\{[\s\S]*\}/);
+              if (jsonMatch) {
+                res.statusCode = 200;
+                res.end(jsonMatch[0]);
+                return;
+              }
             } catch (e) {}
 
-            exec(`open "${targetDir}"`);
-
-            res.statusCode = 200;
-            res.setHeader("Content-Type", "application/json");
-            res.end(JSON.stringify({
-              success: true,
-              destinationPath: targetDir,
-              filesExtracted: fileCount,
-              message: `Curso descomprimido exitosamente en: ${targetDir}`
-            }));
+            if (err) {
+              res.statusCode = 500;
+              res.end(JSON.stringify({ error: stderr || err.message, output: stdout }));
+            } else {
+              res.statusCode = 200;
+              res.end(JSON.stringify({ success: true, message: "Curso preparado con éxito en Google Drive", output: stdout }));
+            }
           });
           return;
         }

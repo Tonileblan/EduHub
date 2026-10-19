@@ -25,7 +25,8 @@
       "Google Drive"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-4690",
@@ -82,7 +83,8 @@
       "Google Drive"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-mi-unidad-1792401877572-744",
@@ -110,7 +112,8 @@
       "Google Drive"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-2826",
@@ -315,7 +318,8 @@
       "Google Drive"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-mi-unidad-1792401877572-583",
@@ -343,7 +347,8 @@
       "Google Drive"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-5393",
@@ -457,7 +462,8 @@
       "Google Drive"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-mi-unidad-1792401877622-567",
@@ -485,7 +491,8 @@
       "Google Drive"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "tpc-telegram-1790696816008-dlfy",
@@ -994,7 +1001,8 @@
         ]
       }
     ],
-    "platform": "Google Drive • Mi Unidad"
+    "platform": "Google Drive • Mi Unidad",
+    "isArchive": false
   },
   {
     "id": "course-mi-unidad-1792401877572-844",
@@ -1022,7 +1030,8 @@
       "Google Drive"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-mi-unidad-1792401877572-291",
@@ -1050,7 +1059,8 @@
       "Google Drive"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-mi-unidad-1792401877572-376",
@@ -1078,7 +1088,8 @@
       "Google Drive"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-mi-unidad-1792401877572-246",
@@ -1106,7 +1117,8 @@
       "Google Drive"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "tpc-telegram-1790696816009-udxa",
@@ -1138,7 +1150,8 @@
     "isUploadedToDrive": false,
     "pipelineStatus": "DOWNLOADED",
     "modules": [],
-    "platform": "Google Drive • Mi Unidad"
+    "platform": "Google Drive • Mi Unidad",
+    "isArchive": false
   },
   {
     "id": "tpc-telegram-1790696816012-bhrq",
@@ -1430,7 +1443,8 @@
         ]
       }
     ],
-    "platform": "Google Drive • Mi Unidad"
+    "platform": "Google Drive • Mi Unidad",
+    "isArchive": false
   },
   {
     "id": "course-mi-unidad-1792401877622-191",
@@ -1458,7 +1472,8 @@
       "Google Drive"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-mi-unidad-1792401877572-822",
@@ -1486,7 +1501,8 @@
       "Google Drive"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "tpc-telegram-1790696816015-l7p1",
@@ -1932,7 +1948,8 @@
         ]
       }
     ],
-    "platform": "Google Drive • Mi Unidad"
+    "platform": "Google Drive • Mi Unidad",
+    "isArchive": false
   },
   {
     "id": "course-mi-unidad-1792401877572-44",
@@ -1960,7 +1977,8 @@
       "Google Drive"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-mi-unidad-1792401877572-222",
@@ -1988,7 +2006,8 @@
       "Google Drive"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-mi-unidad-1792401877622-404",
@@ -2016,7 +2035,8 @@
       "Google Drive"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-api-190Djd1MnPDAN4IuJc6Wb92um62gZ1CTi",
@@ -2044,7 +2064,8 @@
       "Google Drive Cloud"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-api-1Uq6wfWVrFueMuY28JaDGxR2xL64GjJRc",
@@ -2072,7 +2093,8 @@
       "Google Drive Cloud"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-mi-unidad-1792401877622-830",
@@ -2100,7 +2122,8 @@
       "Google Drive"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "tpc-telegram-1790696816024-hk9u",
@@ -2938,7 +2961,8 @@
         ]
       }
     ],
-    "platform": "Skool"
+    "platform": "Skool",
+    "isArchive": false
   },
   {
     "id": "course-mi-unidad-1792401877572-702",
@@ -2966,7 +2990,8 @@
       "Google Drive"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-3351",
@@ -3110,7 +3135,8 @@
       "Google Drive"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-sc-1EWS2RoPfprFIp6kHTS_ERrh4nMk-KPLQ",
@@ -3138,7 +3164,8 @@
       "Google Drive Cloud"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-3263",
@@ -3343,7 +3370,8 @@
       "Google Drive Cloud"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-sc-1LPdWUeNgTLC79-oznoPX2M47O1PVUBL2",
@@ -3371,7 +3399,8 @@
       "Google Drive Cloud"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-446",
@@ -3455,7 +3484,8 @@
       "Google Drive Cloud"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-sc-13Ew1rJApcuBrpgNIf_3V-wmBryX6Dl41",
@@ -3483,7 +3513,8 @@
       "Google Drive Cloud"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-sc-1qk_mPytOJwobZp4L37WIyESU_-YYFdcW",
@@ -3511,7 +3542,8 @@
       "Google Drive Cloud"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-sc-10gTCp5VyjNHZ2SheKT5inR_Sg_PDgrOw",
@@ -3539,7 +3571,8 @@
       "Google Drive Cloud"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-458",
@@ -3743,7 +3776,8 @@
       "Google Drive"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-461",
@@ -3891,7 +3925,8 @@
       "Google Drive Cloud"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-467",
@@ -3979,7 +4014,8 @@
       "Google Drive Cloud"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-sc-1ATVi_8BuA-nM54bVcvxieEHql97QQZjz",
@@ -4007,7 +4043,8 @@
       "Google Drive Cloud"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-sc-1ZIar2P4pOKNfGkEHX8ajOEEnbcrA25W6",
@@ -4035,7 +4072,8 @@
       "Google Drive Cloud"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-sc-1mFw7fG45-DJ20HMZEQOuBjhOiomY-sFf",
@@ -4063,7 +4101,8 @@
       "Google Drive Cloud"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-476",
@@ -4473,7 +4512,8 @@
       "Google Drive Cloud"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-sc-1zABagn6SGki7sHQIJTdoqkUbqfqMthzx",
@@ -4501,7 +4541,8 @@
       "Google Drive Cloud"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-3288",
@@ -4616,7 +4657,8 @@
       "Google Drive Cloud"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-1791",
@@ -5214,7 +5256,8 @@
       "Google Drive Cloud"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-sc-1o2V_HJd0Vffgjzki31ewgWDlfVOX8IUR",
@@ -5242,7 +5285,8 @@
       "Google Drive Cloud"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-sc-1uN_xj_KqZDPSpl48lr4SMllJ3iU49zSz",
@@ -5270,7 +5314,8 @@
       "Google Drive Cloud"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-503",
@@ -5967,7 +6012,8 @@
       "Google Drive Cloud"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-523",
@@ -6070,8 +6116,8 @@
     "estimatedHours": "10h",
     "originType": "DRIVE_SHORTCUT",
     "originName": "Google Drive • Atajos Cloud",
-    "localPath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/.shortcut-targets-by-id/1Eiv4QNrTOn6ofrgxZljkc9N3b5UHtO7A/google-antigravity-desde-cero-crea-apps-con-ayuda-de-la-ia",
-    "drivePath": "Google Drive/Unidades compartidas/1️⃣.2️⃣2️⃣Unidad - Nuevos Cursos 2026 ! - Telegram - @cursosp0rmega/google-antigravity-desde-cero-crea-apps-con-ayuda-de-la-ia",
+    "localPath": "/Users/toni/Downloads/Google antigravity desde cero crea apps con ayuda de la IA",
+    "drivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Mi unidad/001-CURSOS/00-IA-CURSOS/Google antigravity desde cero crea apps con ayuda de la IA",
     "webUrl": "https://drive.google.com/drive/folders/1Eiv4QNrTOn6ofrgxZljkc9N3b5UHtO7A",
     "rating": 4.9,
     "totalLessons": 12,
@@ -6082,10 +6128,637 @@
       "LLMs",
       "Productividad"
     ],
-    "hasLocalFiles": false,
+    "hasLocalFiles": true,
     "isArchive": false,
-    "modules": [],
-    "platform": "Google Drive • Atajos Cloud"
+    "modules": [
+      {
+        "id": "m-1",
+        "title": "Contenido Principal",
+        "order": 1,
+        "lessons": [
+          {
+            "id": "l-1-1",
+            "title": "Introduction",
+            "fileType": "video",
+            "order": 1,
+            "relPath": "01 - Introduction @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-2",
+            "title": "Recomendaciones",
+            "fileType": "video",
+            "order": 2,
+            "relPath": "02 - Recomendaciones @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-3",
+            "title": "bonus",
+            "fileType": "doc",
+            "order": 3,
+            "relPath": "bonus @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-4",
+            "title": "¿Qué es Google Antigravity",
+            "fileType": "video",
+            "order": 4,
+            "relPath": "01 - ¿Qué es Google Antigravity @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-5",
+            "title": "Instalación de Google Antigravity",
+            "fileType": "video",
+            "order": 5,
+            "relPath": "02 - Instalación de Google Antigravity @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-6",
+            "title": "Exploración de google Antigravity",
+            "fileType": "video",
+            "order": 6,
+            "relPath": "03 - Exploración de google Antigravity @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-7",
+            "title": "Conceptos que aprenderemos a lo largo del curso",
+            "fileType": "video",
+            "order": 7,
+            "relPath": "04 - Conceptos que aprenderemos a lo largo del curso @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-8",
+            "title": "Configurando Proyecto Dinosaurio y Cactus",
+            "fileType": "video",
+            "order": 8,
+            "relPath": "01 - Configurando Proyecto Dinosaurio y Cactus @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-9",
+            "title": "Uso del Browser",
+            "fileType": "video",
+            "order": 9,
+            "relPath": "02 - Uso del Browser @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-10",
+            "title": "Artefactos",
+            "fileType": "video",
+            "order": 10,
+            "relPath": "03 - Artefactos @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-11",
+            "title": "¿Qué es la terminal Clase para no desarrolladores",
+            "fileType": "video",
+            "order": 11,
+            "relPath": "04 - ¿Qué es la terminal Clase para no desarrolladores @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-12",
+            "title": "Configuraciones del Agente (recomendaciones)",
+            "fileType": "video",
+            "order": 12,
+            "relPath": "05 - Configuraciones del Agente (recomendaciones) @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-13",
+            "title": "Presentación de la sección, ¿Qué es NodeJS",
+            "fileType": "video",
+            "order": 13,
+            "relPath": "01 - Presentación de la sección, ¿Qué es NodeJS @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-14",
+            "title": "Instalación de NodeJS",
+            "fileType": "video",
+            "order": 14,
+            "relPath": "02 - Instalación de NodeJS @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-15",
+            "title": "Configuración y envío de correos con node.js",
+            "fileType": "video",
+            "order": 15,
+            "relPath": "03 - Configuración y envío de correos con node.js @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-16",
+            "title": "Pruebas en el Navegador",
+            "fileType": "video",
+            "order": 16,
+            "relPath": "04 - Pruebas en el Navegador @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-17",
+            "title": "Contexto Imágenes y Archivos",
+            "fileType": "video",
+            "order": 17,
+            "relPath": "05 - Contexto Imágenes y Archivos @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-18",
+            "title": "Contexto Reglas y Workflows",
+            "fileType": "video",
+            "order": 18,
+            "relPath": "06 - Contexto Reglas y Workflows @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-19",
+            "title": "Sobre las Actions",
+            "fileType": "video",
+            "order": 19,
+            "relPath": "07 - Sobre las Actions @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-20",
+            "title": "Configuración de MCP Caso de Supabase",
+            "fileType": "video",
+            "order": 20,
+            "relPath": "08 - Configuración de MCP Caso de Supabase @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-21",
+            "title": "Configuración MCP Actualizando tabla de Correos en Supabase",
+            "fileType": "video",
+            "order": 21,
+            "relPath": "09 - Configuración MCP Actualizando tabla de Correos en Supabase @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-22",
+            "title": "Configuración MCP Diseño de pantallas de inicio de sesión y registro",
+            "fileType": "video",
+            "order": 22,
+            "relPath": "10 - Configuración MCP Diseño de pantallas de inicio de sesión y registro @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-23",
+            "title": "Autenticación en Supabase",
+            "fileType": "video",
+            "order": 23,
+            "relPath": "11 - Autenticación en Supabase @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-24",
+            "title": "Configuración MCP Añadiendo más campos de usuarios",
+            "fileType": "video",
+            "order": 24,
+            "relPath": "12 - Configuración MCP Añadiendo más campos de usuarios @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-25",
+            "title": "Página de Videos",
+            "fileType": "video",
+            "order": 25,
+            "relPath": "13 - Página de Videos @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-26",
+            "title": "Configuración MCP Storage y almacenamiento de videos",
+            "fileType": "video",
+            "order": 26,
+            "relPath": "14 - Configuración MCP Storage y almacenamiento de videos @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-27",
+            "title": "Limitando acceso a usuarios Free",
+            "fileType": "video",
+            "order": 27,
+            "relPath": "15 - Limitando acceso a usuarios Free @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-28",
+            "title": "Conexión con Github",
+            "fileType": "video",
+            "order": 28,
+            "relPath": "16 - Conexión con Github @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-29",
+            "title": "Enviando proyecto a render",
+            "fileType": "video",
+            "order": 29,
+            "relPath": "17 - Enviando proyecto a render @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-30",
+            "title": "Setup Fullstack",
+            "fileType": "video",
+            "order": 30,
+            "relPath": "01 - Setup Fullstack @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-31",
+            "title": "Configuración de MongoDB y JWT",
+            "fileType": "video",
+            "order": 31,
+            "relPath": "02 - Configuración de MongoDB y JWT @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-32",
+            "title": "Integración de MCP de Stripe",
+            "fileType": "video",
+            "order": 32,
+            "relPath": "03 - Integración de MCP de Stripe @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-33",
+            "title": "Presentación",
+            "fileType": "video",
+            "order": 33,
+            "relPath": "01 - Presentación @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-34",
+            "title": "Instalaciones",
+            "fileType": "video",
+            "order": 34,
+            "relPath": "02 - Instalaciones @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-35",
+            "title": "Pantallas en Stitch y Antigravity",
+            "fileType": "video",
+            "order": 35,
+            "relPath": "03 - Pantallas en Stitch y Antigravity @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-36",
+            "title": "Uso del Emulador con IA",
+            "fileType": "video",
+            "order": 36,
+            "relPath": "04 - Uso del Emulador con IA @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-37",
+            "title": "Uso del Emulador de Forma Manual",
+            "fileType": "video",
+            "order": 37,
+            "relPath": "05 - Uso del Emulador de Forma Manual @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-38",
+            "title": "Presentación",
+            "fileType": "video",
+            "order": 38,
+            "relPath": "01 - Presentación @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-39",
+            "title": "¿Qué es Webscraping",
+            "fileType": "video",
+            "order": 39,
+            "relPath": "02 - ¿Qué es Webscraping @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-40",
+            "title": "Creando la Interfaz",
+            "fileType": "video",
+            "order": 40,
+            "relPath": "03 - Creando la Interfaz @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-41",
+            "title": "Ajustes Visuales",
+            "fileType": "video",
+            "order": 41,
+            "relPath": "04 - Ajustes Visuales @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-42",
+            "title": "Ajuste de Datos",
+            "fileType": "video",
+            "order": 42,
+            "relPath": "05 - Ajuste de Datos @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-43",
+            "title": "Almacenando datos en Supabase",
+            "fileType": "video",
+            "order": 43,
+            "relPath": "06 - Almacenando datos en Supabase @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-44",
+            "title": "Trabajando con el Historial",
+            "fileType": "video",
+            "order": 44,
+            "relPath": "07 - Trabajando con el Historial @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-45",
+            "title": "Histograma",
+            "fileType": "video",
+            "order": 45,
+            "relPath": "08 - Histograma @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-46",
+            "title": "Sobre Antigravity 2.0",
+            "fileType": "video",
+            "order": 46,
+            "relPath": "01 - Sobre Antigravity 2.0 @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-47",
+            "title": "Modo Plan y MCP Servers en Antigravity 2.0",
+            "fileType": "video",
+            "order": 47,
+            "relPath": "02 - Modo Plan y MCP Servers en Antigravity 2.0 @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-48",
+            "title": "Implementación",
+            "fileType": "video",
+            "order": 48,
+            "relPath": "03 - Implementación @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-49",
+            "title": "¿Qué es N8N",
+            "fileType": "video",
+            "order": 49,
+            "relPath": "01 - ¿Qué es N8N @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-50",
+            "title": "Configuración del Webhook en N8N",
+            "fileType": "video",
+            "order": 50,
+            "relPath": "02 - Configuración del Webhook en N8N @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-51",
+            "title": "Agregando Agente IA",
+            "fileType": "video",
+            "order": 51,
+            "relPath": "03 - Agregando Agente IA @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-52",
+            "title": "MCP en Raw con N8N",
+            "fileType": "video",
+            "order": 52,
+            "relPath": "04 - MCP en Raw con N8N @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-53",
+            "title": "Antigrativy en un mundo no code",
+            "fileType": "video",
+            "order": 53,
+            "relPath": "01 - Antigrativy en un mundo no code @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-54",
+            "title": "Antigravity v.s Lovable",
+            "fileType": "video",
+            "order": 54,
+            "relPath": "02 - Antigravity v.s Lovable @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-55",
+            "title": "Flutterflow v.s Antigravity",
+            "fileType": "video",
+            "order": 55,
+            "relPath": "03 - Flutterflow v.s Antigravity @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-56",
+            "title": "Recomendaciones para seguir la sección",
+            "fileType": "video",
+            "order": 56,
+            "relPath": "01 - Recomendaciones para seguir la sección @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-57",
+            "title": "Explorando la plataforma",
+            "fileType": "video",
+            "order": 57,
+            "relPath": "02 - Explorando la plataforma @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-58",
+            "title": "Primer Proyecto",
+            "fileType": "video",
+            "order": 58,
+            "relPath": "03 - Primer Proyecto @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-59",
+            "title": "Ajustes Responsivos e Integración a Github",
+            "fileType": "video",
+            "order": 59,
+            "relPath": "04 - Ajustes Responsivos e Integración a Github @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-60",
+            "title": "Presentación de Buenas Prácticas en Lovable",
+            "fileType": "video",
+            "order": 60,
+            "relPath": "05 - Presentación de Buenas Prácticas en Lovable @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-61",
+            "title": "Knowledge",
+            "fileType": "video",
+            "order": 61,
+            "relPath": "06 - Knowledge @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-62",
+            "title": "El uso de Visual Edit para cambios rápidos",
+            "fileType": "video",
+            "order": 62,
+            "relPath": "07 - El uso de Visual Edit para cambios rápidos @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-63",
+            "title": "Cuidado con los cambios en Github",
+            "fileType": "video",
+            "order": 63,
+            "relPath": "08 - Cuidado con los cambios en Github @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-64",
+            "title": "¿Qué es Supabase",
+            "fileType": "video",
+            "order": 64,
+            "relPath": "09 - ¿Qué es Supabase @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-65",
+            "title": "Explorando Supabase",
+            "fileType": "video",
+            "order": 65,
+            "relPath": "10 - Explorando Supabase @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-66",
+            "title": "Presentación",
+            "fileType": "video",
+            "order": 66,
+            "relPath": "01 - Presentación @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-67",
+            "title": "Dashboard",
+            "fileType": "video",
+            "order": 67,
+            "relPath": "02 - Dashboard @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-68",
+            "title": "AppBuilder",
+            "fileType": "video",
+            "order": 68,
+            "relPath": "03 - AppBuilder @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-69",
+            "title": "Firebase",
+            "fileType": "video",
+            "order": 69,
+            "relPath": "04 - Firebase @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-70",
+            "title": "Sobre los Widgets",
+            "fileType": "video",
+            "order": 70,
+            "relPath": "05 - Sobre los Widgets @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-71",
+            "title": "Sobre las Acciones Parte 1",
+            "fileType": "video",
+            "order": 71,
+            "relPath": "06 - Sobre las Acciones Parte 1 @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-72",
+            "title": "Sobre las acciones Parte 2",
+            "fileType": "video",
+            "order": 72,
+            "relPath": "07 - Sobre las acciones Parte 2 @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-73",
+            "title": "Queries",
+            "fileType": "video",
+            "order": 73,
+            "relPath": "08 - Queries @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-74",
+            "title": "Autenticación",
+            "fileType": "video",
+            "order": 74,
+            "relPath": "09 - Autenticación @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-75",
+            "title": "Variables Básicas en Dart Aspectos Generales",
+            "fileType": "video",
+            "order": 75,
+            "relPath": "10 - Variables Básicas en Dart Aspectos Generales @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-76",
+            "title": "Variables Básicas Aspectos Generales",
+            "fileType": "video",
+            "order": 76,
+            "relPath": "11 - Variables Básicas Aspectos Generales @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-77",
+            "title": "String",
+            "fileType": "video",
+            "order": 77,
+            "relPath": "12 - String @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-78",
+            "title": "Variables Numéricas",
+            "fileType": "video",
+            "order": 78,
+            "relPath": "13 - Variables Numéricas @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-79",
+            "title": "Booleans",
+            "fileType": "video",
+            "order": 79,
+            "relPath": "14 - Booleans @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-80",
+            "title": "Var y Dynamic",
+            "fileType": "video",
+            "order": 80,
+            "relPath": "15 - Var y Dynamic @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-81",
+            "title": "Listas",
+            "fileType": "video",
+            "order": 81,
+            "relPath": "16 - Listas @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-82",
+            "title": "bonus",
+            "fileType": "doc",
+            "order": 82,
+            "relPath": "bonus @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-83",
+            "title": "¿Qué es HTML y cuál es su estructura",
+            "fileType": "video",
+            "order": 83,
+            "relPath": "01 - ¿Qué es HTML y cuál es su estructura @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-84",
+            "title": "Headings y Párrafos",
+            "fileType": "video",
+            "order": 84,
+            "relPath": "02 - Headings y Párrafos @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-85",
+            "title": "Atributos HTML",
+            "fileType": "video",
+            "order": 85,
+            "relPath": "03 - Atributos HTML @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-86",
+            "title": "Formatos en HTML",
+            "fileType": "video",
+            "order": 86,
+            "relPath": "04 - Formatos en HTML @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-87",
+            "title": "CSS",
+            "fileType": "video",
+            "order": 87,
+            "relPath": "05 - CSS @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-88",
+            "title": "bonus",
+            "fileType": "doc",
+            "order": 88,
+            "relPath": "bonus @TUSCURSOSFULL.pdf"
+          }
+        ]
+      }
+    ],
+    "platform": "Google Drive • Atajos Cloud",
+    "isPreparedInDrive": true,
+    "isUploadedToDrive": true,
+    "pipelineStatus": "UPLOADED"
   },
   {
     "id": "course-608",
@@ -6141,7 +6814,8 @@
       "Google Drive Cloud"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-526",
@@ -6229,7 +6903,8 @@
       "Google Drive Cloud"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-442",
@@ -6287,7 +6962,8 @@
       "Google Drive Cloud"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-sc-1pXbrvaFmOdGY5VweZP7o-tPgThVoPja5",
@@ -6315,7 +6991,8 @@
       "Google Drive Cloud"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-sc-1bMpZ_pb1O0WIB4acK9AfBBPi44AueBOZ",
@@ -6343,7 +7020,8 @@
       "Google Drive Cloud"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-3320",
@@ -6456,7 +7134,8 @@
       "Google Drive Cloud"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-536",
@@ -6540,7 +7219,8 @@
       "Google Drive Cloud"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-sc-1pkPy1xlkXb7shouOmb9w8GKI5A9J2Cei",
@@ -6568,7 +7248,8 @@
       "Google Drive Cloud"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-543",
@@ -6736,7 +7417,8 @@
       "Google Drive Cloud"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-sc-1O77OvFZuP0OAJNaCxgP5Gq-TohbXBcqS",
@@ -6764,7 +7446,8 @@
       "Google Drive Cloud"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-347",
@@ -6850,7 +7533,8 @@
       "Google Drive Cloud"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-sc-1yK7T6yfqpwLEHsbIjS-vb8c4PR_ijxBF",
@@ -6878,7 +7562,8 @@
       "Google Drive Cloud"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-sc-1IHj_qzPg_KMpr6_r3Ga3Y2kIMERSyKCN",
@@ -6906,7 +7591,8 @@
       "Google Drive Cloud"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-609",
@@ -7051,7 +7737,8 @@
       "Google Drive Cloud"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-sc-1kWbmc8sBuSs5tN9ebb39zXf0BRYd7okt",
@@ -7079,7 +7766,8 @@
       "Google Drive Cloud"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-1807",
@@ -7446,7 +8134,8 @@
       "Google Drive Cloud"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-572",
@@ -7765,7 +8454,8 @@
       "Google Drive Cloud"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-581",
@@ -7969,7 +8659,8 @@
       "Google Drive Cloud"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-588",
@@ -8197,7 +8888,8 @@
       "Google Drive Cloud"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-sc-1YIBL2mKq3BOOLiMlO4FwozYwrazlxCVN",
@@ -8225,7 +8917,8 @@
       "Google Drive Cloud"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-sc-1o0OJmlHrbn3svUcnfwmzSDfxnLE0VRuc",
@@ -8253,7 +8946,8 @@
       "Google Drive Cloud"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-3344",
@@ -8338,7 +9032,8 @@
       "Google Drive"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-5808",
@@ -8659,7 +9354,8 @@
       "Google Drive Cloud"
     ],
     "hasLocalFiles": true,
-    "modules": []
+    "modules": [],
+    "isArchive": false
   },
   {
     "id": "course-601",
@@ -9672,7 +10368,8 @@
         ]
       }
     ],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "isArchive": false
   },
   {
     "id": "tpc-telegram-1790696816004-49uj",
@@ -9704,7 +10401,8 @@
     "isUploadedToDrive": false,
     "pipelineStatus": "DOWNLOADED",
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "isArchive": false
   },
   {
     "id": "tpc-telegram-1790696816010-jbqy",
@@ -9793,7 +10491,8 @@
         ]
       }
     ],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "isArchive": false
   },
   {
     "id": "tpc-telegram-1790696816027-v7e6",
@@ -9825,7 +10524,8 @@
     "isUploadedToDrive": false,
     "pipelineStatus": "DOWNLOADED",
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "isArchive": false
   },
   {
     "id": "tpc-telegram-1790696816016-6hka",
@@ -9935,7 +10635,8 @@
         ]
       }
     ],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "isArchive": false
   },
   {
     "id": "tpc-telegram-1790696816017-80vy",
@@ -9989,7 +10690,8 @@
         ]
       }
     ],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "isArchive": false
   },
   {
     "id": "tpc-telegram-1790696816025-rhz8",
@@ -10085,7 +10787,8 @@
         ]
       }
     ],
-    "platform": "Skool"
+    "platform": "Skool",
+    "isArchive": false
   },
   {
     "id": "course-906",
@@ -11463,7 +12166,7 @@
     "estimatedHours": "333h",
     "originType": "DRIVE_COMPARTIDA",
     "originName": "Plataforma OPENWEBINARS Parte 2 2026",
-    "localPath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/Plataforma OPENWEBINARS Parte 2 2026 - Telegram - @cursosp0rmega/✪Herramientas",
+    "localPath": "/Users/toni/Downloads/Academia Prime IA/Herramientas",
     "drivePath": "Google Drive/Unidades compartidas/Plataforma OPENWEBINARS Parte 2 2026 - Telegram - @cursosp0rmega/✪Herramientas",
     "webUrl": "https://drive.google.com/drive/u/0/search?q=%E2%9C%AAHerramientas",
     "rating": 4.7,
@@ -11476,9 +12179,12 @@
       "Software"
     ],
     "hasLocalFiles": true,
-    "isArchive": false,
+    "isArchive": true,
     "modules": [],
-    "platform": "OpenWebinars"
+    "platform": "OpenWebinars",
+    "archivePath": "/Users/toni/Downloads/Academia Prime IA.part1.rar",
+    "archiveType": "RAR",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-4829",
@@ -13702,7 +14408,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "RAR",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/Cat.Arquitectura e Ingeniería  2026 - Telegram - @cursosp0rmega-  Parte 3/ACADGIS_ CURSO DE CIVIL 3D BASICO - INTERMEDIO -AVAVANZADO _ YOFRE VARGAS.rar",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-2892",
@@ -15861,7 +16570,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "ZIP",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/Cat.Marketing de Afiliados  2026 - Telegram - @cursosp0rmega Parte 2/Afiliado en 60 Minutos-20210829T160703Z-001.zip",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-3889",
@@ -15891,7 +16603,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "ZIP",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/Cat.Marketing de Afiliados  2026 - Telegram - @cursosp0rmega Parte 2/Afiliado en 60 Minutos-20210829T160703Z-002.zip",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-1838",
@@ -18235,7 +18950,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "RAR",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/Cat.Arquitectura e Ingeniería  2026 - Telegram - @cursosp0rmega-  Parte 3/ANÁLISIS Y DISEÑO DE EDIFICACIONES CON SAP2000 - EM INGENIEROS 2019.rar",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-5609",
@@ -18413,7 +19131,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "ZIP",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/Cat.Arquitectura e Ingeniería  2026 - Telegram - @cursosp0rmega-  Parte 3/anatomiazip.zip",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-4926",
@@ -19301,7 +20022,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "ZIP",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/UNIDAD NUEVA !FULL PROGRAMAS Y SOFTWARE- MEMBRESÍA VIP ⚡️ - GamingTelegram - @cursosp0rmega ⚡️/AOMEI Backupper v7.1.1-20230814T160254Z-001.zip",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-5888",
@@ -19329,7 +20053,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "RAR",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/UNIDAD NUEVA !FULL PROGRAMAS Y SOFTWARE- MEMBRESÍA VIP ⚡️ - GamingTelegram - @cursosp0rmega ⚡️/AOMEI Fone Tool Technician 2.4.1 Multilingual.rar",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-672",
@@ -24041,7 +24768,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "RAR",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/UNIDAD NUEVA !FULL PROGRAMAS Y SOFTWARE- MEMBRESÍA VIP ⚡️ - GamingTelegram - @cursosp0rmega ⚡️/Auslogics Driver Updater 1.25.0.2 Multilingual.rar",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-1677",
@@ -31358,7 +32088,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "ZIP",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/UNIDAD NUEVA !FULL PROGRAMAS Y SOFTWARE- MEMBRESÍA VIP ⚡️ - GamingTelegram - @cursosp0rmega ⚡️/CCleaner.Pro.Portable-20230814T160319Z-001.zip",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-5917",
@@ -31386,7 +32119,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "ZIP",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/UNIDAD NUEVA !FULL PROGRAMAS Y SOFTWARE- MEMBRESÍA VIP ⚡️ - GamingTelegram - @cursosp0rmega ⚡️/CCleaner.v6.02.9938.Portable-20230814T160253Z-001.zip",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-55",
@@ -32121,7 +32857,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "RAR",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/Cat.Arquitectura e Ingeniería  2026 - Telegram - @cursosp0rmega-  Parte 3/cespri - etabs.rar",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-1013",
@@ -32329,7 +33068,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "ZIP",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/Cat.Emprendimiento 💵  2026 - Telegram - @cursosp0rmega Parte 3/ChatBot Profesional para WhatsApp.zip",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-2908",
@@ -43350,7 +44092,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "ZIP",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/Cat.Hacking Black 👨🏻‍💻  2026 - Telegram - @cursosp0rmega/CRACK PACK SEPTEMBER 2021 Compiled.zip",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-2751",
@@ -47379,7 +48124,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "RAR",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/Cat.Cursos Office  2026 📄 - Telegram - @cursosp0rmega/Curs0 de M1cro50ft P0wer P01nt.rar",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-2753",
@@ -48553,7 +49301,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "RAR",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/Cat.Trading e Inversiones y Bienes Raíces  2026 Telegram - @cursosp0rmega - Parte 3/Curso Avanzado de Trading - David Battaglia.rar",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-5540",
@@ -53323,7 +54074,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "RAR",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/Cat.Cursos Office  2026 📄 - Telegram - @cursosp0rmega/Curso de Excel Financiero.rar",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-262",
@@ -56070,7 +56824,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "RAR",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/Cat.Cursos Office  2026 📄 - Telegram - @cursosp0rmega/Curso de M1cr0sof7 Exc3l.rar",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-4446",
@@ -67377,7 +68134,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "RAR",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/Cat.Trading e Inversiones y Bienes Raíces  2026 Telegram - @cursosp0rmega - Parte 3/Curso Trading a tu Medida de Joaquin Vega.rar",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-4547",
@@ -69063,7 +69823,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Musihacks"
+    "platform": "Musihacks",
+    "archiveType": "ZIP",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/Cat.Producción y Ambiente Musical  2026 🎶  Telegram - @cursosp0rmega Parte 2/Cursos de piano Jaime Altozano - Básico - Avanzado.zip",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-4046",
@@ -69091,7 +69854,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Musihacks"
+    "platform": "Musihacks",
+    "archiveType": "ZIP",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/Cat.Producción y Ambiente Musical 2026 🎶  Telegram - @cursosp0rmega Parte 1/Cursos de piano Jaime Altozano - Básico - Avanzado.zip",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-5491",
@@ -69661,7 +70427,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "RAR",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/Cat.Cursos Office  2026 📄 - Telegram - @cursosp0rmega/Cvrso de M1cr0sof7 W0rd.rar",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-3187",
@@ -79201,7 +79970,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "ZIP",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/UNIDAD NUEVA !FULL PROGRAMAS Y SOFTWARE- MEMBRESÍA VIP ⚡️ - GamingTelegram - @cursosp0rmega ⚡️/DriverBoosterPortable-20230814T160249Z-001.zip",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-140",
@@ -79572,7 +80344,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "ZIP",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/Cat.Arquitectura e Ingeniería  2026 - Telegram - @cursosp0rmega-  Parte 3/DYNAMO innova.zip",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-1556",
@@ -79833,7 +80608,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "ZIP",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/UNIDAD NUEVA !FULL PROGRAMAS Y SOFTWARE- MEMBRESÍA VIP ⚡️ - GamingTelegram - @cursosp0rmega ⚡️/EaseUS Partition Master 15.5 Multilingual-20230814T160316Z-001.zip",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-5924",
@@ -85112,7 +85890,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "RAR",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/1️⃣.1️⃣0️⃣Unidad - Nuevos Cursos 2026 ! - Telegram - @cursosp0rmega/Electricidad Industial.rar",
+    "isPreparedInDrive": true
   },
   {
     "id": "course-3507",
@@ -93978,7 +94759,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "ZIP",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/UNIDAD NUEVA !FULL PROGRAMAS Y SOFTWARE- MEMBRESÍA VIP ⚡️ - GamingTelegram - @cursosp0rmega ⚡️/Faronics Deep Freeze 8.63.020.5634 Standard-20230814T160348Z-001.zip",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-4730",
@@ -98113,7 +98897,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "ZIP",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/UNIDAD NUEVA !FULL PROGRAMAS Y SOFTWARE- MEMBRESÍA VIP ⚡️ - GamingTelegram - @cursosp0rmega ⚡️/fx sound 13.028-20230814T160523Z-001.zip",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-5996",
@@ -98141,7 +98928,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "ZIP",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/UNIDAD NUEVA !FULL PROGRAMAS Y SOFTWARE- MEMBRESÍA VIP ⚡️ - GamingTelegram - @cursosp0rmega ⚡️/fxsound_13.028-20230814T160859Z-001.zip",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-2327",
@@ -99157,7 +99947,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "RAR",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/Cat.Arquitectura e Ingeniería  2026 - Telegram - @cursosp0rmega-  Parte 3/9786123043292 - GESTION DE PROYECTOS CON PROJECT BAJO EL ENFOQUE DEL PMI.rar",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-280",
@@ -99443,7 +100236,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "ZIP",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/UNIDAD NUEVA !FULL PROGRAMAS Y SOFTWARE- MEMBRESÍA VIP ⚡️ - GamingTelegram - @cursosp0rmega ⚡️/GetDataBack Pro 5.57-20230814T160716Z-001.zip",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-5348",
@@ -100439,7 +101235,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "ZIP",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/UNIDAD NUEVA !FULL PROGRAMAS Y SOFTWARE- MEMBRESÍA VIP ⚡️ - GamingTelegram - @cursosp0rmega ⚡️/Grabvid 1.1 - Ericksystem-20230814T160533Z-001.zip",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-4580",
@@ -104469,7 +105268,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "RAR",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/Cat.Arquitectura e Ingeniería  2026 - Telegram - @cursosp0rmega-  Parte 3/ICG PAVIMENTOS.rar",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-2980",
@@ -106399,7 +107201,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "RAR",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/Cat.Arquitectura e Ingeniería  2026 - Telegram - @cursosp0rmega-  Parte 3/InfiniteSkills - Advanced Revit Architecture 2016.rar",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-219",
@@ -109125,7 +109930,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "RAR",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/Cat.Arquitectura e Ingeniería  2026 - Telegram - @cursosp0rmega-  Parte 3/5. INSTITUCION EDUCATIVA.rar",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-1055",
@@ -112111,7 +112919,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "BiiaLab"
+    "platform": "BiiaLab",
+    "archiveType": "RAR",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/Plataforma BIIALAB 🅱️  - JURGUEN Klaric  2026 - Telegram - @cursosp0rmega/Investor Weekend jurgen klaric.rar",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-4193",
@@ -112257,7 +113068,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "ZIP",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/UNIDAD NUEVA !FULL PROGRAMAS Y SOFTWARE- MEMBRESÍA VIP ⚡️ - GamingTelegram - @cursosp0rmega ⚡️/IObit Uninstaller Pro 11.0.1.14 Portable-20230814T160720Z-001.zip",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-5098",
@@ -112693,7 +113507,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "RAR",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/Cat.Idiomas 🗣️  2026 - Telegram - @cursosp0rmega Parte 1/Japonès Hablado Basico.rar",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-3323",
@@ -118085,7 +118902,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "RAR",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/Cat.Libros y Audiolibros 2026 - Telegram - @cursosp0rmega/Libros de Filosofía.rar",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-3546",
@@ -119280,7 +120100,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "RAR",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/1️⃣.1️⃣9️⃣Unidad - Nuevos Cursos 2026 ! - Telegram - @cursosp0rmega/Liderazgo Estratégico para la era de Inteligencia Artificial.rar",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-973",
@@ -121187,7 +122010,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "RAR",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/1️⃣.1️⃣4️⃣Unidad - Nuevos Cursos 2026 ! - Telegram - @cursosp0rmega/10 Maneras de crecer tu Instagram de forma orgánica -.rar",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-168",
@@ -132488,7 +133314,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "RAR",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/UNIDAD NUEVA !FULL PROGRAMAS Y SOFTWARE- MEMBRESÍA VIP ⚡️ - GamingTelegram - @cursosp0rmega ⚡️/Mirillis Action! 4.37 Multilingual.rar",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-4468",
@@ -147006,7 +147835,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "ZIP",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/UNIDAD NUEVA !FULL PROGRAMAS Y SOFTWARE- MEMBRESÍA VIP ⚡️ - GamingTelegram - @cursosp0rmega ⚡️/OPTIMIZADOR WINDOWS-20230814T160356Z-001.zip",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-2304",
@@ -148685,7 +149517,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "ZIP",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/UNIDAD NUEVA !FULL PROGRAMAS Y SOFTWARE- MEMBRESÍA VIP ⚡️ - GamingTelegram - @cursosp0rmega ⚡️/PassFab iPhone Unlocker 3.0.21.8 Multilingual-20230814T160358Z-001.zip",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-5958",
@@ -148713,7 +149548,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "ZIP",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/UNIDAD NUEVA !FULL PROGRAMAS Y SOFTWARE- MEMBRESÍA VIP ⚡️ - GamingTelegram - @cursosp0rmega ⚡️/PassFab iPhone Unlocker 3.0.21.8 Multilingual-20230814T160514Z-001.zip",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-3241",
@@ -149150,7 +149988,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "RAR",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/UNIDAD NUEVA !FULL PROGRAMAS Y SOFTWARE- MEMBRESÍA VIP ⚡️ - GamingTelegram - @cursosp0rmega ⚡️/PDF-XChange Editor Plus 10.1.0.380.0 Multilingual.rar",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-4469",
@@ -150659,7 +151500,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "ZIP",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/Cat.Arquitectura e Ingeniería  2026 - Telegram - @cursosp0rmega-  Parte 3/PLANEAMIENTO Y PROGRAMACIÓN DE PROYECTOS_BS GRUPO.zip",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-3806",
@@ -154701,7 +155545,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "RAR",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/Cat.Arquitectura e Ingeniería  2026 - Telegram - @cursosp0rmega-  Parte 3/PYTHON.rar",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-4107",
@@ -156960,7 +157807,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "ZIP",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/Cat.Trading e Inversiones y Bienes Raíces  2026 Telegram - @cursosp0rmega - Parte 3/24 Rentas en 12 Meses - César Rivero - Más Cursos Gratis En Telegram - @cursosp0rmega.zip",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-3957",
@@ -157276,7 +158126,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "ZIP",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/UNIDAD NUEVA !FULL PROGRAMAS Y SOFTWARE- MEMBRESÍA VIP ⚡️ - GamingTelegram - @cursosp0rmega ⚡️/Reset Epson - WorkForce 645-20230814T160352Z-001.zip",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-2657",
@@ -157336,7 +158189,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "ZIP",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/Cat.Redes Sociales 😍  2026 - Telegram - @cursosp0rmega /Respaldo de Los Verdaderos Secretos de Instagram - David Michigan - Más cursos gratis, canal de Telegram - @cursosp0rmega (1).zip",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-4227",
@@ -157366,7 +158222,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "ZIP",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/Cat.Redes Sociales 😍  2026 - Telegram - @cursosp0rmega /Respaldo de Los Verdaderos Secretos de Instagram - David Michigan - Más cursos gratis, canal de Telegram - @cursosp0rmega.zip",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-4655",
@@ -157395,7 +158254,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "ZIP",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/Cat.Trading e Inversiones y Bienes Raíces  2026 Telegram - @cursosp0rmega - Parte 3/Respaldo de Trading en FOREX - DINKA Financial - Más cursos gratis, canal de Telegram - @cursosp0rmega.zip",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-3016",
@@ -159089,7 +159951,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "ZIP",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/UNIDAD NUEVA !FULL PROGRAMAS Y SOFTWARE- MEMBRESÍA VIP ⚡️ - GamingTelegram - @cursosp0rmega ⚡️/runasdate-x64-20230814T160520Z-001.zip",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-5967",
@@ -159117,7 +159982,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "ZIP",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/UNIDAD NUEVA !FULL PROGRAMAS Y SOFTWARE- MEMBRESÍA VIP ⚡️ - GamingTelegram - @cursosp0rmega ⚡️/Runtime GetDataBack Pro 5.57-20230814T160355Z-001.zip",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-5459",
@@ -161363,7 +162231,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "7Z",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/Cat.Arquitectura e Ingeniería  2026 - Telegram - @cursosp0rmega-  Parte 3/SIG Aplicado Al Catastro Urbano.7z",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-2855",
@@ -162523,7 +163394,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "RAR",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/Cat.Arquitectura e Ingeniería  2026 - Telegram - @cursosp0rmega-  Parte 3/SolidWorks 2015.rar",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-3249",
@@ -163094,7 +163968,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "RAR",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/Cat.Arquitectura e Ingeniería  2026 - Telegram - @cursosp0rmega-  Parte 3/StructurePoint spColumn v5.10 - Concrete Column Design.rar",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-728",
@@ -166272,7 +167149,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "RAR",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/Cat.Arquitectura e Ingeniería  2026 - Telegram - @cursosp0rmega-  Parte 3/Tekla Structures 2017 - Concreto Armado.rar",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-425",
@@ -168913,7 +169793,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "ZIP",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/Cat.Marketing de Afiliados  2026 - Telegram - @cursosp0rmega Parte 2/Traffic expert - Lanzamientos - Angel David.zip",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-3908",
@@ -169197,7 +170080,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "ZIP",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/UNIDAD NUEVA !FULL PROGRAMAS Y SOFTWARE- MEMBRESÍA VIP ⚡️ - GamingTelegram - @cursosp0rmega ⚡️/transmac-14-5-20230814T160324Z-001.zip",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-2870",
@@ -170089,7 +170975,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "RAR",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/Cat.Arquitectura e Ingeniería  2026 - Telegram - @cursosp0rmega-  Parte 3/Tutoriales.rar",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-4937",
@@ -172953,7 +173842,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "ZIP",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/UNIDAD NUEVA !FULL PROGRAMAS Y SOFTWARE- MEMBRESÍA VIP ⚡️ - GamingTelegram - @cursosp0rmega ⚡️/Universal Watermark Disabler TM-20230814T160516Z-001.zip",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-256",
@@ -173440,7 +174332,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "ZIP",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/UNIDAD NUEVA !FULL PROGRAMAS Y SOFTWARE- MEMBRESÍA VIP ⚡️ - GamingTelegram - @cursosp0rmega ⚡️/Unlocker 1.9.2 32_64_bits-20230814T160538Z-001.zip",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-6001",
@@ -173468,7 +174363,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "ZIP",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/UNIDAD NUEVA !FULL PROGRAMAS Y SOFTWARE- MEMBRESÍA VIP ⚡️ - GamingTelegram - @cursosp0rmega ⚡️/unlocker1.9.0-portable-20230814T160856Z-001.zip",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-2664",
@@ -175022,7 +175920,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "ZIP",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/UNIDAD NUEVA !FULL PROGRAMAS Y SOFTWARE- MEMBRESÍA VIP ⚡️ - GamingTelegram - @cursosp0rmega ⚡️/ventoy-1.0.64-windows-20230814T160535Z-001.zip",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-6003",
@@ -175050,7 +175951,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "ZIP",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/UNIDAD NUEVA !FULL PROGRAMAS Y SOFTWARE- MEMBRESÍA VIP ⚡️ - GamingTelegram - @cursosp0rmega ⚡️/ventoy-1.0.74-20230814T160619Z-001.zip",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-2051",
@@ -175139,7 +176043,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Udemy"
+    "platform": "Udemy",
+    "archiveType": "RAR",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/Cat.Arquitectura e Ingeniería  2026 - Telegram - @cursosp0rmega-  Parte 3/Video curso revit 2018_Udemy.rar",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-2880",
@@ -176536,7 +177443,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "ZIP",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/UNIDAD NUEVA !FULL PROGRAMAS Y SOFTWARE- MEMBRESÍA VIP ⚡️ - GamingTelegram - @cursosp0rmega ⚡️/Wasapito 1.0-20230814T160909Z-001.zip",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-1832",
@@ -176564,7 +177474,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "RAR",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/Cat.Arquitectura e Ingeniería  2026 - Telegram - @cursosp0rmega-  Parte 3/WaterCAD  8i.rar",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-890",
@@ -177027,7 +177940,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "ZIP",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/UNIDAD NUEVA !FULL PROGRAMAS Y SOFTWARE- MEMBRESÍA VIP ⚡️ - GamingTelegram - @cursosp0rmega ⚡️/WinToHDD.5.5.All-20230814T160905Z-001.zip",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-5987",
@@ -177055,7 +177971,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "ZIP",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/UNIDAD NUEVA !FULL PROGRAMAS Y SOFTWARE- MEMBRESÍA VIP ⚡️ - GamingTelegram - @cursosp0rmega ⚡️/WinToHDD Ent 5.9 (All Editions) Multilingual-20230814T160907Z-001.zip",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-5989",
@@ -177083,7 +178002,10 @@
     "hasLocalFiles": false,
     "isArchive": true,
     "modules": [],
-    "platform": "Google Drive Cloud"
+    "platform": "Google Drive Cloud",
+    "archiveType": "ZIP",
+    "archivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Unidades compartidas/UNIDAD NUEVA !FULL PROGRAMAS Y SOFTWARE- MEMBRESÍA VIP ⚡️ - GamingTelegram - @cursosp0rmega ⚡️/WinToHDDPortable-20230814T160911Z-001.zip",
+    "isPreparedInDrive": false
   },
   {
     "id": "course-5991",
@@ -179456,5 +180378,3053 @@
     "isArchive": false,
     "modules": [],
     "platform": "Google Drive Cloud"
+  },
+  {
+    "id": "tpc-primeia-1792415729572-pzlj",
+    "slug": "animaciones-estilo-comic-moderno-con-ia",
+    "title": "Animaciones Estilo Comic Moderno con IA",
+    "author": "Academia Prime IA",
+    "category": "IA & Automatización",
+    "platform": "Academia Prime IA",
+    "niche": "IA & Automatización",
+    "utility": "Formación práctica sobre Animaciones Estilo Comic Moderno con IA descargada de Academia Prime IA (Telegram TPC) con soporte para preparación automática en Google Drive.",
+    "targetAudience": "Desarrolladores, creadores de contenido y profesionales que buscan dominar la IA generativa y la automatización.",
+    "difficulty": "Intermedio",
+    "estimatedHours": "2h",
+    "originType": "TELEGRAM_TPC",
+    "originName": "Telegram • Academia Prime IA 📥 (@MEMBRESIATPC)",
+    "localPath": "/Users/toni/Downloads/Academia Prime IA/Animaciones Estilo Comic Moderno con IA",
+    "drivePath": "Mi unidad / 001-CURSOS / 00-IA-CURSOS / Animaciones Estilo Comic Moderno con IA",
+    "webUrl": "https://drive.google.com/drive/u/0/search?q=Animaciones%20Estilo%20Comic%20Moderno%20con%20IA",
+    "rating": 4.9,
+    "totalLessons": 1,
+    "tags": [
+      "telegram",
+      "tpc",
+      "prime-ia",
+      "ia",
+      "automatizacion",
+      "ia"
+    ],
+    "hasLocalFiles": true,
+    "isArchive": false,
+    "archivePath": "/Users/toni/Downloads/Academia Prime IA.part1.rar",
+    "archiveType": "RAR",
+    "telegramChannel": "DESCARGAS TPC 📥 (@MEMBRESIATPC)",
+    "telegramSearchUrl": "tg://resolve?domain=MEMBRESIATPC&query=Animaciones%20Estilo%20Comic%20Moderno%20con%20IA",
+    "isUploadedToDrive": false,
+    "isPreparedInDrive": false,
+    "pipelineStatus": "DOWNLOADED",
+    "modules": [
+      {
+        "id": "m-1",
+        "title": "Contenido Principal",
+        "order": 1,
+        "lessons": [
+          {
+            "id": "l-1-1",
+            "title": "✍️ Creación del Guion",
+            "fileType": "video",
+            "order": 1,
+            "relPath": "✍️ Creación del Guion @TUSCURSOSFULL.mp4"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tpc-primeia-1792415729573-qmzi",
+    "slug": "claude-code-ugc-creator-studio",
+    "title": "Claude Code UGC Creator Studio",
+    "author": "Academia Prime IA",
+    "category": "IA & Automatización",
+    "platform": "Academia Prime IA",
+    "niche": "Claude Code & Asistentes IA",
+    "utility": "Formación práctica sobre Claude Code UGC Creator Studio descargada de Academia Prime IA (Telegram TPC) con soporte para preparación automática en Google Drive.",
+    "targetAudience": "Desarrolladores, creadores de contenido y profesionales que buscan dominar la IA generativa y la automatización.",
+    "difficulty": "Intermedio",
+    "estimatedHours": "9h",
+    "originType": "TELEGRAM_TPC",
+    "originName": "Telegram • Academia Prime IA 📥 (@MEMBRESIATPC)",
+    "localPath": "/Users/toni/Downloads/Academia Prime IA/Claude Code UGC Creator Studio",
+    "drivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Mi unidad/001-CURSOS/00-IA-CURSOS/Claude Code UGC Creator Studio",
+    "webUrl": "https://drive.google.com/drive/u/0/search?q=Claude%20Code%20UGC%20Creator%20Studio",
+    "rating": 4.9,
+    "totalLessons": 22,
+    "tags": [
+      "telegram",
+      "tpc",
+      "prime-ia",
+      "ia",
+      "automatizacion",
+      "claude"
+    ],
+    "hasLocalFiles": true,
+    "isArchive": false,
+    "archivePath": "/Users/toni/Downloads/Academia Prime IA.part1.rar",
+    "archiveType": "RAR",
+    "telegramChannel": "DESCARGAS TPC 📥 (@MEMBRESIATPC)",
+    "telegramSearchUrl": "tg://resolve?domain=MEMBRESIATPC&query=Claude%20Code%20UGC%20Creator%20Studio",
+    "isUploadedToDrive": true,
+    "isPreparedInDrive": true,
+    "pipelineStatus": "UPLOADED",
+    "modules": [
+      {
+        "id": "m-1",
+        "title": "Contenido Principal",
+        "order": 1,
+        "lessons": [
+          {
+            "id": "l-1-1",
+            "title": "\udda5️ Qué es Claude Code y Cómo Instalarlo",
+            "fileType": "video",
+            "order": 1,
+            "relPath": "1.🖥️ Qué es Claude Code y Cómo Instalarlo @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-2",
+            "title": "\udee1️ Seguridad y Permisos",
+            "fileType": "doc",
+            "order": 2,
+            "relPath": "10.🛡️ Seguridad y Permisos @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-3",
+            "title": "Slash Commands Nativos",
+            "fileType": "doc",
+            "order": 3,
+            "relPath": "11.Slash Commands Nativos @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-4",
+            "title": "Workflows Completos",
+            "fileType": "doc",
+            "order": 4,
+            "relPath": "12.Workflows Completos @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-5",
+            "title": "⚡ Channels y Skills — Superpoderes",
+            "fileType": "video",
+            "order": 5,
+            "relPath": "2.⚡ Channels y Skills — Superpoderes @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-6",
+            "title": "\udcdd CLAUDE.md — Memoria Permanente",
+            "fileType": "doc",
+            "order": 6,
+            "relPath": "3.📝 CLAUDE.md — Memoria Permanente @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-7",
+            "title": "🎯 Prompting Efectivo en Claude Code",
+            "fileType": "doc",
+            "order": 7,
+            "relPath": "4.🎯 Prompting Efectivo en Claude Code @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-8",
+            "title": "\udee0️ Crea tu Propia Skill",
+            "fileType": "doc",
+            "order": 8,
+            "relPath": "5.🛠️ Crea tu Propia Skill @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-9",
+            "title": "⚙️ Hooks — Automatizaciones",
+            "fileType": "doc",
+            "order": 9,
+            "relPath": "6.⚙️ Hooks — Automatizaciones @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-10",
+            "title": "\udd0c MCP Channels Avanzados",
+            "fileType": "doc",
+            "order": 10,
+            "relPath": "7.🔌 MCP Channels Avanzados @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-11",
+            "title": "\udcb0 Planes y Costos de Claude Code",
+            "fileType": "doc",
+            "order": 11,
+            "relPath": "8.💰 Planes y Costos de Claude Code @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-12",
+            "title": "\udcf1 Claude Code en el Teléfono y Web",
+            "fileType": "doc",
+            "order": 12,
+            "relPath": "9.📱 Claude Code en el Teléfono y Web @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-13",
+            "title": "⚡ Channels y Skills — Superpoderes",
+            "fileType": "doc",
+            "order": 13,
+            "relPath": "⚡ Channels y Skills — Superpoderes @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-14",
+            "title": "\udda5️ Qué es Claude Code y Cómo Instalarlo",
+            "fileType": "doc",
+            "order": 14,
+            "relPath": "🖥️ Qué es Claude Code y Cómo Instalarlo @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-15",
+            "title": "🎬 Fundamentos del UGC con IA",
+            "fileType": "doc",
+            "order": 15,
+            "relPath": "1.🎬 Fundamentos del UGC con IA @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-16",
+            "title": "🧑‍🎨 Tu Modelo Virtual — El Sistema de Actores",
+            "fileType": "doc",
+            "order": 16,
+            "relPath": "2.🧑‍🎨 Tu Modelo Virtual — El Sistema de Actores @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-17",
+            "title": "\udc41️ Motor de Realismo — 10 Anclas, Camara y Luz",
+            "fileType": "doc",
+            "order": 17,
+            "relPath": "3.👁️ Motor de Realismo — 10 Anclas, Camara y Luz @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-18",
+            "title": "🧱 Arquitectura de Prompts — El Sistema de 6 Capas",
+            "fileType": "doc",
+            "order": 18,
+            "relPath": "4.🧱 Arquitectura de Prompts — El Sistema de 6 Capas @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-19",
+            "title": "\ude80 Generacion Masiva y Campanas Multi-Shot",
+            "fileType": "doc",
+            "order": 19,
+            "relPath": "5.🚀 Generacion Masiva y Campanas Multi-Shot @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-20",
+            "title": "\udce5 Descarga e Instala la Skill en Claude Code",
+            "fileType": "doc",
+            "order": 20,
+            "relPath": "6.📥 Descarga e Instala la Skill en Claude Code @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-21",
+            "title": "\udcf1 Publicar en Redes Automáticamente",
+            "fileType": "doc",
+            "order": 21,
+            "relPath": "1.📱 Publicar en Redes Automáticamente @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-22",
+            "title": "\udcac Responder Mensajes Automáticamente",
+            "fileType": "doc",
+            "order": 22,
+            "relPath": "2.💬 Responder Mensajes Automáticamente @TUSCURSOSFULL.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tpc-primeia-1792415729574-aiy8",
+    "slug": "content-creator-con-ia-el-nuevo-influencer",
+    "title": "Content Creator con IA El Nuevo Influencer",
+    "author": "Academia Prime IA",
+    "category": "IA & Automatización",
+    "platform": "Academia Prime IA",
+    "niche": "IA & Automatización",
+    "utility": "Formación práctica sobre Content Creator con IA El Nuevo Influencer descargada de Academia Prime IA (Telegram TPC) con soporte para preparación automática en Google Drive.",
+    "targetAudience": "Desarrolladores, creadores de contenido y profesionales que buscan dominar la IA generativa y la automatización.",
+    "difficulty": "Intermedio",
+    "estimatedHours": "8h",
+    "originType": "TELEGRAM_TPC",
+    "originName": "Telegram • Academia Prime IA 📥 (@MEMBRESIATPC)",
+    "localPath": "/Users/toni/Downloads/Academia Prime IA/Content Creator con IA El Nuevo Influencer",
+    "drivePath": "Mi unidad / 001-CURSOS / 00-IA-CURSOS / Content Creator con IA El Nuevo Influencer",
+    "webUrl": "https://drive.google.com/drive/u/0/search?q=Content%20Creator%20con%20IA%20El%20Nuevo%20Influencer",
+    "rating": 4.9,
+    "totalLessons": 20,
+    "tags": [
+      "telegram",
+      "tpc",
+      "prime-ia",
+      "ia",
+      "automatizacion",
+      "ia"
+    ],
+    "hasLocalFiles": true,
+    "isArchive": false,
+    "archivePath": "/Users/toni/Downloads/Academia Prime IA.part1.rar",
+    "archiveType": "RAR",
+    "telegramChannel": "DESCARGAS TPC 📥 (@MEMBRESIATPC)",
+    "telegramSearchUrl": "tg://resolve?domain=MEMBRESIATPC&query=Content%20Creator%20con%20IA%20El%20Nuevo%20Influencer",
+    "isUploadedToDrive": false,
+    "isPreparedInDrive": false,
+    "pipelineStatus": "DOWNLOADED",
+    "modules": [
+      {
+        "id": "m-1",
+        "title": "Contenido Principal",
+        "order": 1,
+        "lessons": [
+          {
+            "id": "l-1-1",
+            "title": "\udc69‍💻Generar tu influencer IA -Content Creator",
+            "fileType": "video",
+            "order": 1,
+            "relPath": "1️⃣👩‍💻Generar tu influencer IA -Content Creator @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-2",
+            "title": "\udc69‍💻Generar tu influencer IA -Content Creator",
+            "fileType": "doc",
+            "order": 2,
+            "relPath": "1️⃣👩‍💻Generar tu influencer IA -Content Creator @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-3",
+            "title": "✍️ Escribir el guion",
+            "fileType": "video",
+            "order": 3,
+            "relPath": "2️⃣ ✍️ Escribir el guion @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-4",
+            "title": "✍️ Escribir el guion",
+            "fileType": "doc",
+            "order": 4,
+            "relPath": "2️⃣ ✍️ Escribir el guion @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-5",
+            "title": "🎙️ Generar la voz",
+            "fileType": "video",
+            "order": 5,
+            "relPath": "3️⃣ 🎙️ Generar la voz @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-6",
+            "title": "\uddbc️ Escalar la imagen",
+            "fileType": "video",
+            "order": 6,
+            "relPath": "4️⃣ 🖼️ Escalar la imagen @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-7",
+            "title": "🤖 Generación en InfinityTalk",
+            "fileType": "video",
+            "order": 7,
+            "relPath": "5️⃣ 🤖 Generación en InfinityTalk @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-8",
+            "title": "🤖InfinityTalk Parte 2",
+            "fileType": "video",
+            "order": 8,
+            "relPath": "5️⃣🤖InfinityTalk Parte 2 @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-9",
+            "title": "🎬 Importar y editar en CapCut",
+            "fileType": "video",
+            "order": 9,
+            "relPath": "6️⃣ 🎬 Importar y editar en CapCut @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-10",
+            "title": "\ude80Subir a todas las redes automatizada",
+            "fileType": "video",
+            "order": 10,
+            "relPath": "7️⃣🚀Subir a todas las redes automatizada @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-11",
+            "title": "\udcb5 Monetiza tu IA",
+            "fileType": "video",
+            "order": 11,
+            "relPath": "8️⃣ 💵 Monetiza tu IA @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-12",
+            "title": "\udd25Wan2.2-Animate - Animaciones de tu personaje",
+            "fileType": "video",
+            "order": 12,
+            "relPath": "9.🔥Wan2.2-Animate - Animaciones de tu personaje @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-13",
+            "title": "🎞️OVI Generador de VIDEO Open Source",
+            "fileType": "video",
+            "order": 13,
+            "relPath": "🎞️OVI Generador de VIDEO Open Source @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-14",
+            "title": "🎞️OVI Generador de VIDEO Open Source",
+            "fileType": "doc",
+            "order": 14,
+            "relPath": "🎞️OVI Generador de VIDEO Open Source @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-15",
+            "title": "🎞️🔥WAN - Infinity + Humo 🚀",
+            "fileType": "video",
+            "order": 15,
+            "relPath": "🎞️🔥WAN - Infinity + Humo 🚀 @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-16",
+            "title": "🎞️🔥WAN - Infinity + Humo 🚀",
+            "fileType": "doc",
+            "order": 16,
+            "relPath": "🎞️🔥WAN - Infinity + Humo 🚀 @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-17",
+            "title": "🎥InfiniteTalk V3 Workflow Explicacion",
+            "fileType": "video",
+            "order": 17,
+            "relPath": "🎥InfiniteTalk V3 Workflow Explicacion @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-18",
+            "title": "🎥InfiniteTalk V3 Workflow Explicacion",
+            "fileType": "doc",
+            "order": 18,
+            "relPath": "🎥InfiniteTalk V3 Workflow Explicacion @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-19",
+            "title": "\udd25☁️Humo + Infinity - 1 Imagen 3 Escenas!",
+            "fileType": "video",
+            "order": 19,
+            "relPath": "🔥☁️Humo + Infinity - 1 Imagen 3 Escenas! @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-20",
+            "title": "\udd25☁️Humo + Infinity -1 Imagen 3 Escenas!",
+            "fileType": "doc",
+            "order": 20,
+            "relPath": "🔥☁️Humo + Infinity -1 Imagen 3 Escenas! @TUSCURSOSFULL.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tpc-primeia-1792415729575-xx1n",
+    "slug": "dudas-de-usuarios-",
+    "title": "Dudas de usuarios!",
+    "author": "Academia Prime IA",
+    "category": "IA & Automatización",
+    "platform": "Academia Prime IA",
+    "niche": "IA & Automatización",
+    "utility": "Formación práctica sobre Dudas de usuarios! descargada de Academia Prime IA (Telegram TPC) con soporte para preparación automática en Google Drive.",
+    "targetAudience": "Desarrolladores, creadores de contenido y profesionales que buscan dominar la IA generativa y la automatización.",
+    "difficulty": "Intermedio",
+    "estimatedHours": "2h",
+    "originType": "TELEGRAM_TPC",
+    "originName": "Telegram • Academia Prime IA 📥 (@MEMBRESIATPC)",
+    "localPath": "/Users/toni/Downloads/Academia Prime IA/Dudas de usuarios!",
+    "drivePath": "Mi unidad / 001-CURSOS / 00-IA-CURSOS / Dudas de usuarios!",
+    "webUrl": "https://drive.google.com/drive/u/0/search?q=Dudas%20de%20usuarios!",
+    "rating": 4.9,
+    "totalLessons": 6,
+    "tags": [
+      "telegram",
+      "tpc",
+      "prime-ia",
+      "ia",
+      "automatizacion",
+      "ia"
+    ],
+    "hasLocalFiles": true,
+    "isArchive": false,
+    "archivePath": "/Users/toni/Downloads/Academia Prime IA.part1.rar",
+    "archiveType": "RAR",
+    "telegramChannel": "DESCARGAS TPC 📥 (@MEMBRESIATPC)",
+    "telegramSearchUrl": "tg://resolve?domain=MEMBRESIATPC&query=Dudas%20de%20usuarios!",
+    "isUploadedToDrive": false,
+    "isPreparedInDrive": false,
+    "pipelineStatus": "DOWNLOADED",
+    "modules": [
+      {
+        "id": "m-1",
+        "title": "Contenido Principal",
+        "order": 1,
+        "lessons": [
+          {
+            "id": "l-1-1",
+            "title": "Como subir a Varias redes sociales a la vez",
+            "fileType": "video",
+            "order": 1,
+            "relPath": "Como subir a Varias redes sociales a la vez @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-2",
+            "title": "Como subir calidad a tu personaje",
+            "fileType": "video",
+            "order": 2,
+            "relPath": "Como subir calidad a tu personaje @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-3",
+            "title": "Como subir tiempo en InfinityTalk",
+            "fileType": "video",
+            "order": 3,
+            "relPath": "Como subir tiempo en InfinityTalk @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-4",
+            "title": "Como subir tiempo en InfinityTalk",
+            "fileType": "doc",
+            "order": 4,
+            "relPath": "Como subir tiempo en InfinityTalk @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-5",
+            "title": "Contenido NSFW Resumen!",
+            "fileType": "video",
+            "order": 5,
+            "relPath": "Contenido NSFW Resumen! @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-6",
+            "title": "Contenido NSFW Resumen!",
+            "fileType": "doc",
+            "order": 6,
+            "relPath": "Contenido NSFW Resumen! @TUSCURSOSFULL.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tpc-primeia-1792415729575-pvuz",
+    "slug": "flux-krea2-sfwnsfw",
+    "title": "Flux Krea2 SFWNSFW",
+    "author": "Academia Prime IA",
+    "category": "IA & Automatización",
+    "platform": "Academia Prime IA",
+    "niche": "Generación de Vídeo & Modelos IA",
+    "utility": "Formación práctica sobre Flux Krea2 SFWNSFW descargada de Academia Prime IA (Telegram TPC) con soporte para preparación automática en Google Drive.",
+    "targetAudience": "Desarrolladores, creadores de contenido y profesionales que buscan dominar la IA generativa y la automatización.",
+    "difficulty": "Intermedio",
+    "estimatedHours": "3h",
+    "originType": "TELEGRAM_TPC",
+    "originName": "Telegram • Academia Prime IA 📥 (@MEMBRESIATPC)",
+    "localPath": "/Users/toni/Downloads/Academia Prime IA/Flux Krea2 SFWNSFW",
+    "drivePath": "Mi unidad / 001-CURSOS / 00-IA-CURSOS / Flux Krea2 SFWNSFW",
+    "webUrl": "https://drive.google.com/drive/u/0/search?q=Flux%20Krea2%20SFWNSFW",
+    "rating": 4.9,
+    "totalLessons": 8,
+    "tags": [
+      "telegram",
+      "tpc",
+      "prime-ia",
+      "ia",
+      "automatizacion",
+      "generación"
+    ],
+    "hasLocalFiles": true,
+    "isArchive": false,
+    "archivePath": "/Users/toni/Downloads/Academia Prime IA.part1.rar",
+    "archiveType": "RAR",
+    "telegramChannel": "DESCARGAS TPC 📥 (@MEMBRESIATPC)",
+    "telegramSearchUrl": "tg://resolve?domain=MEMBRESIATPC&query=Flux%20Krea2%20SFWNSFW",
+    "isUploadedToDrive": false,
+    "isPreparedInDrive": false,
+    "pipelineStatus": "DOWNLOADED",
+    "modules": [
+      {
+        "id": "m-1",
+        "title": "Contenido Principal",
+        "order": 1,
+        "lessons": [
+          {
+            "id": "l-1-1",
+            "title": "Introducción y explicación del Flujo",
+            "fileType": "video",
+            "order": 1,
+            "relPath": "1. Introducción y explicación del Flujo @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-2",
+            "title": "Introducción y explicación del Flujo",
+            "fileType": "doc",
+            "order": 2,
+            "relPath": "1. Introducción y explicación del Flujo @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-3",
+            "title": "Cómo agregar una imagen de referencia",
+            "fileType": "video",
+            "order": 3,
+            "relPath": "2. Cómo agregar una imagen de referencia @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-4",
+            "title": "Cómo agregar una imagen de referencia",
+            "fileType": "doc",
+            "order": 4,
+            "relPath": "2. Cómo agregar una imagen de referencia @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-5",
+            "title": "Consistencia facial en Krea2",
+            "fileType": "video",
+            "order": 5,
+            "relPath": "3. Consistencia facial en Krea2 @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-6",
+            "title": "Consistencia facial en Krea2",
+            "fileType": "doc",
+            "order": 6,
+            "relPath": "3. Consistencia facial en Krea2 @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-7",
+            "title": "Creación de contenido adulto con Krea2",
+            "fileType": "video",
+            "order": 7,
+            "relPath": "4. Creación de contenido adulto con Krea2 @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-8",
+            "title": "Creación de contenido adulto con Krea2",
+            "fileType": "doc",
+            "order": 8,
+            "relPath": "4. Creación de contenido adulto con Krea2 @TUSCURSOSFULL.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tpc-primeia-1792415729576-opur",
+    "slug": "modelo-ia-coach-100-automatizado",
+    "title": "Modelo IA Coach 100 Automatizado",
+    "author": "Academia Prime IA",
+    "category": "IA & Automatización",
+    "platform": "Academia Prime IA",
+    "niche": "IA & Automatización",
+    "utility": "Formación práctica sobre Modelo IA Coach 100 Automatizado descargada de Academia Prime IA (Telegram TPC) con soporte para preparación automática en Google Drive.",
+    "targetAudience": "Desarrolladores, creadores de contenido y profesionales que buscan dominar la IA generativa y la automatización.",
+    "difficulty": "Intermedio",
+    "estimatedHours": "4h",
+    "originType": "TELEGRAM_TPC",
+    "originName": "Telegram • Academia Prime IA 📥 (@MEMBRESIATPC)",
+    "localPath": "/Users/toni/Downloads/Academia Prime IA/Modelo IA Coach 100_ Automatizado",
+    "drivePath": "Mi unidad / 001-CURSOS / 00-IA-CURSOS / Modelo IA Coach 100 Automatizado",
+    "webUrl": "https://drive.google.com/drive/u/0/search?q=Modelo%20IA%20Coach%20100%20Automatizado",
+    "rating": 4.9,
+    "totalLessons": 9,
+    "tags": [
+      "telegram",
+      "tpc",
+      "prime-ia",
+      "ia",
+      "automatizacion",
+      "ia"
+    ],
+    "hasLocalFiles": true,
+    "isArchive": false,
+    "archivePath": "/Users/toni/Downloads/Academia Prime IA.part1.rar",
+    "archiveType": "RAR",
+    "telegramChannel": "DESCARGAS TPC 📥 (@MEMBRESIATPC)",
+    "telegramSearchUrl": "tg://resolve?domain=MEMBRESIATPC&query=Modelo%20IA%20Coach%20100%20Automatizado",
+    "isUploadedToDrive": false,
+    "isPreparedInDrive": false,
+    "pipelineStatus": "DOWNLOADED",
+    "modules": [
+      {
+        "id": "m-1",
+        "title": "Contenido Principal",
+        "order": 1,
+        "lessons": [
+          {
+            "id": "l-1-1",
+            "title": "Introducción al Influencer Coach IA",
+            "fileType": "video",
+            "order": 1,
+            "relPath": "1-Introducción al Influencer Coach IA @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-2",
+            "title": "Creando tu Personaje con IA",
+            "fileType": "video",
+            "order": 2,
+            "relPath": "2. Creando tu Personaje con IA @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-3",
+            "title": "Conectando n8n y Airtable + Qwen Edit",
+            "fileType": "video",
+            "order": 3,
+            "relPath": "3 Conectando n8n y Airtable + Qwen Edit @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-4",
+            "title": "Generando Guion Automático",
+            "fileType": "video",
+            "order": 4,
+            "relPath": "4. Generando Guion Automático @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-5",
+            "title": "Generando Voz Automático",
+            "fileType": "video",
+            "order": 5,
+            "relPath": "5.Generando Voz Automático @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-6",
+            "title": "Creando el Video con InfinityTalk Automatizado",
+            "fileType": "video",
+            "order": 6,
+            "relPath": "6.Creando el Video con InfinityTalk Automatizado @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-7",
+            "title": "Subiendo el Contenido Automatizado",
+            "fileType": "video",
+            "order": 7,
+            "relPath": "7.Subiendo el Contenido Automatizado @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-8",
+            "title": "Revisando todo el proceso",
+            "fileType": "video",
+            "order": 8,
+            "relPath": "8.Revisando todo el proceso @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-9",
+            "title": "Archivos y Paginas",
+            "fileType": "doc",
+            "order": 9,
+            "relPath": "Archivos y Paginas @TUSCURSOSFULL.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tpc-primeia-1792415729576-afdg",
+    "slug": "nano-banana-pro-x-kling-ai",
+    "title": "Nano Banana Pro X Kling AI",
+    "author": "Academia Prime IA",
+    "category": "IA & Automatización",
+    "platform": "Academia Prime IA",
+    "niche": "IA & Automatización",
+    "utility": "Formación práctica sobre Nano Banana Pro X Kling AI descargada de Academia Prime IA (Telegram TPC) con soporte para preparación automática en Google Drive.",
+    "targetAudience": "Desarrolladores, creadores de contenido y profesionales que buscan dominar la IA generativa y la automatización.",
+    "difficulty": "Intermedio",
+    "estimatedHours": "2h",
+    "originType": "TELEGRAM_TPC",
+    "originName": "Telegram • Academia Prime IA 📥 (@MEMBRESIATPC)",
+    "localPath": "/Users/toni/Downloads/Academia Prime IA/Nano Banana Pro -X- Kling AI",
+    "drivePath": "Mi unidad / 001-CURSOS / 00-IA-CURSOS / Nano Banana Pro X Kling AI",
+    "webUrl": "https://drive.google.com/drive/u/0/search?q=Nano%20Banana%20Pro%20X%20Kling%20AI",
+    "rating": 4.9,
+    "totalLessons": 4,
+    "tags": [
+      "telegram",
+      "tpc",
+      "prime-ia",
+      "ia",
+      "automatizacion",
+      "ia"
+    ],
+    "hasLocalFiles": true,
+    "isArchive": false,
+    "archivePath": "/Users/toni/Downloads/Academia Prime IA.part1.rar",
+    "archiveType": "RAR",
+    "telegramChannel": "DESCARGAS TPC 📥 (@MEMBRESIATPC)",
+    "telegramSearchUrl": "tg://resolve?domain=MEMBRESIATPC&query=Nano%20Banana%20Pro%20X%20Kling%20AI",
+    "isUploadedToDrive": false,
+    "isPreparedInDrive": false,
+    "pipelineStatus": "DOWNLOADED",
+    "modules": [
+      {
+        "id": "m-1",
+        "title": "Contenido Principal",
+        "order": 1,
+        "lessons": [
+          {
+            "id": "l-1-1",
+            "title": "Cómo Crear Avatares Mucho Más Realistas",
+            "fileType": "doc",
+            "order": 1,
+            "relPath": "1-Cómo Crear Avatares Mucho Más Realistas @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-2",
+            "title": "Prompts Ultra Realistas para Editar",
+            "fileType": "doc",
+            "order": 2,
+            "relPath": "2-Prompts Ultra Realistas para Editar @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-3",
+            "title": "Tu Avatar Imita Conversaciones (No solo bailes)",
+            "fileType": "video",
+            "order": 3,
+            "relPath": "Tu Avatar Imita Conversaciones (No solo bailes) @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-4",
+            "title": "Tu Avatar Imita Conversaciones (No solo bailes)",
+            "fileType": "doc",
+            "order": 4,
+            "relPath": "Tu Avatar Imita Conversaciones (No solo bailes) @TUSCURSOSFULL.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tpc-primeia-1792415729577-z96e",
+    "slug": "runninghub-api-n8n-automatizacio-n-inteligente",
+    "title": "RunningHub API & N8N – Automatización Inteligente",
+    "author": "Academia Prime IA",
+    "category": "IA & Automatización",
+    "platform": "Academia Prime IA",
+    "niche": "N8N & Automatizaciones con IA",
+    "utility": "Formación práctica sobre RunningHub API & N8N – Automatización Inteligente descargada de Academia Prime IA (Telegram TPC) con soporte para preparación automática en Google Drive.",
+    "targetAudience": "Desarrolladores, creadores de contenido y profesionales que buscan dominar la IA generativa y la automatización.",
+    "difficulty": "Intermedio",
+    "estimatedHours": "7h",
+    "originType": "TELEGRAM_TPC",
+    "originName": "Telegram • Academia Prime IA 📥 (@MEMBRESIATPC)",
+    "localPath": "/Users/toni/Downloads/Academia Prime IA/RunningHub API & N8N – Automatización Inteligente",
+    "drivePath": "Mi unidad / 001-CURSOS / 00-IA-CURSOS / RunningHub API & N8N – Automatización Inteligente",
+    "webUrl": "https://drive.google.com/drive/u/0/search?q=RunningHub%20API%20%26%20N8N%20%E2%80%93%20Automatizacio%CC%81n%20Inteligente",
+    "rating": 4.9,
+    "totalLessons": 17,
+    "tags": [
+      "telegram",
+      "tpc",
+      "prime-ia",
+      "ia",
+      "automatizacion",
+      "n8n"
+    ],
+    "hasLocalFiles": true,
+    "isArchive": false,
+    "archivePath": "/Users/toni/Downloads/Academia Prime IA.part1.rar",
+    "archiveType": "RAR",
+    "telegramChannel": "DESCARGAS TPC 📥 (@MEMBRESIATPC)",
+    "telegramSearchUrl": "tg://resolve?domain=MEMBRESIATPC&query=RunningHub%20API%20%26%20N8N%20%E2%80%93%20Automatizacio%CC%81n%20Inteligente",
+    "isUploadedToDrive": false,
+    "isPreparedInDrive": false,
+    "pipelineStatus": "DOWNLOADED",
+    "modules": [
+      {
+        "id": "m-1",
+        "title": "Contenido Principal",
+        "order": 1,
+        "lessons": [
+          {
+            "id": "l-1-1",
+            "title": "Crea un bot de Telegram para tu Avatar",
+            "fileType": "video",
+            "order": 1,
+            "relPath": "1- Crea un bot de Telegram para tu Avatar @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-2",
+            "title": "Crea un bot de Telegram para tu Avatar",
+            "fileType": "doc",
+            "order": 2,
+            "relPath": "1- Crea un bot de Telegram para tu Avatar @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-3",
+            "title": "\ude80 100 Generaciones al Día con Airtable + n8n",
+            "fileType": "video",
+            "order": 3,
+            "relPath": "2- 🚀 100 Generaciones al Día con Airtable + n8n @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-4",
+            "title": "\ude80 100 Generaciones al Día con Airtable + n8n",
+            "fileType": "doc",
+            "order": 4,
+            "relPath": "2- 🚀 100 Generaciones al Día con Airtable + n8n @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-5",
+            "title": "Error en Flujo 100 Generaciones al dia",
+            "fileType": "video",
+            "order": 5,
+            "relPath": "3- Error en Flujo 100 Generaciones al dia @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-6",
+            "title": "\udd11 Introducción a la API",
+            "fileType": "video",
+            "order": 6,
+            "relPath": "1️⃣ 🔑 Introducción a la API @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-7",
+            "title": "\udd11 Introducción a la API",
+            "fileType": "doc",
+            "order": 7,
+            "relPath": "1️⃣ 🔑 Introducción a la API @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-8",
+            "title": "⚙️ Modificando Workflows en N8N",
+            "fileType": "video",
+            "order": 8,
+            "relPath": "2️⃣ ⚙️ Modificando Workflows en N8N @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-9",
+            "title": "⚙️ Modificando Workflows en N8N",
+            "fileType": "doc",
+            "order": 9,
+            "relPath": "2️⃣ ⚙️ Modificando Workflows en N8N @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-10",
+            "title": "\udcdd Creando Scripts Automatizados",
+            "fileType": "video",
+            "order": 10,
+            "relPath": "3️⃣ 📝 Creando Scripts Automatizados @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-11",
+            "title": "🎙️ Creando Audio Automatizado",
+            "fileType": "video",
+            "order": 11,
+            "relPath": "4️⃣ 🎙️ Creando Audio Automatizado @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-12",
+            "title": "\uddbc️ Prompt Poses Automatizado",
+            "fileType": "video",
+            "order": 12,
+            "relPath": "5️⃣ 🖼️ Prompt Poses Automatizado @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-13",
+            "title": "\uddbc️📐 Generando Imágenes Automatizadas",
+            "fileType": "video",
+            "order": 13,
+            "relPath": "6️⃣ 🖼️📐 Generando Imágenes Automatizadas @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-14",
+            "title": "🎞️ Animando Imágenes con Automatización",
+            "fileType": "video",
+            "order": 14,
+            "relPath": "7️⃣ 🎞️ Animando Imágenes con Automatización @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-15",
+            "title": "\ude0e 80-20-Mi Opinión Personal",
+            "fileType": "video",
+            "order": 15,
+            "relPath": "8️⃣ 😎 80-20-Mi Opinión Personal @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-16",
+            "title": "🎬 Juntando Escenas de Forma Automatizada",
+            "fileType": "video",
+            "order": 16,
+            "relPath": "9️⃣ 🎬 Juntando Escenas de Forma Automatizada @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-17",
+            "title": "\udcf2 Publicando en Todas tus Redes Sociales",
+            "fileType": "video",
+            "order": 17,
+            "relPath": "🔟 📲 Publicando en Todas tus Redes Sociales @TUSCURSOSFULL.mp4"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tpc-primeia-1792415729577-f2w8",
+    "slug": "seedance",
+    "title": "Seedance",
+    "author": "Academia Prime IA",
+    "category": "IA & Automatización",
+    "platform": "Academia Prime IA",
+    "niche": "IA & Automatización",
+    "utility": "Formación práctica sobre Seedance descargada de Academia Prime IA (Telegram TPC) con soporte para preparación automática en Google Drive.",
+    "targetAudience": "Desarrolladores, creadores de contenido y profesionales que buscan dominar la IA generativa y la automatización.",
+    "difficulty": "Intermedio",
+    "estimatedHours": "2h",
+    "originType": "TELEGRAM_TPC",
+    "originName": "Telegram • Academia Prime IA 📥 (@MEMBRESIATPC)",
+    "localPath": "/Users/toni/Downloads/Academia Prime IA/Seedance",
+    "drivePath": "Mi unidad / 001-CURSOS / 00-IA-CURSOS / Seedance",
+    "webUrl": "https://drive.google.com/drive/u/0/search?q=Seedance",
+    "rating": 4.9,
+    "totalLessons": 2,
+    "tags": [
+      "telegram",
+      "tpc",
+      "prime-ia",
+      "ia",
+      "automatizacion",
+      "ia"
+    ],
+    "hasLocalFiles": true,
+    "isArchive": false,
+    "archivePath": "/Users/toni/Downloads/Academia Prime IA.part1.rar",
+    "archiveType": "RAR",
+    "telegramChannel": "DESCARGAS TPC 📥 (@MEMBRESIATPC)",
+    "telegramSearchUrl": "tg://resolve?domain=MEMBRESIATPC&query=Seedance",
+    "isUploadedToDrive": false,
+    "isPreparedInDrive": false,
+    "pipelineStatus": "DOWNLOADED",
+    "modules": [
+      {
+        "id": "m-1",
+        "title": "Contenido Principal",
+        "order": 1,
+        "lessons": [
+          {
+            "id": "l-1-1",
+            "title": "Videos como Nadia — Avatar en video de referencia",
+            "fileType": "video",
+            "order": 1,
+            "relPath": "Videos como Nadia — Avatar en video de referencia @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-2",
+            "title": "Videos como Nadia — Avatar en video de referencia",
+            "fileType": "doc",
+            "order": 2,
+            "relPath": "Videos como Nadia — Avatar en video de referencia @TUSCURSOSFULL.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tpc-primeia-1792415729577-k0nv",
+    "slug": "superia-aprende-a-crear-tu-clon-de-primeia",
+    "title": "SuperIA Aprende a crear tu clon de PrimeIA",
+    "author": "Academia Prime IA",
+    "category": "IA & Automatización",
+    "platform": "Academia Prime IA",
+    "niche": "IA & Automatización",
+    "utility": "Formación práctica sobre SuperIA Aprende a crear tu clon de PrimeIA descargada de Academia Prime IA (Telegram TPC) con soporte para preparación automática en Google Drive.",
+    "targetAudience": "Desarrolladores, creadores de contenido y profesionales que buscan dominar la IA generativa y la automatización.",
+    "difficulty": "Intermedio",
+    "estimatedHours": "4h",
+    "originType": "TELEGRAM_TPC",
+    "originName": "Telegram • Academia Prime IA 📥 (@MEMBRESIATPC)",
+    "localPath": "/Users/toni/Downloads/Academia Prime IA/SuperIA  Aprende a crear tu clon de PrimeIA",
+    "drivePath": "Mi unidad / 001-CURSOS / 00-IA-CURSOS / SuperIA Aprende a crear tu clon de PrimeIA",
+    "webUrl": "https://drive.google.com/drive/u/0/search?q=SuperIA%20Aprende%20a%20crear%20tu%20clon%20de%20PrimeIA",
+    "rating": 4.9,
+    "totalLessons": 9,
+    "tags": [
+      "telegram",
+      "tpc",
+      "prime-ia",
+      "ia",
+      "automatizacion",
+      "ia"
+    ],
+    "hasLocalFiles": true,
+    "isArchive": false,
+    "archivePath": "/Users/toni/Downloads/Academia Prime IA.part1.rar",
+    "archiveType": "RAR",
+    "telegramChannel": "DESCARGAS TPC 📥 (@MEMBRESIATPC)",
+    "telegramSearchUrl": "tg://resolve?domain=MEMBRESIATPC&query=SuperIA%20Aprende%20a%20crear%20tu%20clon%20de%20PrimeIA",
+    "isUploadedToDrive": false,
+    "isPreparedInDrive": false,
+    "pipelineStatus": "DOWNLOADED",
+    "modules": [
+      {
+        "id": "m-1",
+        "title": "Contenido Principal",
+        "order": 1,
+        "lessons": [
+          {
+            "id": "l-1-1",
+            "title": "⚡Prompt Crea tu Web App con IA",
+            "fileType": "video",
+            "order": 1,
+            "relPath": "1️⃣ ⚡Prompt Crea tu Web App con IA @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-2",
+            "title": "⚡Prompt Crea tu Web App con IA",
+            "fileType": "doc",
+            "order": 2,
+            "relPath": "1️⃣ ⚡Prompt Crea tu Web App con IA @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-3",
+            "title": "\udd17 Webhook Conexión en N8N",
+            "fileType": "video",
+            "order": 3,
+            "relPath": "2️⃣ 🔗 Webhook Conexión en N8N @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-4",
+            "title": "⚙️ Supabase Configuración Inicial",
+            "fileType": "video",
+            "order": 4,
+            "relPath": "3️⃣ ⚙️ Supabase Configuración Inicial @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-5",
+            "title": "🌐Web App Diseño en Lovable",
+            "fileType": "video",
+            "order": 5,
+            "relPath": "4️⃣ 🌐Web App Diseño en Lovable @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-6",
+            "title": "🌐Web App Diseño en Lovable",
+            "fileType": "doc",
+            "order": 6,
+            "relPath": "4️⃣ 🌐Web App Diseño en Lovable @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-7",
+            "title": "\udd0dEdge Functions Revisión y Test",
+            "fileType": "video",
+            "order": 7,
+            "relPath": "5️⃣ 🔍Edge Functions Revisión y Test @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-8",
+            "title": "🤖N8N Automatización de tu App",
+            "fileType": "video",
+            "order": 8,
+            "relPath": "6️⃣ 🤖N8N Automatización de tu App @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-9",
+            "title": "🌎 Compra Dominio y Setup",
+            "fileType": "video",
+            "order": 9,
+            "relPath": "7️⃣🌎 Compra Dominio y Setup @TUSCURSOSFULL.mp4"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tpc-primeia-1792415729578-ui82",
+    "slug": "-primeia-mis-herramientas",
+    "title": "🌐PrimeIA Mis Herramientas",
+    "author": "Academia Prime IA",
+    "category": "IA & Automatización",
+    "platform": "Academia Prime IA",
+    "niche": "IA & Automatización",
+    "utility": "Formación práctica sobre 🌐PrimeIA Mis Herramientas descargada de Academia Prime IA (Telegram TPC) con soporte para preparación automática en Google Drive.",
+    "targetAudience": "Desarrolladores, creadores de contenido y profesionales que buscan dominar la IA generativa y la automatización.",
+    "difficulty": "Intermedio",
+    "estimatedHours": "4h",
+    "originType": "TELEGRAM_TPC",
+    "originName": "Telegram • Academia Prime IA 📥 (@MEMBRESIATPC)",
+    "localPath": "/Users/toni/Downloads/Academia Prime IA/🌐PrimeIA  Mis Herramientas",
+    "drivePath": "Mi unidad / 001-CURSOS / 00-IA-CURSOS / 🌐PrimeIA Mis Herramientas",
+    "webUrl": "https://drive.google.com/drive/u/0/search?q=%F0%9F%8C%90PrimeIA%20Mis%20Herramientas",
+    "rating": 4.9,
+    "totalLessons": 10,
+    "tags": [
+      "telegram",
+      "tpc",
+      "prime-ia",
+      "ia",
+      "automatizacion",
+      "ia"
+    ],
+    "hasLocalFiles": true,
+    "isArchive": false,
+    "archivePath": "/Users/toni/Downloads/Academia Prime IA.part1.rar",
+    "archiveType": "RAR",
+    "telegramChannel": "DESCARGAS TPC 📥 (@MEMBRESIATPC)",
+    "telegramSearchUrl": "tg://resolve?domain=MEMBRESIATPC&query=%F0%9F%8C%90PrimeIA%20Mis%20Herramientas",
+    "isUploadedToDrive": false,
+    "isPreparedInDrive": false,
+    "pipelineStatus": "DOWNLOADED",
+    "modules": [
+      {
+        "id": "m-1",
+        "title": "Contenido Principal",
+        "order": 1,
+        "lessons": [
+          {
+            "id": "l-1-1",
+            "title": "Que es Primelabs y como usarlo",
+            "fileType": "video",
+            "order": 1,
+            "relPath": "1.Que es Primelabs y como usarlo @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-2",
+            "title": "Usando tu Lora en PrimeLabs",
+            "fileType": "video",
+            "order": 2,
+            "relPath": "2.Usando tu Lora en PrimeLabs @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-3",
+            "title": "Que es Primelabs y como usarlo",
+            "fileType": "doc",
+            "order": 3,
+            "relPath": "Que es Primelabs y como usarlo @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-4",
+            "title": "Usando tu Lora en PrimeLabs",
+            "fileType": "doc",
+            "order": 4,
+            "relPath": "Usando tu Lora en PrimeLabs @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-5",
+            "title": "(18+)Que es PrimeFlow y como usarlo con mi Lora",
+            "fileType": "video",
+            "order": 5,
+            "relPath": "(18+)Que es PrimeFlow y como usarlo con mi Lora @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-6",
+            "title": "(18+)Que es PrimeFlow y como usarlo con mi Lora",
+            "fileType": "doc",
+            "order": 6,
+            "relPath": "(18+)Que es PrimeFlow y como usarlo con mi Lora @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-7",
+            "title": "Crea tu Lora Z-image y Wan 2.2 con nosotros.",
+            "fileType": "doc",
+            "order": 7,
+            "relPath": "1.Crea tu Lora Z-image y Wan 2.2 con nosotros. @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-8",
+            "title": ",Entrena tu Lora con PrimeIA",
+            "fileType": "doc",
+            "order": 8,
+            "relPath": "2,Entrena tu Lora con PrimeIA @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-9",
+            "title": "Usando el Modulo Dataset",
+            "fileType": "video",
+            "order": 9,
+            "relPath": "Usando el Modulo Dataset @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-10",
+            "title": "Usando el Modulo Dataset",
+            "fileType": "doc",
+            "order": 10,
+            "relPath": "Usando el Modulo Dataset @TUSCURSOSFULL.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tpc-primeia-1792415729578-lv7d",
+    "slug": "-creacio-n-loras-modelo-consistente",
+    "title": "🎨 Creación LoRAs Modelo Consistente",
+    "author": "Academia Prime IA",
+    "category": "IA & Automatización",
+    "platform": "Academia Prime IA",
+    "niche": "Generación de Vídeo & Modelos IA",
+    "utility": "Formación práctica sobre 🎨 Creación LoRAs Modelo Consistente descargada de Academia Prime IA (Telegram TPC) con soporte para preparación automática en Google Drive.",
+    "targetAudience": "Desarrolladores, creadores de contenido y profesionales que buscan dominar la IA generativa y la automatización.",
+    "difficulty": "Intermedio",
+    "estimatedHours": "9h",
+    "originType": "TELEGRAM_TPC",
+    "originName": "Telegram • Academia Prime IA 📥 (@MEMBRESIATPC)",
+    "localPath": "/Users/toni/Downloads/Academia Prime IA/🎨 Creación LoRAs  Modelo Consistente",
+    "drivePath": "Mi unidad / 001-CURSOS / 00-IA-CURSOS / 🎨 Creación LoRAs Modelo Consistente",
+    "webUrl": "https://drive.google.com/drive/u/0/search?q=%F0%9F%8E%A8%20Creacio%CC%81n%20LoRAs%20Modelo%20Consistente",
+    "rating": 4.9,
+    "totalLessons": 23,
+    "tags": [
+      "telegram",
+      "tpc",
+      "prime-ia",
+      "ia",
+      "automatizacion",
+      "generación"
+    ],
+    "hasLocalFiles": true,
+    "isArchive": false,
+    "archivePath": "/Users/toni/Downloads/Academia Prime IA.part1.rar",
+    "archiveType": "RAR",
+    "telegramChannel": "DESCARGAS TPC 📥 (@MEMBRESIATPC)",
+    "telegramSearchUrl": "tg://resolve?domain=MEMBRESIATPC&query=%F0%9F%8E%A8%20Creacio%CC%81n%20LoRAs%20Modelo%20Consistente",
+    "isUploadedToDrive": false,
+    "isPreparedInDrive": false,
+    "pipelineStatus": "DOWNLOADED",
+    "modules": [
+      {
+        "id": "m-1",
+        "title": "Contenido Principal",
+        "order": 1,
+        "lessons": [
+          {
+            "id": "l-1-1",
+            "title": "Lora en Z-IMAGE + Explicacion",
+            "fileType": "video",
+            "order": 1,
+            "relPath": "1.Lora en Z-IMAGE + Explicacion @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-2",
+            "title": "Resultados Z-Image Entrenamiento",
+            "fileType": "video",
+            "order": 2,
+            "relPath": "2.Resultados Z-Image Entrenamiento @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-3",
+            "title": "Lora en Z-IMAGE + Explicacion",
+            "fileType": "doc",
+            "order": 3,
+            "relPath": "Lora en Z-IMAGE + Explicacion @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-4",
+            "title": "Resultados Z-Image Entrenamiento",
+            "fileType": "doc",
+            "order": 4,
+            "relPath": "Resultados Z-Image Entrenamiento @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-5",
+            "title": "\ude80 Corre tu LoRA en ComfyUI",
+            "fileType": "doc",
+            "order": 5,
+            "relPath": "🚀 Corre tu LoRA en ComfyUI @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-6",
+            "title": ",🧠 Qué es un LoRA",
+            "fileType": "video",
+            "order": 6,
+            "relPath": "1,🧠 Qué es un LoRA @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-7",
+            "title": "⚙️ Crea tu LoRA desde 0",
+            "fileType": "video",
+            "order": 7,
+            "relPath": "2.⚙️ Crea tu LoRA desde 0 @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-8",
+            "title": "Creacion de Loras con Replicate",
+            "fileType": "doc",
+            "order": 8,
+            "relPath": "3.Creacion de Loras con Replicate @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-9",
+            "title": "\ude80 Corre tu LoRA en ComfyUI",
+            "fileType": "video",
+            "order": 9,
+            "relPath": "3.🚀 Corre tu LoRA en ComfyUI @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-10",
+            "title": "(18+)🖼️🔥Creando Contenido Exclusivo con tu LoRA",
+            "fileType": "video",
+            "order": 10,
+            "relPath": "4.(18+)🖼️🔥Creando Contenido Exclusivo con tu LoRA @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-11",
+            "title": "(18+) Buscar y Subir Checkpoints a RunningHub",
+            "fileType": "doc",
+            "order": 11,
+            "relPath": "5.2 (18+) Buscar y Subir Checkpoints a RunningHub @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-12",
+            "title": "Workflow y Nodo Lora explicacion RH",
+            "fileType": "doc",
+            "order": 12,
+            "relPath": "5.Workflow y Nodo Lora explicacion RH @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-13",
+            "title": "🧠 LoRAs de WAN en PrimeFlow + Paginas",
+            "fileType": "video",
+            "order": 13,
+            "relPath": "5.🧠 LoRAs de WAN en PrimeFlow + Paginas @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-14",
+            "title": "Genera 12 imagenes por ejecucion.",
+            "fileType": "doc",
+            "order": 14,
+            "relPath": "7.Genera 12 imagenes por ejecucion. @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-15",
+            "title": "🧠 LoRAs de WAN en PrimeFlow + Paginas",
+            "fileType": "doc",
+            "order": 15,
+            "relPath": "🧠 LoRAs de WAN en PrimeFlow + Paginas @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-16",
+            "title": "SDXL Introduccion",
+            "fileType": "video",
+            "order": 16,
+            "relPath": "1.SDXL Introduccion @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-17",
+            "title": "Creacion de Loras con PrimeIA",
+            "fileType": "video",
+            "order": 17,
+            "relPath": "2.Creacion de Loras con PrimeIA @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-18",
+            "title": "Creacion de Loras con Replicate",
+            "fileType": "video",
+            "order": 18,
+            "relPath": "3.Creacion de Loras con Replicate @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-19",
+            "title": "Generacion de contenido con tu lora en PrimeLabs",
+            "fileType": "video",
+            "order": 19,
+            "relPath": "4.4.Generacion de contenido con tu lora en PrimeLabs @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-20",
+            "title": "(18+) Buscar y Subir Checkpoints a RunningHub",
+            "fileType": "video",
+            "order": 20,
+            "relPath": "5.2 (18+) Buscar y Subir Checkpoints a RunningHub @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-21",
+            "title": "Workflow y Nodo Lora explicacion RH",
+            "fileType": "video",
+            "order": 21,
+            "relPath": "5.Workflow y Nodo Lora explicacion RH @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-22",
+            "title": "Generacion contenido con tu lora en Runninghub",
+            "fileType": "video",
+            "order": 22,
+            "relPath": "6.Generacion contenido con tu lora en Runninghub @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-23",
+            "title": "\udcd8 Leer Antes de Iniciar",
+            "fileType": "doc",
+            "order": 23,
+            "relPath": "📘 Leer Antes de Iniciar @TUSCURSOSFULL.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tpc-primeia-1792415729580-0wb6",
+    "slug": "-inicia-aqui-wan-2-2-comfyui",
+    "title": "\udccdInicia Aqui WAN 2 2 ComfyUI",
+    "author": "Academia Prime IA",
+    "category": "IA & Automatización",
+    "platform": "Academia Prime IA",
+    "niche": "Generación de Vídeo & Modelos IA",
+    "utility": "Formación práctica sobre \udccdInicia Aqui WAN 2 2 ComfyUI descargada de Academia Prime IA (Telegram TPC) con soporte para preparación automática en Google Drive.",
+    "targetAudience": "Desarrolladores, creadores de contenido y profesionales que buscan dominar la IA generativa y la automatización.",
+    "difficulty": "Intermedio",
+    "estimatedHours": "28h",
+    "originType": "TELEGRAM_TPC",
+    "originName": "Telegram • Academia Prime IA 📥 (@MEMBRESIATPC)",
+    "localPath": "/Users/toni/Downloads/Academia Prime IA/📍Inicia Aqui  WAN 2.2 ComfyUI",
+    "drivePath": "Mi unidad / 001-CURSOS / 00-IA-CURSOS / \udccdInicia Aqui WAN 2 2 ComfyUI",
+    "webUrl": "https://drive.google.com/drive/u/0/search?q=Inicia%20Aqui%20WAN%202%202%20ComfyUI",
+    "rating": 4.9,
+    "totalLessons": 70,
+    "tags": [
+      "telegram",
+      "tpc",
+      "prime-ia",
+      "ia",
+      "automatizacion",
+      "generación"
+    ],
+    "hasLocalFiles": true,
+    "isArchive": false,
+    "archivePath": "/Users/toni/Downloads/Academia Prime IA.part1.rar",
+    "archiveType": "RAR",
+    "telegramChannel": "DESCARGAS TPC 📥 (@MEMBRESIATPC)",
+    "telegramSearchUrl": "tg://resolve?domain=MEMBRESIATPC&query=Inicia%20Aqui%20WAN%202%202%20ComfyUI",
+    "isUploadedToDrive": false,
+    "isPreparedInDrive": false,
+    "pipelineStatus": "DOWNLOADED",
+    "modules": [
+      {
+        "id": "m-1",
+        "title": "Contenido Principal",
+        "order": 1,
+        "lessons": [
+          {
+            "id": "l-1-1",
+            "title": "LoRA Slider corporal en WAN 2.2",
+            "fileType": "video",
+            "order": 1,
+            "relPath": "1.LoRA Slider corporal en WAN 2.2 @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-2",
+            "title": "LoRA Slider corporal en WAN 2.2",
+            "fileType": "doc",
+            "order": 2,
+            "relPath": "1.LoRA Slider corporal en WAN 2.2 @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-3",
+            "title": "Generar Varias imagenes a la vez!",
+            "fileType": "doc",
+            "order": 3,
+            "relPath": "2.Generar Varias imagenes a la vez! @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-4",
+            "title": "Workflow de Poses para WAN + LoRA",
+            "fileType": "doc",
+            "order": 4,
+            "relPath": "3.Workflow de Poses para WAN + LoRA @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-5",
+            "title": "Aprende a controlar el Denoise en ComfyUI",
+            "fileType": "doc",
+            "order": 5,
+            "relPath": "4.Aprende a controlar el Denoise en ComfyUI @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-6",
+            "title": "Tu LoRA no funciona en RunningHub",
+            "fileType": "doc",
+            "order": 6,
+            "relPath": "5.Tu LoRA no funciona en RunningHub @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-7",
+            "title": "Introduccion WAN",
+            "fileType": "video",
+            "order": 7,
+            "relPath": "1.Introduccion WAN @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-8",
+            "title": "Introduccion a ComfyUI",
+            "fileType": "video",
+            "order": 8,
+            "relPath": "2.Introduccion a ComfyUI @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-9",
+            "title": "Introduccion WAN",
+            "fileType": "doc",
+            "order": 9,
+            "relPath": "Introduccion WAN @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-10",
+            "title": "Introduccion a ComfyUI",
+            "fileType": "doc",
+            "order": 10,
+            "relPath": "Introduccion a ComfyUI @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-11",
+            "title": "Workflow Wan2.2",
+            "fileType": "doc",
+            "order": 11,
+            "relPath": "Workflow Wan2.2 @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-12",
+            "title": "Plantilla Creacion Avatar",
+            "fileType": "doc",
+            "order": 12,
+            "relPath": "1.Plantilla Creacion Avatar @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-13",
+            "title": "Avatar con Google Studio (Gratis)",
+            "fileType": "video",
+            "order": 13,
+            "relPath": "2.Avatar con Google Studio (Gratis) @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-14",
+            "title": "Creando tu Avatar con ComfyUI",
+            "fileType": "video",
+            "order": 14,
+            "relPath": "3.Creando tu Avatar con ComfyUI @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-15",
+            "title": "Creando tu Avatar con ComfyUI",
+            "fileType": "doc",
+            "order": 15,
+            "relPath": "3.Creando tu Avatar con ComfyUI @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-16",
+            "title": "Avatar con Nano Banana y OpenArt",
+            "fileType": "video",
+            "order": 16,
+            "relPath": "4.Avatar con Nano Banana y OpenArt @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-17",
+            "title": "Avatar con Nano Banana y OpenArt",
+            "fileType": "doc",
+            "order": 17,
+            "relPath": "4.Avatar con Nano Banana y OpenArt @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-18",
+            "title": "Avatar con Seedream y Fal.AI",
+            "fileType": "video",
+            "order": 18,
+            "relPath": "5.Avatar con Seedream y Fal.AI @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-19",
+            "title": "Avatar con Seedream y Fal.AI",
+            "fileType": "doc",
+            "order": 19,
+            "relPath": "5.Avatar con Seedream y Fal.AI @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-20",
+            "title": "🎓 Regla 80-20 para crear Dataset",
+            "fileType": "doc",
+            "order": 20,
+            "relPath": "1.🎓 Regla 80-20 para crear Dataset @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-21",
+            "title": "PROMPTS Sugeridos Para Dataset Nano Banana Pro",
+            "fileType": "doc",
+            "order": 21,
+            "relPath": "2.PROMPTS Sugeridos Para Dataset Nano Banana Pro @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-22",
+            "title": "Editando tu imagen Con Seedream o Nano banana",
+            "fileType": "video",
+            "order": 22,
+            "relPath": "3.Editando tu imagen Con Seedream o Nano banana @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-23",
+            "title": "Editando tu imagen Con Seedream o Nano banana",
+            "fileType": "doc",
+            "order": 23,
+            "relPath": "3.Editando tu imagen Con Seedream o Nano banana @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-24",
+            "title": "Creando Descripcion de cada imagen",
+            "fileType": "video",
+            "order": 24,
+            "relPath": "4.Creando Descripcion de cada imagen @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-25",
+            "title": "Creando Descripcion de cada imagen",
+            "fileType": "doc",
+            "order": 25,
+            "relPath": "4.Creando Descripcion de cada imagen @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-26",
+            "title": "Corta tus imagenes!",
+            "fileType": "doc",
+            "order": 26,
+            "relPath": "5.Corta tus imagenes! @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-27",
+            "title": "Crea tu Lora con Runninghub",
+            "fileType": "video",
+            "order": 27,
+            "relPath": "1.Crea tu Lora con Runninghub @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-28",
+            "title": "Crea tu Lora con Runninghub",
+            "fileType": "doc",
+            "order": 28,
+            "relPath": "1.Crea tu Lora con Runninghub @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-29",
+            "title": "(Opcional) Explicacion De Runpod",
+            "fileType": "video",
+            "order": 29,
+            "relPath": "2.(Opcional) Explicacion De Runpod @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-30",
+            "title": "(Opcional) Explicacion De Runpod",
+            "fileType": "doc",
+            "order": 30,
+            "relPath": "2.(Opcional) Explicacion De Runpod @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-31",
+            "title": "(Opcional) Entrenamiento de Lora",
+            "fileType": "video",
+            "order": 31,
+            "relPath": "3.(Opcional) Entrenamiento de Lora @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-32",
+            "title": "Subiendo Lora a ComfyUI",
+            "fileType": "video",
+            "order": 32,
+            "relPath": "1.Subiendo Lora a ComfyUI @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-33",
+            "title": "Prueba tu Lora en el Workflow",
+            "fileType": "video",
+            "order": 33,
+            "relPath": "Prueba tu Lora en el Workflow @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-34",
+            "title": "Prueba tu Lora en el Workflow",
+            "fileType": "doc",
+            "order": 34,
+            "relPath": "Prueba tu Lora en el Workflow @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-35",
+            "title": "Subiendo Lora a ComfyUI",
+            "fileType": "doc",
+            "order": 35,
+            "relPath": "Subiendo Lora a ComfyUI @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-36",
+            "title": "Workflow con Guia de poses para tu Avatar IA",
+            "fileType": "video",
+            "order": 36,
+            "relPath": "Workflow con Guia de poses para tu Avatar IA @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-37",
+            "title": "\udd39 Actualizando LoRAs y Parámetros",
+            "fileType": "video",
+            "order": 37,
+            "relPath": "🔹 Actualizando LoRAs y Parámetros @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-38",
+            "title": "\udd39 Concatenando Prompts para LoRAs",
+            "fileType": "video",
+            "order": 38,
+            "relPath": "🔹 Concatenando Prompts para LoRAs @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-39",
+            "title": "\udd39 Intro – Concatenado",
+            "fileType": "video",
+            "order": 39,
+            "relPath": "🔹 Intro – Concatenado @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-40",
+            "title": "\ude80 WAN Animate v3 - Character Replacement",
+            "fileType": "video",
+            "order": 40,
+            "relPath": "1.🚀 WAN Animate v3 - Character Replacement @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-41",
+            "title": "🎬 WAN V5 Motion Transfer Workflow Optimizado",
+            "fileType": "video",
+            "order": 41,
+            "relPath": "2.🎬 WAN V5 Motion Transfer Workflow Optimizado @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-42",
+            "title": "🆕Nuevo Flujo V7 Wan motion Transfer",
+            "fileType": "video",
+            "order": 42,
+            "relPath": "3.🆕Nuevo Flujo V7 Wan motion Transfer @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-43",
+            "title": "Wan Animate V8",
+            "fileType": "video",
+            "order": 43,
+            "relPath": "4.Wan Animate V8 @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-44",
+            "title": "Wan Animate V8",
+            "fileType": "doc",
+            "order": 44,
+            "relPath": "Wan Animate V8 @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-45",
+            "title": "🆕Nuevo Flujo V7 Wan motion Transfer",
+            "fileType": "doc",
+            "order": 45,
+            "relPath": "🆕Nuevo Flujo V7 Wan motion Transfer @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-46",
+            "title": "🎬 WAN V5 Motion Transfer Workflow Optimizado",
+            "fileType": "doc",
+            "order": 46,
+            "relPath": "🎬 WAN V5 Motion Transfer Workflow Optimizado @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-47",
+            "title": "\ude80 WAN Animate v3 - Character Replacement",
+            "fileType": "doc",
+            "order": 47,
+            "relPath": "🚀 WAN Animate v3 - Character Replacement @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-48",
+            "title": "Wan 2.2 Flujo Basico Recomendado",
+            "fileType": "doc",
+            "order": 48,
+            "relPath": "Wan 2.2 Flujo Basico Recomendado @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-49",
+            "title": "🎥InfiniteTalk V3 Workflow Explicacion",
+            "fileType": "video",
+            "order": 49,
+            "relPath": "🎥InfiniteTalk V3 Workflow Explicacion @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-50",
+            "title": "🎥InfiniteTalk V3 Workflow Explicacion",
+            "fileType": "doc",
+            "order": 50,
+            "relPath": "🎥InfiniteTalk V3 Workflow Explicacion @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-51",
+            "title": "Wan Smooth Introduccion",
+            "fileType": "video",
+            "order": 51,
+            "relPath": "1.Wan Smooth Introduccion @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-52",
+            "title": "Wan Smooth Explicacion Workflow Basico",
+            "fileType": "video",
+            "order": 52,
+            "relPath": "2.Wan Smooth Explicacion Workflow Basico @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-53",
+            "title": "Wan Smooth Mejor Textura - Workflow Avanzado",
+            "fileType": "video",
+            "order": 53,
+            "relPath": "3.Wan Smooth Mejor Textura - Workflow Avanzado @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-54",
+            "title": "Wan Smooth Explicacion Workflow Basico",
+            "fileType": "doc",
+            "order": 54,
+            "relPath": "Wan Smooth Explicacion Workflow Basico @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-55",
+            "title": "Wan Smooth Mejor Textura -Workflow Avanzado",
+            "fileType": "doc",
+            "order": 55,
+            "relPath": "Wan Smooth Mejor Textura -Workflow Avanzado @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-56",
+            "title": "(18+)🎥 Video Workflow NSFW WAN Enhanced + Audio",
+            "fileType": "doc",
+            "order": 56,
+            "relPath": "(18+)🎥 Video Workflow NSFW WAN Enhanced + Audio @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-57",
+            "title": "(18+)🎥Mejorar calidad de un Video usando SeedVR",
+            "fileType": "doc",
+            "order": 57,
+            "relPath": "(18+)🎥Mejorar calidad de un Video usando SeedVR @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-58",
+            "title": "(18+)🔍 Buscando LoRAs NSFW para Video en Civitai",
+            "fileType": "doc",
+            "order": 58,
+            "relPath": "(18+)🔍 Buscando LoRAs NSFW para Video en Civitai @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-59",
+            "title": "(18+)🔥 Introduccion y explicacion Workflow",
+            "fileType": "doc",
+            "order": 59,
+            "relPath": "(18+)🔥 Introduccion y explicacion Workflow @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-60",
+            "title": "(18+)🔥 Introduccion y explicacion Workflow",
+            "fileType": "video",
+            "order": 60,
+            "relPath": "1.(18+)🔥 Introduccion y explicacion Workflow @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-61",
+            "title": "(18+)🔍 Buscando LoRAs NSFW para Video en Civitai",
+            "fileType": "video",
+            "order": 61,
+            "relPath": "2.(18+)🔍 Buscando LoRAs NSFW para Video en Civitai @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-62",
+            "title": "(18+)🎥Mejorar calidad de un Video usando SeedVR",
+            "fileType": "video",
+            "order": 62,
+            "relPath": "3.(18+)🎥Mejorar calidad de un Video usando SeedVR @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-63",
+            "title": "\udd25(18)Nuevo WF Daxamur Videos NSFW de alta calidad",
+            "fileType": "doc",
+            "order": 63,
+            "relPath": "🔥(18)Nuevo WF Daxamur Videos NSFW de alta calidad @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-64",
+            "title": "Wan2.2 T2I NSFW + PussyLora + Breast Slider",
+            "fileType": "doc",
+            "order": 64,
+            "relPath": "Wan2.2 T2I NSFW + PussyLora + Breast Slider @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-65",
+            "title": "\ude80WAN2.2 + Último Escalador = Resultados de Locura",
+            "fileType": "video",
+            "order": 65,
+            "relPath": "1.🚀WAN2.2 + Último Escalador = Resultados de Locura @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-66",
+            "title": "Workflow de Poses para WAN + LoRA",
+            "fileType": "video",
+            "order": 66,
+            "relPath": "3.Workflow de Poses para WAN + LoRA @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-67",
+            "title": "Aprende a controlar el Denoise en ComfyUI",
+            "fileType": "video",
+            "order": 67,
+            "relPath": "4.Aprende a controlar el Denoise en ComfyUI @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-68",
+            "title": "Tu LoRA no funciona en RunningHub",
+            "fileType": "video",
+            "order": 68,
+            "relPath": "5.Tu LoRA no funciona en RunningHub @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-69",
+            "title": "\udd25Nueva Version del Workflow 17-1-2026",
+            "fileType": "doc",
+            "order": 69,
+            "relPath": "🔥Nueva Version del Workflow 17-1-2026 @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-70",
+            "title": "\ude80WAN2.2 + Último Escalador = Resultados de Locura",
+            "fileType": "doc",
+            "order": 70,
+            "relPath": "🚀WAN2.2 + Último Escalador = Resultados de Locura @TUSCURSOSFULL.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tpc-primeia-1792415729582-klr5",
+    "slug": "-z-image-turbo-nsfw",
+    "title": "🥵Z Image TURBO NSFW",
+    "author": "Academia Prime IA",
+    "category": "IA & Automatización",
+    "platform": "Academia Prime IA",
+    "niche": "IA & Automatización",
+    "utility": "Formación práctica sobre 🥵Z Image TURBO NSFW descargada de Academia Prime IA (Telegram TPC) con soporte para preparación automática en Google Drive.",
+    "targetAudience": "Desarrolladores, creadores de contenido y profesionales que buscan dominar la IA generativa y la automatización.",
+    "difficulty": "Intermedio",
+    "estimatedHours": "10h",
+    "originType": "TELEGRAM_TPC",
+    "originName": "Telegram • Academia Prime IA 📥 (@MEMBRESIATPC)",
+    "localPath": "/Users/toni/Downloads/Academia Prime IA/🥵Z-Image TURBO NSFW",
+    "drivePath": "Mi unidad / 001-CURSOS / 00-IA-CURSOS / 🥵Z Image TURBO NSFW",
+    "webUrl": "https://drive.google.com/drive/u/0/search?q=%F0%9F%A5%B5Z%20Image%20TURBO%20NSFW",
+    "rating": 4.9,
+    "totalLessons": 24,
+    "tags": [
+      "telegram",
+      "tpc",
+      "prime-ia",
+      "ia",
+      "automatizacion",
+      "ia"
+    ],
+    "hasLocalFiles": true,
+    "isArchive": false,
+    "archivePath": "/Users/toni/Downloads/Academia Prime IA.part1.rar",
+    "archiveType": "RAR",
+    "telegramChannel": "DESCARGAS TPC 📥 (@MEMBRESIATPC)",
+    "telegramSearchUrl": "tg://resolve?domain=MEMBRESIATPC&query=%F0%9F%A5%B5Z%20Image%20TURBO%20NSFW",
+    "isUploadedToDrive": false,
+    "isPreparedInDrive": false,
+    "pipelineStatus": "DOWNLOADED",
+    "modules": [
+      {
+        "id": "m-1",
+        "title": "Contenido Principal",
+        "order": 1,
+        "lessons": [
+          {
+            "id": "l-1-1",
+            "title": "Workflow Z-Image Explicacion Rapida SFW",
+            "fileType": "video",
+            "order": 1,
+            "relPath": "1.Workflow Z-Image Explicacion Rapida SFW @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-2",
+            "title": "(18) Workflow Z-Image Parte 2 NSFW",
+            "fileType": "video",
+            "order": 2,
+            "relPath": "2.(18) Workflow Z-Image Parte 2 NSFW @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-3",
+            "title": "🧪 Workflow Z-Image + Escalador Realista (v1)",
+            "fileType": "doc",
+            "order": 3,
+            "relPath": "1.🧪 Workflow Z-Image + Escalador Realista (v1) @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-4",
+            "title": "\ude80 Z-Image AIO V1 — Workflow NSFW + LoRA",
+            "fileType": "doc",
+            "order": 4,
+            "relPath": "2.🚀 Z-Image AIO V1 — Workflow NSFW + LoRA @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-5",
+            "title": "(🔥TOP)📍Z-IMAGE NOPORMASTER",
+            "fileType": "doc",
+            "order": 5,
+            "relPath": "3.(🔥TOP)📍Z-IMAGE NOPORMASTER @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-6",
+            "title": "Z-Image V4 Photorealistic Workflow",
+            "fileType": "doc",
+            "order": 6,
+            "relPath": "4.Z-Image V4 Photorealistic Workflow @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-7",
+            "title": "Z-Image V4.3 Turbo NSFW [Photorealistic]",
+            "fileType": "doc",
+            "order": 7,
+            "relPath": "5.Z-Image V4.3 Turbo NSFW [Photorealistic].pdf"
+          },
+          {
+            "id": "l-1-8",
+            "title": "⚡Dark Beast Z-image Turbo",
+            "fileType": "doc",
+            "order": 8,
+            "relPath": "6.⚡Dark Beast Z-image Turbo @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-9",
+            "title": "⚠️ LÉEME PRIMERO",
+            "fileType": "doc",
+            "order": 9,
+            "relPath": "⚠️ LÉEME PRIMERO @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-10",
+            "title": "Z-IMAGE TURBO & MysticXXX",
+            "fileType": "video",
+            "order": 10,
+            "relPath": "Z-IMAGE TURBO & MysticXXX @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-11",
+            "title": "Z-IMAGE TURBO & MysticXXX",
+            "fileType": "doc",
+            "order": 11,
+            "relPath": "Z-IMAGE TURBO & MysticXXX @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-12",
+            "title": "🎞️ Generar videos usando Wan Smooth",
+            "fileType": "video",
+            "order": 12,
+            "relPath": "🎞️ Generar videos usando Wan Smooth @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-13",
+            "title": "🎞️ Generar videos usando Wan Smooth",
+            "fileType": "doc",
+            "order": 13,
+            "relPath": "🎞️ Generar videos usando Wan Smooth @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-14",
+            "title": "\udd0e Cómo encontrar Checkpoints de Z-IMAGE",
+            "fileType": "video",
+            "order": 14,
+            "relPath": "🔎 Cómo encontrar Checkpoints de Z-IMAGE @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-15",
+            "title": "🎛️ Control de Tamaño de Pecho en tu Avatar",
+            "fileType": "video",
+            "order": 15,
+            "relPath": "1.🎛️ Control de Tamaño de Pecho en tu Avatar @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-16",
+            "title": "🍑 Mejor Control del Tamaño de las Pompys",
+            "fileType": "video",
+            "order": 16,
+            "relPath": "2.🍑 Mejor Control del Tamaño de las Pompys @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-17",
+            "title": "🍑 Mejor Control del Tamaño de las Pompys",
+            "fileType": "doc",
+            "order": 17,
+            "relPath": "🍑 Mejor Control del Tamaño de las Pompys @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-18",
+            "title": "🎛️ Control de Tamaño de Pecho en tu Avatar",
+            "fileType": "doc",
+            "order": 18,
+            "relPath": "🎛️ Control de Tamaño de Pecho en tu Avatar @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-19",
+            "title": "\udd1e SFW vs NSFW",
+            "fileType": "doc",
+            "order": 19,
+            "relPath": "🔞 SFW vs NSFW @TUSCURSOSFULL.pdf"
+          },
+          {
+            "id": "l-1-20",
+            "title": "\udd1e Codificando para NSFW correctamente + Escalador",
+            "fileType": "video",
+            "order": 20,
+            "relPath": "🔞 Codificando para NSFW correctamente + Escalador @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-21",
+            "title": "\uddbc️ Añadir Imagen de Referencia al Workflow",
+            "fileType": "video",
+            "order": 21,
+            "relPath": "🖼️ Añadir Imagen de Referencia al Workflow @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-22",
+            "title": "\udce5 Cargando LoRA en un Workflow",
+            "fileType": "video",
+            "order": 22,
+            "relPath": "1.📥 Cargando LoRA en un Workflow @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-23",
+            "title": "\udccc Introducción a Z-Image",
+            "fileType": "video",
+            "order": 23,
+            "relPath": "1.📌 Introducción a Z-Image @TUSCURSOSFULL.mp4"
+          },
+          {
+            "id": "l-1-24",
+            "title": "🧩 Workflow de Z-Image desde 0",
+            "fileType": "video",
+            "order": 24,
+            "relPath": "2.🧩 Workflow de Z-Image desde 0 @TUSCURSOSFULL.mp4"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tpc-telegram-1792415729592-fd6y",
+    "slug": "ma-ster-claude-code-2026-agentes-ia-mcp-skills-y-comandos",
+    "title": "Máster Claude Code 2026 Agentes IA, MCP, Skills y Comandos",
+    "author": "Membresía TPC",
+    "category": "Desarrollo & Programación",
+    "platform": "Telegram TPC",
+    "niche": "Claude Code & MCP Agentes",
+    "utility": "Curso completo de Máster Claude Code 2026 Agentes IA, MCP, Skills y Comandos descargado desde Telegram TPC, listo para ver y preparar en Google Drive.",
+    "targetAudience": "Interesados en claude code & mcp agentes.",
+    "difficulty": "Intermedio",
+    "estimatedHours": "26h",
+    "originType": "TELEGRAM_TPC",
+    "originName": "Telegram • DESCARGAS TPC 📥 (@MEMBRESIATPC)",
+    "localPath": "/Users/toni/Downloads/Máster Claude Code 2026 Agentes IA, MCP, Skills y Comandos",
+    "drivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Mi unidad/001-CURSOS/00-IA-CURSOS/Máster Claude Code 2026 Agentes IA, MCP, Skills y Comandos",
+    "webUrl": "https://drive.google.com/drive/u/0/search?q=Ma%CC%81ster%20Claude%20Code%202026%20Agentes%20IA%2C%20MCP%2C%20Skills%20y%20Comandos",
+    "rating": 4.8,
+    "totalLessons": 65,
+    "tags": [
+      "telegram",
+      "tpc",
+      "desarrollo",
+      "claude"
+    ],
+    "hasLocalFiles": true,
+    "isArchive": false,
+    "telegramChannel": "DESCARGAS TPC 📥 (@MEMBRESIATPC)",
+    "telegramSearchUrl": "tg://resolve?domain=MEMBRESIATPC&query=Ma%CC%81ster%20Claude%20Code%202026%20Agentes%20IA%2C%20MCP%2C%20Skills%20y%20Comandos",
+    "isUploadedToDrive": true,
+    "isPreparedInDrive": true,
+    "pipelineStatus": "UPLOADED",
+    "modules": [
+      {
+        "id": "m-1",
+        "title": "Contenido Principal",
+        "order": 1,
+        "lessons": [
+          {
+            "id": "l-1-1",
+            "title": "Qué es Claude Code y Por Qué Usarlo",
+            "fileType": "video",
+            "order": 1,
+            "relPath": "01 - Qué es Claude Code y Por Qué Usarlo @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-2",
+            "title": "Precios de Claude Code",
+            "fileType": "video",
+            "order": 2,
+            "relPath": "02 - Precios de Claude Code @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-3",
+            "title": "Instalación y Setup Paso a Paso",
+            "fileType": "video",
+            "order": 3,
+            "relPath": "03 - Instalación y Setup Paso a Paso @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-4",
+            "title": "Crear Proyecto Next.js  y Claude Code en Diferentes Terminales",
+            "fileType": "video",
+            "order": 4,
+            "relPath": "05 - Crear Proyecto Next.js  y Claude Code en Diferentes Terminales @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-5",
+            "title": "Flujo de Trabajo en Claude Code",
+            "fileType": "video",
+            "order": 5,
+            "relPath": "06 - Flujo de Trabajo en Claude Code @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-6",
+            "title": "Integracicion de Claude Code y VS Code",
+            "fileType": "video",
+            "order": 6,
+            "relPath": "07 - Integracicion de Claude Code y VS Code @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-7",
+            "title": "Configuración de Claude Code",
+            "fileType": "video",
+            "order": 7,
+            "relPath": "08 - Configuración de Claude Code @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-8",
+            "title": "Elección de Modelos de IA",
+            "fileType": "video",
+            "order": 8,
+            "relPath": "09 - Elección de Modelos de IA @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-9",
+            "title": "Gestión de Sesiones, Contexto y Uso de Claude Code",
+            "fileType": "video",
+            "order": 9,
+            "relPath": "10 - Gestión de Sesiones, Contexto y Uso de Claude Code @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-10",
+            "title": "Compactación de Memoria Cuándo Reiniciar",
+            "fileType": "video",
+            "order": 10,
+            "relPath": "11 - Compactación de Memoria Cuándo Reiniciar @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-11",
+            "title": "Funciones Nativas de Claude Code que debes Conocer",
+            "fileType": "video",
+            "order": 11,
+            "relPath": "12 - Funciones Nativas de Claude Code que debes Conocer @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-12",
+            "title": "Gestión Avanzada de Permisos de LecturaEscritura",
+            "fileType": "video",
+            "order": 12,
+            "relPath": "13 - Gestión Avanzada de Permisos de LecturaEscritura @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-13",
+            "title": "Corriendo Claude Code en Docker",
+            "fileType": "video",
+            "order": 13,
+            "relPath": "14 - Corriendo Claude Code en Docker @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-14",
+            "title": "Deshacer acciones y Control de Versiones (Git)",
+            "fileType": "video",
+            "order": 14,
+            "relPath": "15 - Deshacer acciones y Control de Versiones (Git) @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-15",
+            "title": "Cheat Sheet Comandos y Atajos",
+            "fileType": "video",
+            "order": 15,
+            "relPath": "16 - Cheat Sheet Comandos y Atajos @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-16",
+            "title": "Introducción a las Funciones Clave Qué define a Claude Code",
+            "fileType": "video",
+            "order": 16,
+            "relPath": "01 - Introducción a las Funciones Clave Qué define a Claude Code @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-17",
+            "title": "Estrategias de Segmentación de Tareas",
+            "fileType": "video",
+            "order": 17,
+            "relPath": "02 - Estrategias de Segmentación de Tareas @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-18",
+            "title": "Ingeniería de Prompts y Gestión de Contexto y Memoria",
+            "fileType": "video",
+            "order": 18,
+            "relPath": "03 - Ingeniería de Prompts y Gestión de Contexto y Memoria @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-19",
+            "title": "Uso de Especificaciones y el Archivo SPECS",
+            "fileType": "video",
+            "order": 19,
+            "relPath": "04 - Uso de Especificaciones y el Archivo SPECS @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-20",
+            "title": "Inicialización de Proyectos y archivo CLAUDE.md",
+            "fileType": "video",
+            "order": 20,
+            "relPath": "05 - Inicialización de Proyectos y archivo CLAUDE.md @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-21",
+            "title": "CLAUDE.md-vs.Auto-Memory-El-Manual-vs.La-Experiencia",
+            "fileType": "doc",
+            "order": 21,
+            "relPath": "06 - CLAUDE.md-vs.Auto-Memory-El-Manual-vs.La-Experiencia @MEMBRESIATPC.pdf"
+          },
+          {
+            "id": "l-1-22",
+            "title": "Control de Versiones Agéntico (Git e Inicio del Proyecto)",
+            "fileType": "video",
+            "order": 22,
+            "relPath": "07 - Control de Versiones Agéntico (Git e Inicio del Proyecto) @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-23",
+            "title": "Construcción de la UI Base (Layout y SearchBar)",
+            "fileType": "video",
+            "order": 23,
+            "relPath": "08 - Construcción de la UI Base (Layout y SearchBar) @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-24",
+            "title": "Conexión a la API y Gestión de Estado",
+            "fileType": "video",
+            "order": 24,
+            "relPath": "09 - Conexión a la API y Gestión de Estado @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-25",
+            "title": "Herramientas Integradas de Claude Code",
+            "fileType": "video",
+            "order": 25,
+            "relPath": "10 - Herramientas Integradas de Claude Code @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-26",
+            "title": "Servidores MCP Conexión con Datos Externos",
+            "fileType": "video",
+            "order": 26,
+            "relPath": "11 - Servidores MCP Conexión con Datos Externos @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-27",
+            "title": "SQLite Local en React con Claude Code",
+            "fileType": "video",
+            "order": 27,
+            "relPath": "12 - SQLite Local en React con Claude Code @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-28",
+            "title": "Entendiendo-y-Configurando-Subagentes",
+            "fileType": "doc",
+            "order": 28,
+            "relPath": "13 - 13.Entendiendo-y-Configurando-Subagentes @MEMBRESIATPC.pdf"
+          },
+          {
+            "id": "l-1-29",
+            "title": "Entendiendo y Configurando Subagentes",
+            "fileType": "video",
+            "order": 29,
+            "relPath": "13 - Entendiendo y Configurando Subagentes @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-30",
+            "title": "Creación de Subagentes Personalizados",
+            "fileType": "video",
+            "order": 30,
+            "relPath": "14 - Creación de Subagentes Personalizados @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-31",
+            "title": "Introducción a las Habilidades (Skills)",
+            "fileType": "video",
+            "order": 31,
+            "relPath": "15 - Introducción a las Habilidades (Skills) @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-32",
+            "title": "Cómo Crear y Agregar Skills Propias",
+            "fileType": "video",
+            "order": 32,
+            "relPath": "16 - Cómo Crear y Agregar Skills Propias @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-33",
+            "title": "Optimización de Skills y Uso de Habilidades de Terceros",
+            "fileType": "video",
+            "order": 33,
+            "relPath": "17 - Optimización de Skills y Uso de Habilidades de Terceros @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-34",
+            "title": "Guía de Slash Commands en Claude Code",
+            "fileType": "video",
+            "order": 34,
+            "relPath": "18 - Guía de Slash Commands en Claude Code @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-35",
+            "title": "Crear y Usar Slash Commands Personalizados",
+            "fileType": "video",
+            "order": 35,
+            "relPath": "19 - Crear y Usar Slash Commands Personalizados @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-36",
+            "title": "Prompting Visual Screenshots y Feedback",
+            "fileType": "video",
+            "order": 36,
+            "relPath": "20 - Prompting Visual Screenshots y Feedback @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-37",
+            "title": "Uso de Hooks para Automatización",
+            "fileType": "video",
+            "order": 37,
+            "relPath": "21 - Uso de Hooks para Automatización @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-38",
+            "title": "Instalación de Plugins y Extensiones",
+            "fileType": "video",
+            "order": 38,
+            "relPath": "22 - Instalación de Plugins y Extensiones @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-39",
+            "title": "Bucles de Feedback con con MCP Playwrigth",
+            "fileType": "video",
+            "order": 39,
+            "relPath": "23 - Bucles de Feedback con con MCP Playwrigth @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-40",
+            "title": "Pruebas Automatizadas y Mejora Continua",
+            "fileType": "video",
+            "order": 40,
+            "relPath": "24 - Pruebas Automatizadas y Mejora Continua @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-41",
+            "title": "Niveles-de-Razonamiento-y-Configuraci-n-de-Thinking",
+            "fileType": "doc",
+            "order": 41,
+            "relPath": "25 - 25.Niveles-de-Razonamiento-y-Configuraci-n-de-Thinking @MEMBRESIATPC.pdf"
+          },
+          {
+            "id": "l-1-42",
+            "title": "Niveles de Razonamiento y Configuración de Thinking",
+            "fileType": "video",
+            "order": 42,
+            "relPath": "25 - Niveles de Razonamiento y Configuración de Thinking @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-43",
+            "title": "Modos-de-Operaci-n-Normal-Plan-y-Edit",
+            "fileType": "doc",
+            "order": 43,
+            "relPath": "26 - 26.Modos-de-Operaci-n-Normal-Plan-y-Edit @MEMBRESIATPC.pdf"
+          },
+          {
+            "id": "l-1-44",
+            "title": "Modos de Operación Normal, Plan y Edit",
+            "fileType": "video",
+            "order": 44,
+            "relPath": "26 - Modos de Operación Normal, Plan y Edit @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-45",
+            "title": "El Panel de Claude en VS Code",
+            "fileType": "video",
+            "order": 45,
+            "relPath": "27 - El Panel de Claude en VS Code @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-46",
+            "title": "Integración de Claude Code con Git y GitHub",
+            "fileType": "video",
+            "order": 46,
+            "relPath": "28 - Integración de Claude Code con Git y GitHub @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-47",
+            "title": "Agent Teams Orquestación Multi-Agente en Paralelo",
+            "fileType": "video",
+            "order": 47,
+            "relPath": "29 - Agent Teams Orquestación Multi-Agente en Paralelo @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-48",
+            "title": "buscador-peliculas",
+            "fileType": "archive",
+            "order": 48,
+            "relPath": "30 - buscador-peliculas @MEMBRESIATPC.rar"
+          },
+          {
+            "id": "l-1-49",
+            "title": "claude",
+            "fileType": "archive",
+            "order": 49,
+            "relPath": "01 - .claude @MEMBRESIATPC.rar"
+          },
+          {
+            "id": "l-1-50",
+            "title": "El Cimiento Estructura y Reglas",
+            "fileType": "video",
+            "order": 50,
+            "relPath": "01 - El Cimiento Estructura y Reglas @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-51",
+            "title": "El Corazón de Datos Prisma y PostgreSQL",
+            "fileType": "video",
+            "order": 51,
+            "relPath": "02 - El Corazón de Datos Prisma y PostgreSQL @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-52",
+            "title": "Seguridad de Acceso Auth.js (NextAuth) v5",
+            "fileType": "video",
+            "order": 52,
+            "relPath": "03 - Seguridad de Acceso Auth.js (NextAuth) v5 @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-53",
+            "title": "Layout Profesional y Navegación",
+            "fileType": "video",
+            "order": 53,
+            "relPath": "04 - Layout Profesional y Navegación @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-54",
+            "title": "Gestión de Categorías (CRUD Simple)",
+            "fileType": "video",
+            "order": 54,
+            "relPath": "05 - Gestión de Categorías (CRUD Simple) @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-55",
+            "title": "Catálogo de Productos (Relaciones Prisma)",
+            "fileType": "video",
+            "order": 55,
+            "relPath": "06 - Catálogo de Productos (Relaciones Prisma) @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-56",
+            "title": "Formulario de Productos con Shadcn UI",
+            "fileType": "video",
+            "order": 56,
+            "relPath": "07 - Formulario de Productos con Shadcn UI @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-57",
+            "title": "Directorio de Proveedores, Gestión de Contactos y Edición de Producto",
+            "fileType": "video",
+            "order": 57,
+            "relPath": "08 - Directorio de Proveedores, Gestión de Contactos y Edición de Producto @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-58",
+            "title": "Control de Calidad Automatizado con Playwright",
+            "fileType": "video",
+            "order": 58,
+            "relPath": "09 - Control de Calidad Automatizado con Playwright @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-59",
+            "title": "Lógica de Inventario El Ajuste de Stock",
+            "fileType": "video",
+            "order": 59,
+            "relPath": "10 - Lógica de Inventario El Ajuste de Stock @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-60",
+            "title": "Historial de Movimientos (Transacciones)",
+            "fileType": "video",
+            "order": 60,
+            "relPath": "11 - Historial de Movimientos (Transacciones) @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-61",
+            "title": "Dashboard de Analíticas Gráficos",
+            "fileType": "video",
+            "order": 61,
+            "relPath": "12 - Dashboard de Analíticas Gráficos @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-62",
+            "title": "Búsqueda y Filtros en Tiempo Real",
+            "fileType": "video",
+            "order": 62,
+            "relPath": "13 - Búsqueda y Filtros en Tiempo Real @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-63",
+            "title": "Reportes y Exportación (Uso de Plugins MCP)",
+            "fileType": "video",
+            "order": 63,
+            "relPath": "14 - Reportes y Exportación (Uso de Plugins MCP) @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-64",
+            "title": "Pruebas de Roles y Permisos (Subagentes)",
+            "fileType": "video",
+            "order": 64,
+            "relPath": "15 - Pruebas de Roles y Permisos (Subagentes) @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-65",
+            "title": "Optimización y Despliegue (VercelDocker) y GitHub",
+            "fileType": "video",
+            "order": 65,
+            "relPath": "16 - Optimización y Despliegue (VercelDocker) y GitHub @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-66",
+            "title": "inventrack",
+            "fileType": "archive",
+            "order": 66,
+            "relPath": "17 - inventrack @MEMBRESIATPC.rar"
+          },
+          {
+            "id": "l-1-67",
+            "title": "Arquitectura del Modelo de Datos (C# 14)",
+            "fileType": "video",
+            "order": 67,
+            "relPath": "01 - Arquitectura del Modelo de Datos (C# 14) @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-68",
+            "title": "UI Responsiva con Boostrap CSS",
+            "fileType": "video",
+            "order": 68,
+            "relPath": "02 - UI Responsiva con Boostrap CSS @MEMBRESIATPC.mp4"
+          },
+          {
+            "id": "l-1-69",
+            "title": "RecetasSemanales",
+            "fileType": "archive",
+            "order": 69,
+            "relPath": "03 - RecetasSemanales @MEMBRESIATPC.rar"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tpc-telegram-1792415729592-n1mj",
+    "slug": "lovable-con-sites",
+    "title": "Lovable con Sites",
+    "author": "Lovable Sites Master",
+    "category": "Desarrollo & Programación",
+    "platform": "Telegram TPC",
+    "niche": "Lovable & No-Code Fullstack",
+    "utility": "Curso completo de Lovable con Sites descargado desde Telegram TPC, listo para ver y preparar en Google Drive.",
+    "targetAudience": "Interesados en lovable & no-code fullstack.",
+    "difficulty": "Intermedio",
+    "estimatedHours": "7h",
+    "originType": "TELEGRAM_TPC",
+    "originName": "Telegram • DESCARGAS TPC 📥 (@MEMBRESIATPC)",
+    "localPath": "/Users/toni/Downloads/Lovable con Sites",
+    "drivePath": "Mi unidad / 001-CURSOS / 00-IA-CURSOS / Lovable con Sites",
+    "webUrl": "https://drive.google.com/drive/u/0/search?q=Lovable%20con%20Sites",
+    "rating": 4.8,
+    "totalLessons": 18,
+    "tags": [
+      "telegram",
+      "tpc",
+      "desarrollo",
+      "lovable"
+    ],
+    "hasLocalFiles": true,
+    "isArchive": false,
+    "telegramChannel": "DESCARGAS TPC 📥 (@MEMBRESIATPC)",
+    "telegramSearchUrl": "tg://resolve?domain=MEMBRESIATPC&query=Lovable%20con%20Sites",
+    "isUploadedToDrive": false,
+    "isPreparedInDrive": false,
+    "pipelineStatus": "DOWNLOADED",
+    "modules": [
+      {
+        "id": "m-1",
+        "title": "Contenido Principal",
+        "order": 1,
+        "lessons": [
+          {
+            "id": "l-1-1",
+            "title": "C01 - Introduccion a sites",
+            "fileType": "doc",
+            "order": 1,
+            "relPath": "C01 - Introduccion a sites.pdf"
+          },
+          {
+            "id": "l-1-2",
+            "title": "C01 - recursos - Introduccion a sites",
+            "fileType": "doc",
+            "order": 2,
+            "relPath": "C01 - recursos - Introduccion a sites.pdf"
+          },
+          {
+            "id": "l-1-3",
+            "title": "C02 - Creación de tu primer proyecto",
+            "fileType": "doc",
+            "order": 3,
+            "relPath": "C02 - Creación de tu primer proyecto.pdf"
+          },
+          {
+            "id": "l-1-4",
+            "title": "C02 - recursos - Creación de tu primer proyecto",
+            "fileType": "doc",
+            "order": 4,
+            "relPath": "C02 - recursos - Creación de tu primer proyecto.pdf"
+          },
+          {
+            "id": "l-1-5",
+            "title": "C03 - Base de datos en Sites",
+            "fileType": "doc",
+            "order": 5,
+            "relPath": "C03 - Base de datos en Sites.pdf"
+          },
+          {
+            "id": "l-1-6",
+            "title": "C03 - recursos - Base de datos en Sites",
+            "fileType": "doc",
+            "order": 6,
+            "relPath": "C03 - recursos - Base de datos en Sites.pdf"
+          },
+          {
+            "id": "l-1-7",
+            "title": "C04 - Implementa IA en Sites",
+            "fileType": "doc",
+            "order": 7,
+            "relPath": "C04 - Implementa IA en Sites.pdf"
+          },
+          {
+            "id": "l-1-8",
+            "title": "C04 - recursos - Implementa IA en Sites",
+            "fileType": "doc",
+            "order": 8,
+            "relPath": "C04 - recursos - Implementa IA en Sites.pdf"
+          },
+          {
+            "id": "l-1-9",
+            "title": "C05 - Publica tu Site con tu propio dominio",
+            "fileType": "doc",
+            "order": 9,
+            "relPath": "C05 - Publica tu Site con tu propio dominio.pdf"
+          },
+          {
+            "id": "l-1-10",
+            "title": "C05 - recursos - Publica tu Site con tu propio dominio",
+            "fileType": "doc",
+            "order": 10,
+            "relPath": "C05 - recursos - Publica tu Site con tu propio dominio.pdf"
+          },
+          {
+            "id": "l-1-11",
+            "title": "C06 - Automatiza Sites con Cron Jobs",
+            "fileType": "doc",
+            "order": 11,
+            "relPath": "C06 - Automatiza Sites con Cron Jobs.pdf"
+          },
+          {
+            "id": "l-1-12",
+            "title": "C06 - recursos - Automatiza Sites con Cron Jobs",
+            "fileType": "doc",
+            "order": 12,
+            "relPath": "C06 - recursos - Automatiza Sites con Cron Jobs.pdf"
+          },
+          {
+            "id": "l-1-13",
+            "title": "C07 - Crea un CRM a partir de un proyecto",
+            "fileType": "doc",
+            "order": 13,
+            "relPath": "C07 - Crea un CRM a partir de un proyecto.pdf"
+          },
+          {
+            "id": "l-1-14",
+            "title": "C07 - recursos - Crea un CRM a partir de un proyecto",
+            "fileType": "doc",
+            "order": 14,
+            "relPath": "C07 - recursos - Crea un CRM a partir de un proyecto.pdf"
+          },
+          {
+            "id": "l-1-15",
+            "title": "C08 - Agente financiero con dashboard",
+            "fileType": "doc",
+            "order": 15,
+            "relPath": "C08 - Agente financiero con dashboard.pdf"
+          },
+          {
+            "id": "l-1-16",
+            "title": "C08 - recursos - Agente financiero con dashboard",
+            "fileType": "doc",
+            "order": 16,
+            "relPath": "C08 - recursos - Agente financiero con dashboard.pdf"
+          },
+          {
+            "id": "l-1-17",
+            "title": "C09 - Creación de una página web",
+            "fileType": "doc",
+            "order": 17,
+            "relPath": "C09 - Creación de una página web.pdf"
+          },
+          {
+            "id": "l-1-18",
+            "title": "C09 - recursos - Creación de una página web",
+            "fileType": "doc",
+            "order": 18,
+            "relPath": "C09 - recursos - Creación de una página web.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tpc-telegram-1792415729603-frvo",
+    "slug": "inicio-antigravity",
+    "title": "Inicio Antigravity",
+    "author": "Antigravity Guías",
+    "category": "IA & Automatización",
+    "platform": "Telegram TPC",
+    "niche": "Google Antigravity Básico",
+    "utility": "Curso completo de Inicio Antigravity descargado desde Telegram TPC, listo para ver y preparar en Google Drive.",
+    "targetAudience": "Interesados en google antigravity básico.",
+    "difficulty": "Intermedio",
+    "estimatedHours": "85h",
+    "originType": "TELEGRAM_TPC",
+    "originName": "Telegram • DESCARGAS TPC 📥 (@MEMBRESIATPC)",
+    "localPath": "/Users/toni/Downloads/Inicio Antigravity",
+    "drivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Mi unidad/001-CURSOS/00-IA-CURSOS/Inicio Antigravity",
+    "webUrl": "https://drive.google.com/drive/u/0/search?q=Inicio%20Antigravity",
+    "rating": 4.8,
+    "totalLessons": 212,
+    "tags": [
+      "telegram",
+      "tpc",
+      "ia",
+      "google"
+    ],
+    "hasLocalFiles": true,
+    "isArchive": false,
+    "telegramChannel": "DESCARGAS TPC 📥 (@MEMBRESIATPC)",
+    "telegramSearchUrl": "tg://resolve?domain=MEMBRESIATPC&query=Inicio%20Antigravity",
+    "isUploadedToDrive": true,
+    "isPreparedInDrive": true,
+    "pipelineStatus": "UPLOADED",
+    "modules": []
+  },
+  {
+    "id": "tpc-telegram-1792415729645-5ibx",
+    "slug": "panel-de-trading-ift",
+    "title": "Panel De Trading IFT",
+    "author": "IFT Trading",
+    "category": "Trading & Inversión",
+    "platform": "Telegram TPC",
+    "niche": "Trading Algorítmico & Scripts",
+    "utility": "Curso completo de Panel De Trading IFT descargado desde Telegram TPC, listo para ver y preparar en Google Drive.",
+    "targetAudience": "Interesados en trading algorítmico & scripts.",
+    "difficulty": "Intermedio",
+    "estimatedHours": "2h",
+    "originType": "TELEGRAM_TPC",
+    "originName": "Telegram • DESCARGAS TPC 📥 (@MEMBRESIATPC)",
+    "localPath": "/Users/toni/Downloads/Panel.De.Trading.IFT",
+    "drivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Mi unidad/001-CURSOS/Panel De Trading IFT",
+    "webUrl": "https://drive.google.com/drive/u/0/search?q=Panel%20De%20Trading%20IFT",
+    "rating": 4.8,
+    "totalLessons": 3,
+    "tags": [
+      "telegram",
+      "tpc",
+      "trading",
+      "trading"
+    ],
+    "hasLocalFiles": true,
+    "isArchive": false,
+    "telegramChannel": "DESCARGAS TPC 📥 (@MEMBRESIATPC)",
+    "telegramSearchUrl": "tg://resolve?domain=MEMBRESIATPC&query=Panel%20De%20Trading%20IFT",
+    "isUploadedToDrive": true,
+    "isPreparedInDrive": true,
+    "pipelineStatus": "UPLOADED",
+    "modules": []
+  },
+  {
+    "id": "tpc-telegram-1792415729659-8vgx",
+    "slug": "daily-win-manual",
+    "title": "Daily Win manual",
+    "author": "Daily Win",
+    "category": "Trading & Inversión",
+    "platform": "Telegram TPC",
+    "niche": "Trading & Estrategias Intradía",
+    "utility": "Curso completo de Daily Win manual descargado desde Telegram TPC, listo para ver y preparar en Google Drive.",
+    "targetAudience": "Interesados en trading & estrategias intradía.",
+    "difficulty": "Intermedio",
+    "estimatedHours": "2h",
+    "originType": "TELEGRAM_TPC",
+    "originName": "Telegram • DESCARGAS TPC 📥 (@MEMBRESIATPC)",
+    "localPath": "/Users/toni/Downloads/Daily.Win.manual",
+    "drivePath": "/Users/toni/Library/CloudStorage/GoogleDrive-leblangarcia@gmail.com/Mi unidad/001-CURSOS/Daily Win manual",
+    "webUrl": "https://drive.google.com/drive/u/0/search?q=Daily%20Win%20manual",
+    "rating": 4.8,
+    "totalLessons": 3,
+    "tags": [
+      "telegram",
+      "tpc",
+      "trading",
+      "trading"
+    ],
+    "hasLocalFiles": true,
+    "isArchive": false,
+    "telegramChannel": "DESCARGAS TPC 📥 (@MEMBRESIATPC)",
+    "telegramSearchUrl": "tg://resolve?domain=MEMBRESIATPC&query=Daily%20Win%20manual",
+    "isUploadedToDrive": true,
+    "isPreparedInDrive": true,
+    "pipelineStatus": "UPLOADED",
+    "modules": []
+  },
+  {
+    "id": "tpc-telegram-1792415729672-germ",
+    "slug": "estrategias",
+    "title": "Estrategias",
+    "author": "Trading Master",
+    "category": "Trading & Inversión",
+    "platform": "Telegram TPC",
+    "niche": "Estrategias de Inversión",
+    "utility": "Curso completo de Estrategias descargado desde Telegram TPC, listo para ver y preparar en Google Drive.",
+    "targetAudience": "Interesados en estrategias de inversión.",
+    "difficulty": "Intermedio",
+    "estimatedHours": "10h",
+    "originType": "TELEGRAM_TPC",
+    "originName": "Telegram • DESCARGAS TPC 📥 (@MEMBRESIATPC)",
+    "localPath": "/Users/toni/Downloads/Estrategias",
+    "drivePath": "Mi unidad / 001-CURSOS / Trading / Estrategias",
+    "webUrl": "https://drive.google.com/drive/u/0/search?q=Estrategias",
+    "rating": 4.8,
+    "totalLessons": 26,
+    "tags": [
+      "telegram",
+      "tpc",
+      "trading",
+      "estrategias"
+    ],
+    "hasLocalFiles": true,
+    "isArchive": false,
+    "telegramChannel": "DESCARGAS TPC 📥 (@MEMBRESIATPC)",
+    "telegramSearchUrl": "tg://resolve?domain=MEMBRESIATPC&query=Estrategias",
+    "isUploadedToDrive": false,
+    "isPreparedInDrive": false,
+    "pipelineStatus": "DOWNLOADED",
+    "modules": []
   }
 ]

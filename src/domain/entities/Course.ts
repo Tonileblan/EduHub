@@ -25,6 +25,8 @@ export interface Course {
   hasLocalFiles?: boolean;
   isArchive?: boolean;
   archiveType?: "ZIP" | "RAR" | "7Z" | "OTHER";
+  archivePath?: string;
+  isPreparedInDrive?: boolean;
   modules?: Module[];
   telegramChannel?: string;
   telegramSearchUrl?: string;

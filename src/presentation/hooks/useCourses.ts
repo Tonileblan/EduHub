@@ -69,6 +69,16 @@ export function useCourses(progressMap: Record<string, CourseProgress>) {
     setFilters(initialFilterState);
   };
 
+  const markCourseAsPrepared = (courseId: string) => {
+    setCourses(prev =>
+      prev.map(c =>
+        c.id === courseId
+          ? { ...c, isPreparedInDrive: true, isUploadedToDrive: true, pipelineStatus: "UPLOADED" }
+          : c
+      )
+    );
+  };
+
   return {
     courses,
     filteredCourses,
@@ -80,6 +90,7 @@ export function useCourses(progressMap: Record<string, CourseProgress>) {
     niches,
     platforms,
     updateFilters,
-    resetFilters
+    resetFilters,
+    markCourseAsPrepared
   };
 }

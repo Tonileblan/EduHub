@@ -30,6 +30,9 @@ export const CourseCard: React.FC<CourseCardProps> = ({
   const cleanTitle = course.title.replace(/^[0-9️⃣🔟._ -]+/, "").trim();
   const driveUrl = course.webUrl || `https://drive.google.com/drive/u/0/search?q=${encodeURIComponent(cleanTitle)}`;
   const isDirect1Click = Boolean(course.webUrl && (course.webUrl.includes('/folders/') || course.webUrl.includes('/file/d/')));
+  const isArchive = Boolean(course.isArchive || (course.localPath && /\.(zip|rar|7z)$/i.test(course.localPath)));
+  const isPrepared = Boolean(course.isPreparedInDrive);
+  const needsPrep = (isTelegram || isArchive) && !isPrepared;
 
   return (
     <article
@@ -50,9 +53,17 @@ export const CourseCard: React.FC<CourseCardProps> = ({
 
         {/* Top Badges over banner */}
         <div className="banner-top-row">
-          {isTelegram ? (
+          {course.isPreparedInDrive ? (
+            <span className="banner-cloud-pill" style={{ background: "rgba(16, 185, 129, 0.85)", borderColor: "rgba(52, 211, 153, 0.7)", color: "#ffffff" }}>
+              ✅ Preparado en Drive
+            </span>
+          ) : isTelegram ? (
             <span className="banner-cloud-pill" style={{ background: "rgba(192, 38, 211, 0.7)", borderColor: "rgba(240, 171, 252, 0.5)", color: "#ffffff" }}>
               ✈️ Telegram TPC
+            </span>
+          ) : course.isArchive ? (
+            <span className="banner-cloud-pill" style={{ background: "rgba(245, 158, 11, 0.75)", borderColor: "rgba(251, 191, 36, 0.6)", color: "#ffffff" }}>
+              📦 Archivo Comprimido
             </span>
           ) : course.originType === "DRIVE_MI_UNIDAD" ? (
             <span className="banner-cloud-pill" style={{ background: "rgba(16, 185, 129, 0.75)", borderColor: "rgba(52, 211, 153, 0.6)", color: "#ffffff" }}>
@@ -164,15 +175,22 @@ export const CourseCard: React.FC<CourseCardProps> = ({
 
       {/* Card Actions Footer */}
       <div className="card-action-footer" onClick={(e) => e.stopPropagation()}>
-        {isTelegram ? (
+        {needsPrep ? (
           <button
             type="button"
             className="btn-drive-main"
-            style={{ background: "linear-gradient(135deg, #d946ef 0%, #8b5cf6 100%)", boxShadow: "0 4px 14px rgba(217, 70, 239, 0.4)" }}
+            style={{
+              background: isTelegram
+                ? "linear-gradient(135deg, #d946ef 0%, #8b5cf6 100%)"
+                : "linear-gradient(135deg, #f59e0b 0%, #d97706 100%)",
+              boxShadow: isTelegram
+                ? "0 4px 14px rgba(217, 70, 239, 0.4)"
+                : "0 4px 14px rgba(245, 158, 11, 0.4)"
+            }}
             onClick={() => onOpenPipeline ? onOpenPipeline(course) : onOpenDetails(course)}
-            title="Procesar descarga de Telegram, descompresión y subida a Drive"
+            title={isTelegram ? "Preparar descarga de Telegram en Drive" : "Descomprimir y preparar en Drive"}
           >
-            <span>⚡ Pipeline SSD ➜ Drive</span>
+            <span>⚡ Preparar en Drive (1-Clic)</span>
             <span className="btn-arrow">➔</span>
           </button>
         ) : (
@@ -181,10 +199,10 @@ export const CourseCard: React.FC<CourseCardProps> = ({
             target="_blank"
             rel="noreferrer"
             className="btn-drive-main"
-            style={isDirect1Click ? { background: "linear-gradient(135deg, #10b981 0%, #059669 100%)", boxShadow: "0 4px 14px rgba(16, 185, 129, 0.4)" } : undefined}
-            title={isDirect1Click ? "Abrir carpeta directa en Google Drive (1 clic)" : "Buscar y abrir en Google Drive Cloud"}
+            style={(isDirect1Click || isPrepared) ? { background: "linear-gradient(135deg, #10b981 0%, #059669 100%)", boxShadow: "0 4px 14px rgba(16, 185, 129, 0.4)" } : undefined}
+            title={isDirect1Click || isPrepared ? "Abrir carpeta directa en Google Drive (1 clic)" : "Buscar y abrir en Google Drive Cloud"}
           >
-            <span>{isDirect1Click ? "⚡ Abrir en Drive (1-Clic)" : "☁️ Ver en Drive"}</span>
+            <span>{(isDirect1Click || isPrepared) ? "⚡ Abrir en Drive (1-Clic)" : "☁️ Ver en Drive"}</span>
             <span className="btn-arrow">➔</span>
           </a>
         )}

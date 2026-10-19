@@ -55,7 +55,8 @@ export const App: React.FC = () => {
     niches,
     platforms,
     updateFilters,
-    resetFilters
+    resetFilters,
+    markCourseAsPrepared
   } = useCourses(progressMap);
 
   // Global search shortcut
@@ -290,6 +291,7 @@ export const App: React.FC = () => {
                 onOpenDetails={(c) => setSelectedCourse(c)}
                 onToggleFavorite={handleToggleFavoriteWithToast}
                 onToggleWatchLater={handleToggleWatchLaterWithToast}
+                onOpenPipeline={handleOpenPipeline}
               />
             )}
 
@@ -319,6 +321,7 @@ export const App: React.FC = () => {
         isOpen={Boolean(pipelineCourse)}
         onClose={() => setPipelineCourse(null)}
         onShowToast={showToast}
+        onMarkAsUploaded={markCourseAsPrepared}
       />
 
       {/* Cloud & Drive Synchronization Modal */}
