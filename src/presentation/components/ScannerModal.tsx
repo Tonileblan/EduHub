@@ -46,13 +46,13 @@ export const ScannerModal: React.FC<ScannerModalProps> = ({
               El catálogo se sincroniza con:
             </p>
             <ul style={{ paddingLeft: "2rem", display: "flex", flexDirection: "column", gap: "0.6rem" }}>
-              <li>☁️ <strong>Google Drive:</strong> <code>Mi unidad</code> y <code>140+ Unidades Compartidas</code></li>
-              <li>💾 <strong>Almacenamiento Local:</strong> <code>~/Downloads/Claude Code - El Curso Completo</code></li>
+              <li>☁️ <strong>Google Drive Cloud:</strong> <code>Mi unidad</code>, <code>141 Unidades Compartidas</code> y <code>158 Atajos Cloud</code></li>
+              <li>💾 <strong>Almacenamiento Local SSD:</strong> Carpetas locales y descargas de Telegram TPC</li>
             </ul>
           </div>
 
           <div style={{ background: "rgba(99, 102, 241, 0.1)", border: "1px solid rgba(99, 102, 241, 0.2)", padding: "1.4rem", borderRadius: "var(--radius-md)", fontSize: "1.3rem", color: "var(--text-secondary)" }}>
-            💡 Para re-escanear nuevas carpetas descargadas o compartidas, puedes ejecutar el script CLI <code>node scripts/scan_and_index_courses.js</code> o pedirle a tu agente que sincronice.
+            💡 Para re-escanear y enriquecer nuevas carpetas de Drive o Telegram, ejecuta el script CLI <code>node scripts/rebuild_and_enrich_catalog.js</code>.
           </div>
 
           <div style={{ display: "flex", justifyContent: "flex-end", gap: "1rem" }}>

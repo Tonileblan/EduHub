@@ -11,6 +11,7 @@ export const initialFilterState: FilterState = {
   searchQuery: "",
   category: "ALL",
   author: "ALL",
+  platform: "ALL",
   niche: "ALL",
   originType: "ALL",
   formatType: "ALL",
@@ -28,6 +29,7 @@ export function useCourses(progressMap: Record<string, CourseProgress>) {
   const [categories, setCategories] = useState<string[]>([]);
   const [authors, setAuthors] = useState<string[]>([]);
   const [niches, setNiches] = useState<string[]>([]);
+  const [platforms, setPlatforms] = useState<string[]>([]);
 
   useEffect(() => {
     async function loadData() {
@@ -36,14 +38,16 @@ export function useCourses(progressMap: Record<string, CourseProgress>) {
         const data = await courseRepo.getAllCourses();
         setCourses(data);
 
-        const [cats, auths, nich] = await Promise.all([
+        const [cats, auths, nich, plat] = await Promise.all([
           courseRepo.getCategories(),
           courseRepo.getAuthors(),
-          courseRepo.getNiches()
+          courseRepo.getNiches(),
+          courseRepo.getPlatforms()
         ]);
         setCategories(cats);
         setAuthors(auths);
         setNiches(nich);
+        setPlatforms(plat);
       } catch (err: any) {
         setError(err.message || "Error al cargar catálogo de cursos");
       } finally {
@@ -74,6 +78,7 @@ export function useCourses(progressMap: Record<string, CourseProgress>) {
     categories,
     authors,
     niches,
+    platforms,
     updateFilters,
     resetFilters
   };

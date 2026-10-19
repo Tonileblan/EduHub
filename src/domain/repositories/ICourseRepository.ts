@@ -9,4 +9,5 @@ export interface ICourseRepository {
   getCategories(): Promise<string[]>;
   getAuthors(): Promise<string[]>;
   getNiches(): Promise<string[]>;
+  getPlatforms(): Promise<string[]>;
 }

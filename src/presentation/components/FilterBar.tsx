@@ -9,6 +9,7 @@ interface FilterBarProps {
   categories: string[];
   authors: string[];
   niches: string[];
+  platforms: string[];
   viewMode: ViewMode;
   onViewModeChange: (mode: ViewMode) => void;
   onFilterChange: (newFilters: Partial<FilterState>) => void;
@@ -20,6 +21,7 @@ interface FilterBarProps {
     watchLater: number;
     completed: number;
     telegram: number;
+    directDrive: number;
   };
 }
 
@@ -28,6 +30,7 @@ export const FilterBar: React.FC<FilterBarProps> = ({
   categories,
   authors,
   niches,
+  platforms,
   viewMode,
   onViewModeChange,
   onFilterChange,
@@ -40,6 +43,7 @@ export const FilterBar: React.FC<FilterBarProps> = ({
     filters.searchQuery ||
     filters.category !== "ALL" ||
     filters.author !== "ALL" ||
+    filters.platform !== "ALL" ||
     filters.niche !== "ALL" ||
     filters.originType !== "ALL" ||
     filters.formatType !== "ALL" ||
@@ -61,6 +65,20 @@ export const FilterBar: React.FC<FilterBarProps> = ({
           <span className="tab-icon">🌐</span>
           <span>Todo el Catálogo</span>
           <span className="tab-badge">{statsCounts.total.toLocaleString()}</span>
+        </button>
+
+        <button
+          type="button"
+          role="tab"
+          aria-selected={filters.originType === "DRIVE_DIRECT"}
+          className={`status-tab ${filters.originType === "DRIVE_DIRECT" ? "active" : ""}`}
+          onClick={() => onFilterChange({ originType: filters.originType === "DRIVE_DIRECT" ? "ALL" : "DRIVE_DIRECT" })}
+        >
+          <span className="tab-icon">⭐</span>
+          <span>En Mi Drive & Atajos</span>
+          <span className="tab-badge highlight" style={{ background: "#10b981", color: "#ffffff" }}>
+            {statsCounts.directDrive}
+          </span>
         </button>
 
         <button
@@ -217,6 +235,37 @@ export const FilterBar: React.FC<FilterBarProps> = ({
         <div className="advanced-filters-panel">
           <div className="advanced-grid">
             <div className="filter-field">
+              <label htmlFor="select-platform">🏢 Plataforma / Academia</label>
+              <select
+                id="select-platform"
+                value={filters.platform}
+                onChange={(e) => onFilterChange({ platform: e.target.value })}
+              >
+                <option value="ALL">Todas las Plataformas ({platforms.length})</option>
+                {platforms.map((p) => (
+                  <option key={p} value={p}>{p}</option>
+                ))}
+              </select>
+            </div>
+
+            <div className="filter-field">
+              <label htmlFor="select-origin">☁️ Ubicación / Origen</label>
+              <select
+                id="select-origin"
+                value={filters.originType}
+                onChange={(e) => onFilterChange({ originType: e.target.value })}
+              >
+                <option value="ALL">Todos los Orígenes</option>
+                <option value="DRIVE_DIRECT">⭐ Mi Unidad & Atajos Cloud (Acceso Directo)</option>
+                <option value="DRIVE_MI_UNIDAD">☁️ Google Drive • Mi Unidad</option>
+                <option value="DRIVE_SHORTCUT">🚀 Google Drive • Atajos Cloud</option>
+                <option value="DRIVE_COMPARTIDA">👥 Google Drive • Unidades Compartidas</option>
+                <option value="TELEGRAM_TPC">✈️ Telegram TPC (SSD ➜ Drive)</option>
+                <option value="LOCAL_SSD">💾 Almacenamiento Local SSD</option>
+              </select>
+            </div>
+
+            <div className="filter-field">
               <label htmlFor="select-author">👤 Creador / Autor</label>
               <select
                 id="select-author"
@@ -241,20 +290,6 @@ export const FilterBar: React.FC<FilterBarProps> = ({
                 {niches.slice(0, 50).map((n) => (
                   <option key={n} value={n}>{n}</option>
                 ))}
-              </select>
-            </div>
-
-            <div className="filter-field">
-              <label htmlFor="select-origin">☁️ Ubicación / Origen</label>
-              <select
-                id="select-origin"
-                value={filters.originType}
-                onChange={(e) => onFilterChange({ originType: e.target.value })}
-              >
-                <option value="ALL">Todos los Orígenes</option>
-                <option value="DRIVE_MI_UNIDAD">☁️ Google Drive (En la nube)</option>
-                <option value="TELEGRAM_TPC">✈️ Telegram TPC (SSD ➜ Drive)</option>
-                <option value="LOCAL_SSD">💾 Almacenamiento Local SSD</option>
               </select>
             </div>
 

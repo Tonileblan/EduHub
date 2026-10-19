@@ -70,4 +70,13 @@ export class CourseRepositoryImpl implements ICourseRepository {
     });
     return Array.from(niches).sort();
   }
+
+  async getPlatforms(): Promise<string[]> {
+    const courses = await this.getAllCourses();
+    const platforms = new Set<string>();
+    courses.forEach(c => {
+      if (c.platform) platforms.add(c.platform);
+    });
+    return Array.from(platforms).sort();
+  }
 }

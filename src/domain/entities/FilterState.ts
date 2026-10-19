@@ -5,6 +5,7 @@ export interface FilterState {
   searchQuery: string;
   category: string;
   author: string;
+  platform: string;
   niche: string;
   originType: string;
   formatType: FormatFilter;

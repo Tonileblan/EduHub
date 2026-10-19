@@ -25,7 +25,8 @@ const mockCourses: Course[] = [
     totalLessons: 35,
     tags: ["IA", "Claude", "Agentes"],
     hasLocalFiles: true,
-    isArchive: false
+    isArchive: false,
+    platform: "Udemy"
   },
   {
     id: "c2",
@@ -47,7 +48,8 @@ const mockCourses: Course[] = [
     totalLessons: 14,
     tags: ["Amazon", "Ecommerce"],
     hasLocalFiles: false,
-    isArchive: false
+    isArchive: false,
+    platform: "Hotmart"
   },
   {
     id: "c3",
@@ -70,7 +72,8 @@ const mockCourses: Course[] = [
     tags: ["Ingeniería", "Electricidad"],
     hasLocalFiles: false,
     isArchive: true,
-    archiveType: "RAR"
+    archiveType: "RAR",
+    platform: "EDteam"
   }
 ];
 
@@ -101,6 +104,7 @@ describe("FilterCoursesUseCase", () => {
       searchQuery: "Claude",
       category: "ALL",
       author: "ALL",
+      platform: "ALL",
       niche: "ALL",
       originType: "ALL",
       formatType: "ALL",
@@ -119,6 +123,7 @@ describe("FilterCoursesUseCase", () => {
       searchQuery: "",
       category: "ALL",
       author: "ALL",
+      platform: "ALL",
       niche: "ALL",
       originType: "ALL",
       formatType: "ARCHIVES",
@@ -138,6 +143,7 @@ describe("FilterCoursesUseCase", () => {
       searchQuery: "",
       category: "ALL",
       author: "ALL",
+      platform: "ALL",
       niche: "ALL",
       originType: "ALL",
       formatType: "ALL",
@@ -156,6 +162,7 @@ describe("FilterCoursesUseCase", () => {
       searchQuery: "",
       category: "E-Commerce & Amazon FBA",
       author: "ALL",
+      platform: "ALL",
       niche: "ALL",
       originType: "ALL",
       formatType: "ALL",
@@ -167,5 +174,25 @@ describe("FilterCoursesUseCase", () => {
     const result = FilterCoursesUseCase.filter(mockCourses, filters, mockProgressMap);
     expect(result).toHaveLength(1);
     expect(result[0].id).toBe("c2");
+  });
+
+  it("filters courses by platform", () => {
+    const filters: FilterState = {
+      searchQuery: "",
+      category: "ALL",
+      author: "ALL",
+      platform: "EDteam",
+      niche: "ALL",
+      originType: "ALL",
+      formatType: "ALL",
+      status: "ALL",
+      sortBy: "relevance",
+      onlyWithLessons: false
+    };
+
+    const result = FilterCoursesUseCase.filter(mockCourses, filters, mockProgressMap);
+    expect(result).toHaveLength(1);
+    expect(result[0].id).toBe("c3");
+    expect(result[0].platform).toBe("EDteam");
   });
 });

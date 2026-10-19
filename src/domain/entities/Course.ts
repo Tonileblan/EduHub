@@ -1,6 +1,6 @@
 import type { Module } from "./Module";
 
-export type OriginType = "DRIVE_MI_UNIDAD" | "DRIVE_COMPARTIDA" | "LOCAL_SSD" | "TELEGRAM_TPC";
+export type OriginType = "DRIVE_MI_UNIDAD" | "DRIVE_COMPARTIDA" | "DRIVE_SHORTCUT" | "LOCAL_SSD" | "TELEGRAM_TPC";
 
 export interface Course {
   id: string;
@@ -8,6 +8,7 @@ export interface Course {
   title: string;
   author: string;
   category: string;
+  platform?: string;
   niche: string;
   utility: string;
   targetAudience: string;

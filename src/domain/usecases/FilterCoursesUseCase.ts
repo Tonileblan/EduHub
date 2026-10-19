@@ -11,16 +11,17 @@ export class FilterCoursesUseCase {
     const query = filters.searchQuery.trim().toLowerCase();
     
     return courses.filter(course => {
-      // 1. Text Search across Title, Author, Niche, Utility, Tags
+      // 1. Text Search across Title, Author, Platform, Niche, Utility, Tags
       if (query) {
         const titleMatch = course.title.toLowerCase().includes(query);
         const authorMatch = course.author.toLowerCase().includes(query);
+        const platformMatch = (course.platform || "").toLowerCase().includes(query);
         const nicheMatch = course.niche.toLowerCase().includes(query);
         const utilityMatch = course.utility.toLowerCase().includes(query);
         const categoryMatch = course.category.toLowerCase().includes(query);
         const tagMatch = course.tags.some(t => t.toLowerCase().includes(query));
 
-        if (!titleMatch && !authorMatch && !nicheMatch && !utilityMatch && !categoryMatch && !tagMatch) {
+        if (!titleMatch && !authorMatch && !platformMatch && !nicheMatch && !utilityMatch && !categoryMatch && !tagMatch) {
           return false;
         }
       }
@@ -30,19 +31,30 @@ export class FilterCoursesUseCase {
         if (course.category !== filters.category) return false;
       }
 
-      // 3. Author Filter
+      // 3. Platform Filter
+      if (filters.platform && filters.platform !== "ALL") {
+        if (course.platform !== filters.platform) return false;
+      }
+
+      // 4. Author Filter
       if (filters.author && filters.author !== "ALL") {
         if (course.author !== filters.author) return false;
       }
 
-      // 4. Niche Filter
+      // 5. Niche Filter
       if (filters.niche && filters.niche !== "ALL") {
         if (course.niche !== filters.niche) return false;
       }
 
-      // 5. Origin Type Filter
+      // 6. Origin Type Filter
       if (filters.originType && filters.originType !== "ALL") {
-        if (course.originType !== filters.originType) return false;
+        if (filters.originType === "DRIVE_ALL") {
+          if (!course.originType.startsWith("DRIVE_")) return false;
+        } else if (filters.originType === "DRIVE_DIRECT") {
+          if (course.originType !== "DRIVE_MI_UNIDAD" && course.originType !== "DRIVE_SHORTCUT") return false;
+        } else if (course.originType !== filters.originType) {
+          return false;
+        }
       }
 
       // 6. Format Type Filter (ZIP/RAR vs Direct Folder)

@@ -28,7 +28,8 @@ export const CourseCard: React.FC<CourseCardProps> = ({
   const isTelegram = course.originType === "TELEGRAM_TPC";
 
   const cleanTitle = course.title.replace(/^[0-9️⃣🔟._ -]+/, "").trim();
-  const driveUrl = `https://drive.google.com/drive/u/0/search?q=${encodeURIComponent(cleanTitle)}`;
+  const driveUrl = course.webUrl || `https://drive.google.com/drive/u/0/search?q=${encodeURIComponent(cleanTitle)}`;
+  const isDirect1Click = Boolean(course.webUrl && (course.webUrl.includes('/folders/') || course.webUrl.includes('/file/d/')));
 
   return (
     <article
@@ -51,11 +52,19 @@ export const CourseCard: React.FC<CourseCardProps> = ({
         <div className="banner-top-row">
           {isTelegram ? (
             <span className="banner-cloud-pill" style={{ background: "rgba(192, 38, 211, 0.7)", borderColor: "rgba(240, 171, 252, 0.5)", color: "#ffffff" }}>
-              ✈️ Telegram TPC (SSD ➜ Drive)
+              ✈️ Telegram TPC
+            </span>
+          ) : course.originType === "DRIVE_MI_UNIDAD" ? (
+            <span className="banner-cloud-pill" style={{ background: "rgba(16, 185, 129, 0.75)", borderColor: "rgba(52, 211, 153, 0.6)", color: "#ffffff" }}>
+              ⭐ Mi Unidad
+            </span>
+          ) : course.originType === "DRIVE_SHORTCUT" ? (
+            <span className="banner-cloud-pill" style={{ background: "rgba(59, 130, 246, 0.75)", borderColor: "rgba(96, 165, 250, 0.6)", color: "#ffffff" }}>
+              🚀 Atajo Drive
             </span>
           ) : (
             <span className="banner-cloud-pill">
-              ☁️ Drive 0 GB Local
+              ☁️ Drive Cloud
             </span>
           )}
 
@@ -119,6 +128,11 @@ export const CourseCard: React.FC<CourseCardProps> = ({
         </p>
 
         <div className="card-tags-row">
+          {course.platform && course.platform !== "Google Drive Cloud" && (
+            <span className="niche-tag" style={{ background: "rgba(99, 102, 241, 0.2)", color: "#a5b4fc", borderColor: "rgba(99, 102, 241, 0.4)", fontWeight: 700 }}>
+              🏢 {course.platform}
+            </span>
+          )}
           {isTelegram && (
             <span className="niche-tag" style={{ background: "rgba(217, 70, 239, 0.2)", color: "#f0abfc", borderColor: "rgba(217, 70, 239, 0.4)" }}>
               ✈️ DESCARGAS TPC
@@ -167,9 +181,10 @@ export const CourseCard: React.FC<CourseCardProps> = ({
             target="_blank"
             rel="noreferrer"
             className="btn-drive-main"
-            title="Abrir directamente en Google Drive Cloud"
+            style={isDirect1Click ? { background: "linear-gradient(135deg, #10b981 0%, #059669 100%)", boxShadow: "0 4px 14px rgba(16, 185, 129, 0.4)" } : undefined}
+            title={isDirect1Click ? "Abrir carpeta directa en Google Drive (1 clic)" : "Buscar y abrir en Google Drive Cloud"}
           >
-            <span>☁️ Ver en Drive</span>
+            <span>{isDirect1Click ? "⚡ Abrir en Drive (1-Clic)" : "☁️ Ver en Drive"}</span>
             <span className="btn-arrow">➔</span>
           </a>
         )}

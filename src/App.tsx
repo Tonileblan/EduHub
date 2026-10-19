@@ -53,6 +53,7 @@ export const App: React.FC = () => {
     categories,
     authors,
     niches,
+    platforms,
     updateFilters,
     resetFilters
   } = useCourses(progressMap);
@@ -97,9 +98,11 @@ export const App: React.FC = () => {
     let watchLater = 0;
     let completed = 0;
     let telegram = 0;
+    let directDrive = 0;
 
     for (const c of courses) {
       if (c.originType === "TELEGRAM_TPC") telegram++;
+      if (c.originType === "DRIVE_MI_UNIDAD" || c.originType === "DRIVE_SHORTCUT") directDrive++;
     }
 
     for (const [_, prog] of Object.entries(progressMap)) {
@@ -118,7 +121,8 @@ export const App: React.FC = () => {
       inProgress,
       watchLater,
       completed,
-      telegram
+      telegram,
+      directDrive
     };
   }, [courses, progressMap]);
 
@@ -201,6 +205,7 @@ export const App: React.FC = () => {
           categories={categories}
           authors={authors}
           niches={niches}
+          platforms={platforms}
           viewMode={viewMode}
           onViewModeChange={setViewMode}
           onFilterChange={updateFilters}
@@ -214,6 +219,10 @@ export const App: React.FC = () => {
             <h2 className="results-title">
               {filters.originType === "TELEGRAM_TPC"
                 ? "✈️ Cursos de Telegram TPC (Flujo SSD ➜ Drive)"
+                : filters.originType === "DRIVE_DIRECT"
+                ? "⭐ Cursos en Mi Drive & Atajos Cloud"
+                : filters.platform !== "ALL"
+                ? `🏢 Academia / Plataforma: ${filters.platform}`
                 : filters.status === "FAVORITE"
                 ? "❤️ Mis Cursos Favoritos"
                 : filters.status === "IN_PROGRESS"

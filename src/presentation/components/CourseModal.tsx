@@ -36,7 +36,8 @@ export const CourseModal: React.FC<CourseModalProps> = ({
   const isTelegram = course.originType === "TELEGRAM_TPC";
 
   const cleanSearchTerm = course.title.replace(/^[0-9️⃣🔟._ -]+/, "").trim();
-  const driveWebSearchUrl = `https://drive.google.com/drive/u/0/search?q=${encodeURIComponent(cleanSearchTerm)}`;
+  const driveWebSearchUrl = course.webUrl || `https://drive.google.com/drive/u/0/search?q=${encodeURIComponent(cleanSearchTerm)}`;
+  const isDirectFolder = Boolean(course.webUrl && (course.webUrl.includes('/folders/') || course.webUrl.includes('/file/d/')));
   const telegramUrl = course.telegramSearchUrl || "https://t.me/MEMBRESIATPC";
 
   return (
@@ -48,9 +49,22 @@ export const CourseModal: React.FC<CourseModalProps> = ({
               <span className="course-tag" style={{ background: "rgba(99, 102, 241, 0.2)", color: "var(--accent-primary)" }}>
                 {course.category}
               </span>
+              {course.platform && course.platform !== "Google Drive Cloud" && (
+                <span className="course-tag" style={{ background: "rgba(168, 85, 247, 0.25)", color: "#c084fc", border: "1px solid rgba(168, 85, 247, 0.4)", fontWeight: 700 }}>
+                  🏢 {course.platform}
+                </span>
+              )}
               {isTelegram ? (
                 <span className="course-tag" style={{ background: "rgba(217, 70, 239, 0.2)", color: "#f0abfc", border: "1px solid rgba(217, 70, 239, 0.4)" }}>
                   ✈️ Telegram • DESCARGAS TPC 📥
+                </span>
+              ) : course.originType === "DRIVE_MI_UNIDAD" ? (
+                <span className="course-tag" style={{ background: "rgba(16, 185, 129, 0.2)", color: "var(--accent-emerald)", border: "1px solid rgba(16, 185, 129, 0.4)" }}>
+                  ⭐ Google Drive • Mi Unidad
+                </span>
+              ) : course.originType === "DRIVE_SHORTCUT" ? (
+                <span className="course-tag" style={{ background: "rgba(59, 130, 246, 0.2)", color: "#60a5fa", border: "1px solid rgba(59, 130, 246, 0.4)" }}>
+                  🚀 Google Drive • Atajo Cloud
                 </span>
               ) : (
                 <span className="course-tag" style={{ background: "rgba(16, 185, 129, 0.15)", color: "var(--accent-emerald)" }}>
@@ -113,9 +127,17 @@ export const CourseModal: React.FC<CourseModalProps> = ({
                 target="_blank"
                 rel="noreferrer"
                 className="btn-primary"
-                style={{ display: "inline-flex", alignItems: "center", gap: "0.6rem", padding: "0.8rem 1.6rem", fontSize: "1.35rem" }}
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: "0.6rem",
+                  padding: "0.8rem 1.6rem",
+                  fontSize: "1.35rem",
+                  background: isDirectFolder ? "linear-gradient(135deg, #10b981 0%, #059669 100%)" : undefined,
+                  boxShadow: isDirectFolder ? "0 4px 14px rgba(16, 185, 129, 0.4)" : undefined
+                }}
               >
-                ☁️ Abrir Curso en Google Drive Web ➔
+                {isDirectFolder ? "⚡ Abrir Carpeta en Drive (1-Clic) ➔" : "☁️ Abrir Curso en Google Drive Web ➔"}
               </a>
             )}
           </div>
@@ -279,9 +301,22 @@ export const CourseModal: React.FC<CourseModalProps> = ({
               </div>
 
               {course.localPath && (
-                <div style={{ background: "rgba(10, 14, 25, 0.6)", padding: "1.4rem", borderRadius: "var(--radius-md)", border: "1px solid var(--border-glass)", fontSize: "1.25rem" }}>
-                  <div style={{ color: "var(--text-muted)", marginBottom: "0.4rem" }}>📁 Ruta Local / Almacenamiento:</div>
-                  <code style={{ color: "var(--accent-cyan)" }}>{course.localPath}</code>
+                <div style={{ background: "rgba(10, 14, 25, 0.6)", padding: "1.4rem", borderRadius: "var(--radius-md)", border: "1px solid var(--border-glass)", fontSize: "1.25rem", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "1rem" }}>
+                  <div style={{ flex: 1, minWidth: "20rem" }}>
+                    <div style={{ color: "var(--text-muted)", marginBottom: "0.4rem" }}>📁 Ruta Local / Almacenamiento:</div>
+                    <code style={{ color: "var(--accent-cyan)", wordBreak: "break-all" }}>{course.localPath}</code>
+                  </div>
+                  <button
+                    type="button"
+                    className="btn-secondary"
+                    style={{ padding: "0.6rem 1.2rem", fontSize: "1.2rem", whiteSpace: "nowrap" }}
+                    onClick={() => {
+                      navigator.clipboard.writeText(course.localPath);
+                      onShowToast("Ruta copiada al portapapeles", "success");
+                    }}
+                  >
+                    📋 Copiar Ruta
+                  </button>
                 </div>
               )}
             </div>
